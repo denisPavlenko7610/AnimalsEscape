@@ -1,18 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Animal : MonoBehaviour
+namespace AnimalsEscape.Animal
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Animal : MonoBehaviour
     {
-        
-    }
+        [SerializeField] private AnimalInput _animalInput;
+        [SerializeField] private AnimalMove _animalMove;
+        [SerializeField] private AnimalAnimation _animalAnimation;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void OnEnable()
+        {
+            _animalInput.input += Move;
+        }
+
+        private void OnDisable()
+        {
+            _animalInput.input -= Move;
+        }
+
+        private void Move(Vector2 moveInput)
+        {
+            _animalMove.MoveInput = moveInput;
+            _animalAnimation.MoveAnimation(moveInput);
+        }
     }
 }

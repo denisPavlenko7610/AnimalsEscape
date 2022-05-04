@@ -8,6 +8,11 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="CrystalFramework" t="Include">
+          <e p="Utility" t="Include">
+            <e p="SafeArea.cs" t="Include" />
+          </e>
+        </e>
         <e p="Input" t="Include">
           <e p="InputActions.cs" t="Include" />
         </e>
@@ -1398,6 +1403,7 @@
               <e p="Installers" t="Include">
                 <e p="PlayerInstaller.cs" t="Include" />
               </e>
+              <e p="LevelsConfig.cs" t="Include" />
             </e>
             <e p="Enums" t="Include">
               <e p="AnimalType.cs" t="Include" />
@@ -1409,6 +1415,9 @@
               <e p="AnimalInput.cs" t="Include" />
               <e p="AnimalMove.cs" t="Include" />
               <e p="AnimalSettingsSO.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="SafeAreaFilter.cs" t="Include" />
             </e>
           </e>
         </e>

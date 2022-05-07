@@ -2,14 +2,14 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace AnimalsEscape.Animal
+namespace AnimalsEscape.Player
 {
     public class AnimalInput : MonoBehaviour
     {
         public Action<Vector2> input;
         private Vector2 _moveVector;
-
         private InputActions _inputActions;
+
         private void OnEnable()
         {
             _inputActions = new InputActions();

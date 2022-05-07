@@ -1,3 +1,5 @@
+using System;
+using AnimalsEscape.Player;
 using UnityEngine;
 
 namespace AnimalsEscape.Animal

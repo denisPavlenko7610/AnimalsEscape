@@ -1,6 +1,7 @@
 using System;
 using AnimalsEscape.Player;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Zenject;
 
 namespace AnimalsEscape.Core.Installers

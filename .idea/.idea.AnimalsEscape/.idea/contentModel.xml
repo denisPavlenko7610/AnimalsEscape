@@ -6,10 +6,84 @@
     <e p="C:\Users\RDragon\Desktop\Projects\AnimalsEscape" t="IncludeRecursive">
       <e p="AnimalsEscape.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
-      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Input" t="Include">
-          <e p="InputActions.cs" t="Include" />
+        <e p="Editor" t="Include">
+          <e p="AutoSaver" t="Include">
+            <e p="AutoSave.cs" t="Include" />
+            <e p="AutoSavePreferences.cs" t="Include" />
+          </e>
+          <e p="Editor.asmdef" t="Include" />
+        </e>
+        <e p="External" t="Include">
+          <e p="CrystalFramework" t="Include">
+            <e p="Utility" t="Include">
+              <e p="SafeArea.cs" t="Include" />
+            </e>
+          </e>
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModuleEPOOutline.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="ReadMe.txt" t="Include" />
+          </e>
+          <e p="External.asmdef" t="Include" />
+          <e p="POLYTEX - Home" t="Include">
+            <e p="Outline Shader" t="Include">
+              <e p="Outline Shader.shader" t="Include" />
+              <e p="OutlineScript.cs" t="Include" />
+              <e p="ReadMe.txt" t="Include" />
+            </e>
+            <e p="ReadMe.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="CameraLookAtTarget Script" t="Include">
+                <e p="CameraLookAtTarget.cs" t="Include" />
+                <e p="ReadMe.txt" t="Include" />
+              </e>
+              <e p="RotateObject" t="Include">
+                <e p="ReadMe.txt" t="Include" />
+                <e p="RotateObject.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="TextMesh Pro" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="LiberationSans - OFL.txt" t="Include" />
+            </e>
+            <e p="Resources" t="Include">
+              <e p="LineBreaking Following Characters.txt" t="Include" />
+              <e p="LineBreaking Leading Characters.txt" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+              <e p="TMP_Bitmap.shader" t="Include" />
+              <e p="TMP_SDF Overlay.shader" t="Include" />
+              <e p="TMP_SDF SSD.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+              <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+              <e p="TMP_SDF-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+              <e p="TMP_SDF-Surface.shader" t="Include" />
+              <e p="TMP_SDF.shader" t="Include" />
+              <e p="TMP_Sprite.shader" t="Include" />
+              <e p="TMPro.cginc" t="Include" />
+              <e p="TMPro_Mobile.cginc" t="Include" />
+              <e p="TMPro_Properties.cginc" t="Include" />
+              <e p="TMPro_Surface.cginc" t="Include" />
+            </e>
+            <e p="Sprites" t="Include">
+              <e p="EmojiOne Attribution.txt" t="Include" />
+              <e p="EmojiOne.json" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Plugins" t="Include">
           <e p="UniRx" t="Include">
@@ -1408,6 +1482,9 @@
             <e p="Enums" t="Include">
               <e p="AnimalType.cs" t="Include" />
             </e>
+            <e p="Input" t="Include">
+              <e p="InputActions.cs" t="Include" />
+            </e>
             <e p="Player" t="Include">
               <e p="Animal.cs" t="Include" />
               <e p="AnimalAnimation.cs" t="Include" />
@@ -1416,84 +1493,17 @@
               <e p="AnimalMove.cs" t="Include" />
               <e p="AnimalSettingsSO.cs" t="Include" />
             </e>
+            <e p="Project.asmdef" t="Include" />
             <e p="TestLoad.cs" t="Include" />
             <e p="UI" t="Include">
               <e p="LevelText.cs" t="Include" />
             </e>
           </e>
         </e>
-        <e p="ThirdAssets" t="Include">
-          <e p="CrystalFramework" t="Include">
-            <e p="Utility" t="Include">
-              <e p="SafeArea.cs" t="Include" />
-            </e>
-          </e>
-          <e p="DOTween" t="Include">
-            <e p="Modules" t="Include">
-              <e p="DOTweenModuleAudio.cs" t="Include" />
-              <e p="DOTweenModuleEPOOutline.cs" t="Include" />
-              <e p="DOTweenModulePhysics.cs" t="Include" />
-              <e p="DOTweenModulePhysics2D.cs" t="Include" />
-              <e p="DOTweenModuleSprite.cs" t="Include" />
-              <e p="DOTweenModuleUI.cs" t="Include" />
-              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
-              <e p="DOTweenModuleUtils.cs" t="Include" />
-            </e>
-            <e p="ReadMe.txt" t="Include" />
-          </e>
-          <e p="POLYTEX - Home" t="Include">
-            <e p="Outline Shader" t="Include">
-              <e p="Outline Shader.shader" t="Include" />
-              <e p="OutlineScript.cs" t="Include" />
-              <e p="ReadMe.txt" t="Include" />
-            </e>
-            <e p="ReadMe.txt" t="Include" />
-            <e p="Scripts" t="Include">
-              <e p="CameraLookAtTarget Script" t="Include">
-                <e p="CameraLookAtTarget.cs" t="Include" />
-                <e p="ReadMe.txt" t="Include" />
-              </e>
-              <e p="RotateObject" t="Include">
-                <e p="ReadMe.txt" t="Include" />
-                <e p="RotateObject.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="TextMesh Pro" t="Include">
-            <e p="Fonts" t="Include">
-              <e p="LiberationSans - OFL.txt" t="Include" />
-            </e>
-            <e p="Resources" t="Include">
-              <e p="LineBreaking Following Characters.txt" t="Include" />
-              <e p="LineBreaking Leading Characters.txt" t="Include" />
-            </e>
-            <e p="Shaders" t="Include">
-              <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
-              <e p="TMP_Bitmap-Mobile.shader" t="Include" />
-              <e p="TMP_Bitmap.shader" t="Include" />
-              <e p="TMP_SDF Overlay.shader" t="Include" />
-              <e p="TMP_SDF SSD.shader" t="Include" />
-              <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
-              <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
-              <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
-              <e p="TMP_SDF-Mobile.shader" t="Include" />
-              <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
-              <e p="TMP_SDF-Surface.shader" t="Include" />
-              <e p="TMP_SDF.shader" t="Include" />
-              <e p="TMP_Sprite.shader" t="Include" />
-              <e p="TMPro.cginc" t="Include" />
-              <e p="TMPro_Mobile.cginc" t="Include" />
-              <e p="TMPro_Properties.cginc" t="Include" />
-              <e p="TMPro_Surface.cginc" t="Include" />
-            </e>
-            <e p="Sprites" t="Include">
-              <e p="EmojiOne Attribution.txt" t="Include" />
-              <e p="EmojiOne.json" t="Include" />
-            </e>
-          </e>
-        </e>
       </e>
       <e p="DocCodeExamples.csproj" t="IncludeRecursive" />
+      <e p="Editor.csproj" t="IncludeRecursive" />
+      <e p="External.csproj" t="IncludeRecursive" />
       <e p="Library" t="Include">
         <e p="PackageCache" t="Include">
           <e p="com.unity.burst@1.6.5" t="Include">
@@ -5953,6 +5963,7 @@
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
+      <e p="Project.csproj" t="IncludeRecursive" />
       <e p="SeparateAssembly.csproj" t="IncludeRecursive" />
       <e p="Temp\Bin" t="ExcludeRecursive" />
       <e p="UniRx.csproj" t="IncludeRecursive" />

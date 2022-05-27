@@ -15,6 +15,6 @@ namespace AnimalsEscape.Player
     public struct AnimalSetting
     {
         public AnimalType AnimalType;
-        public Animal.Animal AnimalPrefab;
+        public Animal AnimalPrefab;
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace AnimalsEscape.Animal
+namespace AnimalsEscape
 {
     public class AnimalMove : MonoBehaviour
     {

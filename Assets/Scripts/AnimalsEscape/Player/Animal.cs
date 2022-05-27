@@ -1,8 +1,6 @@
-using System;
-using AnimalsEscape.Player;
 using UnityEngine;
 
-namespace AnimalsEscape.Animal
+namespace AnimalsEscape
 {
     public class Animal : MonoBehaviour
     {

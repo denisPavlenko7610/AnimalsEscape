@@ -10,7 +10,7 @@ namespace AnimalsEscape.Player
         [SerializeField] private AnimalType _animalType;
         [SerializeField] private AnimalSettingsSo _animalSettingsSo;
 
-        public Animal.Animal Create()
+        public Animal Create()
         {
             foreach (var animalSetting in _animalSettingsSo.AnimalSettings.Where(s =>
                 s.AnimalType == _animalType))

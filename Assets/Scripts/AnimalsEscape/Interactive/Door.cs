@@ -1,13 +1,13 @@
 using AnimalsEscape.Core.SceneManagement;
+using AnimalsEscape.Utils;
 using UnityEngine;
 using Zenject;
 
 namespace AnimalsEscape
 {
-    public class TestLoad : MonoBehaviour
+    public class Door : MonoBehaviour
     {
         private LevelLoader LevelLoader;
-        private float time = 5f;
 
         [Inject]
         public void Construct(LevelLoader LevelLoader)
@@ -15,13 +15,10 @@ namespace AnimalsEscape
             this.LevelLoader = LevelLoader;
         }
 
-        void Update()
+        private void OnTriggerEnter(Collider other)
         {
-            time -= Time.deltaTime;
-            
-            if (time < 0)
+            if (other.CompareTag(Constants.AnimalTag))
             {
-                time = 5f;
                 LevelLoader.LoadNextLevel();
             }
         }

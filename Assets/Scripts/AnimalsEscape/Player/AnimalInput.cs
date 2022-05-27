@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace AnimalsEscape.Player
+namespace AnimalsEscape
 {
     public class AnimalInput : MonoBehaviour
     {

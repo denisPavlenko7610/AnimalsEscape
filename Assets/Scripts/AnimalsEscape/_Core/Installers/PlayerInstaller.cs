@@ -1,7 +1,5 @@
-using System;
 using AnimalsEscape.Player;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using Zenject;
 
 namespace AnimalsEscape.Core.Installers
@@ -21,7 +19,7 @@ namespace AnimalsEscape.Core.Installers
         public override void InstallBindings()
         {
             var newAnimal = _animalFactory.Create();
-            Container.Bind<Animal.Animal>().FromInstance(newAnimal).AsSingle().NonLazy();
+            Container.Bind<Animal>().FromInstance(newAnimal).AsSingle().NonLazy();
         }
     }
 }

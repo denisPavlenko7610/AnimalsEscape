@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2048
     height: 1060.8
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Game
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 109
+  controlID: 110
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 110
+  controlID: 111
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 111
+  controlID: 112
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -480,22 +480,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/ThirdAssets/Sixpolys/SIXP Autosaver/Editor
+    - Assets/Scripts/AnimalsEscape/_Core
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/ThirdAssets/Sixpolys/SIXP Autosaver/Editor
+  - Assets/Scripts/AnimalsEscape/_Core
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\RDragon\Desktop\Projects\AnimalsEscape
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 234.19995}
-    m_SelectedIDs: e0760000
-    m_LastClickedID: 30432
-    m_ExpandedIDs: 000000005e73000060730000627300006473000066730000687300006a7300006c73000092730000d4760000dc76000000ca9a3b
+    scrollPos: {x: 0, y: 538.19995}
+    m_SelectedIDs: e0740000
+    m_LastClickedID: 29920
+    m_ExpandedIDs: 00000000d2740000d4740000d6740000d8740000da740000dc740000de740000e0740000e2740000e4740000e6740000e8740000ea740000ec740000ee740000f0740000f2740000f4740000f6740000f874000064770000608800007689000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -523,7 +523,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005e73000060730000627300006473000066730000687300006a7300006c730000
+    m_ExpandedIDs: 00000000d2740000d4740000d6740000d8740000da740000dc740000de740000e0740000e2740000e4740000e6740000e8740000ea740000ec740000ee740000f0740000f2740000f4740000f6740000f8740000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -567,7 +567,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 2}
+      m_ClientGUIView: {fileID: 6}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -655,7 +655,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2cfbffff
+      m_ExpandedIDs: 0c4ffeffd48afefff48efeffce92feffe8a1feff9e0bffff7c46ffff96f7fffffefaffffda770000928b0000a2a40000dea50000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -713,8 +713,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -100, y: -25.599976}
+      snapOffset: {x: -100, y: -25.599976}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -735,7 +735,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -757,7 +757,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -905,9 +905,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -1.8481327, y: -3.0987613, z: -8.505035}
+    m_Target: {x: -1.2612053, y: -12.00945, z: 3.5459948}
     speed: 2
-    m_Value: {x: -1.8481327, y: -3.0987613, z: -8.505035}
+    m_Value: {x: -1.2612053, y: -12.00945, z: 3.5459948}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -954,13 +954,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.23339857, y: 0.04463077, z: -0.0106965015, w: 0.97135866}
+    m_Target: {x: -0.43419272, y: 0.062608555, z: -0.030268205, w: -0.8981374}
     speed: 2
-    m_Value: {x: -0.23339857, y: -0.04463077, z: 0.0106965015, w: -0.97135866}
+    m_Value: {x: -0.43419054, y: 0.06260824, z: -0.030268054, w: -0.8981329}
   m_Size:
-    m_Target: 1.6465017
+    m_Target: 10
     speed: 2
-    m_Value: 1.6465017
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1045,7 +1045,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -1058,20 +1058,20 @@ MonoBehaviour:
       y: 21
       width: 415.6001
       height: 618
-    m_Scale: {x: 0.26984796, y: 0.26984796}
-    m_Translation: {x: 207.80003, y: 308.99997}
+    m_Scale: {x: 0.26097974, y: 0.26097974}
+    m_Translation: {x: 207.80005, y: 309}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -770.0634
-      y: -1145.0891
-      width: 1540.1268
-      height: 2290.1785
+      x: -796.2306
+      y: -1184
+      width: 1592.4612
+      height: 2368
     m_MinimalGUI: 1
-  m_defaultScale: 0.26984796
+  m_defaultScale: 0.26097974
   m_LastWindowPixelSize: {x: 519.5001, y: 798.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1

@@ -45,50 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelLoader: {fileID: 8563937826009831262}
---- !u!1 &2240034884220248977
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1077921586424865909}
-  - component: {fileID: 7508098264291711979}
-  m_Layer: 0
-  m_Name: TestLoad
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1077921586424865909
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2240034884220248977}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 193.00002, y: 386.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 823843552862406476}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7508098264291711979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2240034884220248977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6db514f4e42aa749b60b5fb4f4c23be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2608440189946207506
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,7 +78,6 @@ Transform:
   - {fileID: 4784885001836958442}
   - {fileID: 6290186050762601287}
   - {fileID: 7677499682720394243}
-  - {fileID: 1077921586424865909}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -245,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a6e1c345a7cd042a4c424829af1dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelsConfig: {fileID: 11400000, guid: 6806fe406fe33fb4c8c258c65eff0728, type: 2}
+  _levelsConfig: {fileID: 11400000, guid: 6806fe406fe33fb4c8c258c65eff0728, type: 2}
 --- !u!1001 &7598495970487364379
 PrefabInstance:
   m_ObjectHideFlags: 0

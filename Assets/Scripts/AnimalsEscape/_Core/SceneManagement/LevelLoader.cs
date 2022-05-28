@@ -7,7 +7,8 @@ namespace AnimalsEscape.Core.SceneManagement
 {
     public class LevelLoader : MonoBehaviour
     {
-        [SerializeField] private LevelsConfig LevelsConfig;
+        [SerializeField] private LevelsConfig _levelsConfig;
+        
         private int _currentLevelIndex = -1;
         private LevelText _levelText;
 
@@ -20,7 +21,7 @@ namespace AnimalsEscape.Core.SceneManagement
         public void LoadNextLevel()
         {
             var nextLevelIndex = _currentLevelIndex + 1;
-            if (nextLevelIndex != LevelsConfig.Levels.Count)
+            if (nextLevelIndex != _levelsConfig.Levels.Count)
             {
                 _currentLevelIndex = nextLevelIndex;
             }
@@ -31,7 +32,7 @@ namespace AnimalsEscape.Core.SceneManagement
             }
 
             _levelText.ShowLevel(nextLevelIndex + 1);
-            SceneManager.LoadScene(LevelsConfig.Levels[nextLevelIndex].name);
+            SceneManager.LoadScene(_levelsConfig.Levels[nextLevelIndex].name);
         }
     }
 }

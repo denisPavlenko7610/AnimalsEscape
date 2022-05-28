@@ -1,25 +1,18 @@
-using AnimalsEscape.Core.SceneManagement;
+using System;
 using AnimalsEscape.Utils;
 using UnityEngine;
-using Zenject;
 
 namespace AnimalsEscape
 {
     public class Door : MonoBehaviour
     {
-        private LevelLoader LevelLoader;
-
-        [Inject]
-        public void Construct(LevelLoader LevelLoader)
-        {
-            this.LevelLoader = LevelLoader;
-        }
+        public event Action CompleteLevelHandler;
 
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag(Constants.AnimalTag))
             {
-                LevelLoader.LoadNextLevel();
+                CompleteLevelHandler?.Invoke();
             }
         }
     }

@@ -1469,8 +1469,10 @@
         <e p="Scripts" t="Include">
           <e p="AnimalsEscape" t="Include">
             <e p="_Core" t="Include">
+              <e p="Game.cs" t="Include" />
               <e p="Installers" t="Include">
                 <e p="LevelInstaller.cs" t="Include" />
+                <e p="LevelLoaderInstaller.cs" t="Include" />
                 <e p="PlayerInstaller.cs" t="Include" />
                 <e p="UIInstaller.cs" t="Include" />
               </e>

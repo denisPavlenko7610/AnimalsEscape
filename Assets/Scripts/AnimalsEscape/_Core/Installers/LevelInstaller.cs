@@ -1,15 +1,23 @@
-using AnimalsEscape.Core.SceneManagement;
+using System;
 using Zenject;
 
-namespace AnimalsEscape.Core.Installers
+namespace AnimalsEscape._Core.Installers
 {
     public class LevelInstaller : MonoInstaller
     {
-        public LevelLoader LevelLoader;
+        public Door Door;
+
+        private void OnValidate()
+        {
+            if (!Door)
+            {
+                Door = FindObjectOfType<Door>();
+            }
+        }
 
         public override void InstallBindings()
         {
-            Container.Bind<LevelLoader>().FromInstance(LevelLoader).AsSingle().NonLazy();
+            Container.Bind<Door>().FromInstance(Door).AsSingle();
         }
     }
 }

@@ -2,18 +2,21 @@ using AnimalsEscape.Core.SceneManagement;
 using UnityEngine;
 using Zenject;
 
-public class LoadStartLevel : MonoBehaviour
+namespace AnimalsEscape._Core
 {
-    private LevelLoader LevelLoader;
-
-    [Inject]
-    public void Construct(LevelLoader LevelLoader)
+    public class LoadStartLevel : MonoBehaviour
     {
-        this.LevelLoader = LevelLoader;
-    }
+        private LevelLoader _levelLoader;
 
-    private void Start()
-    {
-        LevelLoader.LoadNextLevel();
+        [Inject]
+        public void Construct(LevelLoader levelLoader)
+        {
+            _levelLoader = levelLoader;
+        }
+
+        private void Start()
+        {
+            _levelLoader.LoadNextLevel();
+        }
     }
 }

@@ -20,59 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/Fox.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/Fox.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/PenguinFBX.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/PenguinFBX.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/Rabbit.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/Rabbit.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/cat 1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/cat 1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Door.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Door.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Utils.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Utils/Constants.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Utils/Constants.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadStartLevel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadStartLevel.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/_Core/Animal.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/_Core/Animal.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/_Core/Game.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/_Core/Game.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Game.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Game.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelLoaderInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelLoaderInstaller.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Wall_Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Wall_Material.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Animals/Cat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/Cat.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/_Bootstrap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/_Bootstrap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/Installers.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/Installers/LevelInstaller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/Installers/LevelInstaller.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/Installers/PlayerInstaller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/Installers/PlayerInstaller.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/Installers/UIInstaller.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/Installers/UIInstaller.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/SceneManagement.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/SceneManagement/LevelLoader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/SceneManagement/LevelLoader.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/SceneManagement/LevelsConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/SceneManagement/LevelsConfig.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/Animal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalAnimation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalSettingsSO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalSettingsSO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/TestLoad.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/TestLoad.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Resources/ProjectContext.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Resources/ProjectContext.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelInstaller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadStartLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadStartLevel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/SceneManagement/LevelLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/SceneManagement/LevelLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +50,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/40205BB2-CB25-478A-9CB0-F5E54CF11441/de/26e33199/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Main/DiContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalSettingsSo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Binding/Binders/ConcreteBinders/ConcreteIdBinderGeneric.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalMove.cs" root0="FORCE_HIGHLIGHTING" />
@@ -99,8 +68,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Scripts/Enemy/EnemyFacade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Scripts/Asteroid/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.3.0/InputSystem/Plugins/OnScreen/OnScreenButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/SceneManagement/LevelLoader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/PlayerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Scripts/Misc/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelLoaderInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadStartLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Install/ZenjectBinding.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Scripts/Installers/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
@@ -134,10 +105,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalSettingsSo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/PlayerInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadFirstLevel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadStartLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Utils/Constants.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/Animal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelLoadreInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadStartLevel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/SceneManagement/LevelLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelLoaderInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelInstaller.cs" />
       </list>
     </option>
   </component>

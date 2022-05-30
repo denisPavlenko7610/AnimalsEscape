@@ -1,5 +1,3 @@
-using AnimalsEscape.Enums;
-
 namespace AnimalsEscape.States
 {
     public class EnemyStateMachine

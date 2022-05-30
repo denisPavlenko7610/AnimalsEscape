@@ -1,5 +1,3 @@
-using UnityEngine;
-
 namespace AnimalsEscape.States
 {
     public class EnemyIdleState : IState

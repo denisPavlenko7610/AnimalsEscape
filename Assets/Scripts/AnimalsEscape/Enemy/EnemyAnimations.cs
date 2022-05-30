@@ -1,5 +1,3 @@
-using System;
-using AnimalsEscape.Enums;
 using UnityEngine;
 
 namespace AnimalsEscape
@@ -9,19 +7,13 @@ namespace AnimalsEscape
         [SerializeField] private Animator _enemyAnimator;
         private static readonly int IsWalk = Animator.StringToHash("IsWalk");
 
-        public void ChangeAnimation(EnemyStates enemyState)
+        public void PlayIdle()
         {
-            if (enemyState == EnemyStates.Idle)
-            {
-                _enemyAnimator.SetBool(IsWalk, false);
-            }
-            else if (enemyState == EnemyStates.Walk)
-            {
-                _enemyAnimator.SetBool(IsWalk, true);
-            }
-            else if (enemyState == EnemyStates.Catch)
-            {
-            }
+            _enemyAnimator.SetBool(IsWalk, false);
+        }
+        public void PlayWalk()
+        {
+            _enemyAnimator.SetBool(IsWalk, true);
         }
     }
 }

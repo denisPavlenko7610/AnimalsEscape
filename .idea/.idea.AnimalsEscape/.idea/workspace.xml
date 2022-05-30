@@ -20,52 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy/EnemyAnimator.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy/EnemyAnimator.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Black.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Black.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Grey.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Grey.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Main.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Main.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Robot (1).fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Robot (1).fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/AnimalFactory.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/AnimalFactory.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/EnemyFactory.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/EnemyFactory.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Robot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Robot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Door.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Door.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/_Core/SceneContext.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/_Core/SceneContext.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/Enemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/Enemy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemyAnimations.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemyAnimations.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemySettingsSo.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemySettingsSo.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemySettingsSo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enums/EnemyStates.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enums/EnemyType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/EnemyInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/EnemyInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyIdleState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyStateMachine.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyStateMachine.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyWalkState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/IState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/IState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/_Core/Door.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/_Core/Door.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/Animal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalAnimations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalAnimation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalAnimations.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalFactory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemyAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemyAnimations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enums/EnemyStates.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enums/EnemyStates.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Factories/AnimalFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Factories/AnimalFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,20 +58,24 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/EnemyInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Binding/Binders/ConcreteBinders/ConcreteIdBinderGeneric.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyWalkState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalMove.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyIdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalAnimations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Utils/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Factories/PlaceholderFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/Animal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/IState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Scripts/Installers/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Scripts/Enemy/EnemyFacade.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enums/EnemyStates.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Scripts/Asteroid/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.3.0/InputSystem/Plugins/OnScreen/OnScreenButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/SceneManagement/LevelLoader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyStateMachine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemySettingsSo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/PlayerInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.3.0/InputSystem/Utilities/DelegateHelpers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Scripts/Misc/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelLoaderInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadStartLevel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -114,10 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Animal/AnimalAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Animal/Animal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Animal/AnimalInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Animal/AnimalMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enums/AnimalType.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Binding/Binders/ConcreteBinders/ConcreteIdBinderGeneric.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalSettingsSO.cs" />
@@ -156,11 +127,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Factories/EnemyFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Factories/Factory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Factories/IFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Factories/AnimalFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemyMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemyAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalAnimations.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enums/EnemyStates.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Factories/AnimalFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyStateMashine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/IState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/IdleState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyIdleState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyWalkState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemyAnimations.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/Enemy.cs" />
       </list>
@@ -284,9 +261,13 @@
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
     <state width="2005" height="400" key="GridCell.Tab.3.right/0.0.2048.1104@0.0.2048.1104" timestamp="1651825760239" />
-    <state x="687" y="241" width="672" height="678" key="search.everywhere.popup" timestamp="1653901895510">
+    <state x="857" y="254" key="RiderGenerateDialog" timestamp="1653910883699">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state x="687" y="241" width="672" height="678" key="search.everywhere.popup/0.0.2048.1104@0.0.2048.1104" timestamp="1653901895510" />
+    <state x="857" y="254" key="RiderGenerateDialog/0.0.2048.1104@0.0.2048.1104" timestamp="1653910883699" />
+    <state x="687" y="241" width="672" height="678" key="search.everywhere.popup" timestamp="1653904373469">
+      <screen x="0" y="0" width="2048" height="1104" />
+    </state>
+    <state x="687" y="241" width="672" height="678" key="search.everywhere.popup/0.0.2048.1104@0.0.2048.1104" timestamp="1653904373469" />
   </component>
 </project>

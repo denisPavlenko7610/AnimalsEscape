@@ -1490,7 +1490,6 @@
             </e>
             <e p="Enums" t="Include">
               <e p="AnimalType.cs" t="Include" />
-              <e p="EnemyStates.cs" t="Include" />
               <e p="EnemyType.cs" t="Include" />
             </e>
             <e p="Factories" t="Include">
@@ -1512,6 +1511,12 @@
               <e p="AnimalSettingsSO.cs" t="Include" />
             </e>
             <e p="Project.asmdef" t="Include" />
+            <e p="States" t="Include">
+              <e p="EnemyIdleState.cs" t="Include" />
+              <e p="EnemyStateMachine.cs" t="Include" />
+              <e p="EnemyWalkState.cs" t="Include" />
+              <e p="IState.cs" t="Include" />
+            </e>
             <e p="UI" t="Include">
               <e p="LevelText.cs" t="Include" />
             </e>

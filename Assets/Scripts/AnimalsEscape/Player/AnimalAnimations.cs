@@ -2,9 +2,9 @@ using UnityEngine;
 
 namespace AnimalsEscape
 {
-    public class AnimalAnimation : MonoBehaviour
+    public class AnimalAnimations : MonoBehaviour
     {
-        [SerializeField] private Animator _animator;
+        [SerializeField] private Animator _animalAnimator;
         private static readonly int Run = Animator.StringToHash("Run");
         private float _minValue = 0.01f;
 
@@ -13,11 +13,11 @@ namespace AnimalsEscape
             if (moveInput.x > _minValue || moveInput.y > _minValue || moveInput.x < -_minValue ||
                 moveInput.y < -_minValue)
             {
-                _animator.SetBool(Run, true);
+                _animalAnimator.SetBool(Run, true);
             }
             else
             {
-                _animator.SetBool(Run, false);
+                _animalAnimator.SetBool(Run, false);
             }
         }
     }

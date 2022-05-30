@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace AnimalsEscape.Player
 {
-    public class AnimalFactory : MonoBehaviour
+    public class AnimalFactory : MonoBehaviour, IFactory<Animal>
     {
         [SerializeField] private AnimalType _animalType;
         [SerializeField] private AnimalSettingsSo _animalSettingsSo;
@@ -15,7 +15,7 @@ namespace AnimalsEscape.Player
             foreach (var animalSetting in _animalSettingsSo.AnimalSettings.Where(s =>
                 s.AnimalType == _animalType))
             {
-                return Instantiate(animalSetting.AnimalPrefab, transform.position, Quaternion.identity, transform);
+                return Instantiate(animalSetting.AnimalPrefab, transform.position, transform.rotation, transform);
             }
 
             throw new NullReferenceException("Can`t create animal");

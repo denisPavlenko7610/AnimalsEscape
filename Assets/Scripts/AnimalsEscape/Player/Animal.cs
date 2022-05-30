@@ -6,7 +6,7 @@ namespace AnimalsEscape
     {
         [SerializeField] private AnimalInput _animalInput;
         [SerializeField] private AnimalMove _animalMove;
-        [SerializeField] private AnimalAnimation _animalAnimation;
+        [SerializeField] private AnimalAnimations animalAnimations;
 
         private void OnEnable()
         {
@@ -21,7 +21,7 @@ namespace AnimalsEscape
         private void Move(Vector2 moveInput)
         {
             _animalMove.MoveInput = moveInput;
-            _animalAnimation.MoveAnimation(moveInput);
+            animalAnimations.MoveAnimation(moveInput);
         }
     }
 }

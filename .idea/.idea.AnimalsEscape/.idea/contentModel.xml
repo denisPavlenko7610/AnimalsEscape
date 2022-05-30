@@ -1471,6 +1471,7 @@
             <e p="_Core" t="Include">
               <e p="Game.cs" t="Include" />
               <e p="Installers" t="Include">
+                <e p="EnemyInstaller.cs" t="Include" />
                 <e p="LevelInstaller.cs" t="Include" />
                 <e p="LevelLoaderInstaller.cs" t="Include" />
                 <e p="PlayerInstaller.cs" t="Include" />
@@ -1482,8 +1483,20 @@
                 <e p="LevelsConfig.cs" t="Include" />
               </e>
             </e>
+            <e p="Enemy" t="Include">
+              <e p="Enemy.cs" t="Include" />
+              <e p="EnemyAnimations.cs" t="Include" />
+              <e p="EnemySettingsSo.cs" t="Include" />
+            </e>
             <e p="Enums" t="Include">
               <e p="AnimalType.cs" t="Include" />
+              <e p="EnemyStates.cs" t="Include" />
+              <e p="EnemyType.cs" t="Include" />
+            </e>
+            <e p="Factories" t="Include">
+              <e p="AnimalFactory.cs" t="Include" />
+              <e p="EnemyFactory.cs" t="Include" />
+              <e p="IFactory.cs" t="Include" />
             </e>
             <e p="Input" t="Include">
               <e p="InputActions.cs" t="Include" />
@@ -1493,8 +1506,7 @@
             </e>
             <e p="Player" t="Include">
               <e p="Animal.cs" t="Include" />
-              <e p="AnimalAnimation.cs" t="Include" />
-              <e p="AnimalFactory.cs" t="Include" />
+              <e p="AnimalAnimations.cs" t="Include" />
               <e p="AnimalInput.cs" t="Include" />
               <e p="AnimalMove.cs" t="Include" />
               <e p="AnimalSettingsSO.cs" t="Include" />

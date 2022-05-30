@@ -1653,7 +1653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b51b19892cf747647a7bcae1d25e2733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 6683949241829009656}
+  _animalAnimator: {fileID: 6683949241829009656}
 --- !u!114 &5899540549917707484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,4 +1668,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animalInput: {fileID: 5899540549917707486}
   _animalMove: {fileID: 5899540549917707481}
-  _animalAnimation: {fileID: 5899540549917707487}
+  animalAnimations: {fileID: 5899540549917707487}

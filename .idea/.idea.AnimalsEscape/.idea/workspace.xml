@@ -20,48 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Coin.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Coin.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Materials/M_DarkYellow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Materials/M_DarkYellow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Materials/M_Yellow.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Materials/M_Yellow.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/DarkMetal.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/DarkMetal.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/DarkWood.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/DarkWood.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/Metal.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/Metal.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/Wood.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/Wood.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Trapdoor.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Trapdoor.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Building.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Building.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Interact.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Interact.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Interact.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Interact/Coin.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Interact/Coin.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Coin.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Coin.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/M_Door.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/M_Door.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Door.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Coin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -36,7 +36,8 @@ namespace AnimalsEscape.Interactive
         private void RotateCoin()
         {
             _rotateSequence = DOTween.Sequence();
-            _rotateSequence.Append(transform
+            _rotateSequence
+                .Append(transform
                 .DORotate(new Vector3(0, 0, _aroundAxisDegree), rotateTime, RotateMode.FastBeyond360)
                 .SetRelative(true)
                 .SetEase(Ease.Linear))
@@ -45,13 +46,13 @@ namespace AnimalsEscape.Interactive
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag(Constants.AnimalTag))
-            {
-                CollectCoinHandler?.Invoke();
-                _meshRenderer.enabled = false;
-                _collider.enabled = false;
-                _rotateSequence.Kill();
-            }
+            if (!other.CompareTag(Constants.AnimalTag))
+                return;
+            
+            CollectCoinHandler?.Invoke();
+            _meshRenderer.enabled = false;
+            _collider.enabled = false;
+            _rotateSequence.Kill();
         }
     }
 }

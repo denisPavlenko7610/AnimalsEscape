@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace AnimalsEscape
 {
+    [RequireComponent(typeof(EnemyAnimations))]
     public class Enemy : MonoBehaviour
     {
         [SerializeField] private EnemyAnimations _enemyAnimations;

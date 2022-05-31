@@ -1501,6 +1501,7 @@
               <e p="InputActions.cs" t="Include" />
             </e>
             <e p="Interactive" t="Include">
+              <e p="Coin.cs" t="Include" />
               <e p="Door.cs" t="Include" />
             </e>
             <e p="Player" t="Include">

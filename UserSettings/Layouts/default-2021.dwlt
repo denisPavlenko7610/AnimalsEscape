@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2048
     height: 1060.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 7}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -295,8 +295,8 @@ MonoBehaviour:
     y: 0
     width: 835.99994
     height: 662.4
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -497,36 +497,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\RDragon\Desktop\Projects\AnimalsEscape
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 348.59998}
-    m_SelectedIDs: 8a770000
-    m_LastClickedID: 30602
-    m_ExpandedIDs: 00000000e8740000ea740000ec740000ee740000f0740000f2740000f4740000f6740000fa740000fc740000fe74000000750000027500000475000006750000087500000a7500000c7500000e7500001075000012750000147500005c7700008a770000227b0000f48300000085000074910000b692000000ca9a3b
+    scrollPos: {x: 0, y: 236.59998}
+    m_SelectedIDs: 12750000
+    m_LastClickedID: 29970
+    m_ExpandedIDs: 00000000ec740000ee740000f0740000f2740000f4740000f6740000f8740000fa740000fc740000fe74000000750000027500000475000006750000087500000a7500000c7500000e75000010750000127500001475000016750000187500001a7500001c7500001e750000207500006877000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Environment
-      m_OriginalName: Environment
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 31522
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 6}
     m_SearchString: 
@@ -540,7 +540,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e8740000ea740000ec740000ee740000f0740000f2740000f4740000f6740000f8740000fa740000fc740000fe74000000750000027500000475000006750000087500000a7500000c7500000e750000107500001275000014750000
+    m_ExpandedIDs: 00000000ec740000ee740000f0740000f2740000f4740000f6740000f8740000fa740000fc740000fe74000000750000027500000475000006750000087500000a7500000c7500000e75000010750000127500001475000016750000187500001a7500001c7500001e75000020750000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,7 +568,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c623000068900000027500007c8000002eab0000ec9c00006e9000007a800000e48a0000a4830000
+    m_ExpandedInstanceIDs: c623000068900000027500007c8000002eab0000ec9c00006e9000007a800000e48a0000a4830000e4840000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -670,9 +670,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 12750000
       m_LastClickedID: 0
-      m_ExpandedIDs: 90d2f9ffc8d2f9ff64d5f9ffb613faffd013faffec13faffae1bfaff5c1efaffde33faffd647faff445ffaff7c5ffaff8061faff9cbefaffb6befaffd2befaff54c0faff3eccfaffb8cffaffa2ddfafff4e5faffc8f0faff7259fbff4e62fbfff269fbff2472fbff4074fbff2cbffcffbcccfcfff045ffffa8f8ffffc4f8ffff2cfbffffc2770000047800008c960000ba960000e496000096a00000c4a0000010a500003ea5000032a6000060a60000eaa6000018a7000030a7000042a7000034aa000088aa00003eab000058ab000018ac000040ad0000f0ad000016ae000082af0000a0b40000c6b40000d6b50000
+      m_ExpandedIDs: 4acdfeffe4f0feffa609ffff5e22ffffea3bfffffc47ffff7857fffff897ffff76f0ffff2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -730,8 +730,8 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
-      snapOffsetDelta: {x: -100, y: -25.599976}
+      snapOffset: {x: -100, y: -25.599976}
+      snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
       id: Tool Settings
       index: 0
@@ -752,7 +752,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 24.8}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -922,9 +922,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.022948172, y: -16.805468, z: 7.3772125}
+    m_Target: {x: 1.5029472, y: -15.867933, z: 5.6844172}
     speed: 2
-    m_Value: {x: 0.022948172, y: -16.805468, z: 7.3772125}
+    m_Value: {x: 1.5029472, y: -15.867933, z: 5.6844172}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -971,9 +971,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.41798052, y: -0.09621271, z: 0.044502594, w: -0.902286}
+    m_Target: {x: -0.4168822, y: -0.054248434, z: 0.024849763, w: -0.90704274}
     speed: 2
-    m_Value: {x: -0.41796693, y: -0.09620958, z: 0.044501144, w: -0.9022566}
+    m_Value: {x: -0.4169387, y: -0.051525068, z: 0.023598092, w: -0.9071662}
   m_Size:
     m_Target: 10
     speed: 2

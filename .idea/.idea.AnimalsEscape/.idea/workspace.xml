@@ -20,9 +20,89 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Animator.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Animator/Cat_Lite_AC.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Animator/Cat_Lite_AC.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Cat Lite.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Cat Lite.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Materials/Mat_Cat_Lite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Materials/Mat_Cat_Lite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Textures/Tex_Cat_Lite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Textures/Tex_Cat_Lite.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/materials.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/materials.mtl.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/materials.mtl.bak.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/materials.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/model.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/model.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Key.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Key.mtl.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Key.mtl.bak.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Key.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Key.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Key.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Materials/Mat.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Materials/Mat.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Other.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/materials.mtl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/materials.mtl.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/materials.mtl.bak.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/materials.mtl.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/model.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/model.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Key.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Key.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Key.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Key.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/IKillSequence.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/IKillSequence.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/IRotator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/IRotator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/Rotator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/Rotator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Cat/Models/cat.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat/Models/cat.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model/Animator.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model/Animator/Cat_Lite_AC.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model/Animator/Cat_Lite_AC.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model/Cat Lite.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model/Cat Lite.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model/Materials/Mat_Cat_Lite.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model/Materials/Mat_Cat_Lite.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model/Textures/Tex_Cat_Lite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Lowpoly Toon Cat Lite/Model/Textures/Tex_Cat_Lite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/DarkWood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/DarkWood.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/Wood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/Wood.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Interact.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Interact.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Door.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/_Core/SceneContext.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/_Core/SceneContext.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1/SceneSettings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1/SceneSettings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Factories/AnimalFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Factories/AnimalFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Coin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Coin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/Animal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/PlayerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/PlayerInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +132,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Utils/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Factories/PlaceholderFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/Animal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/IRotator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/Rotator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/IKillSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/IState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Scripts/Installers/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Scripts/Enemy/EnemyFacade.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,6 +150,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelLoaderInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadStartLevel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemyAnimations.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Key.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Install/ZenjectBinding.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Scripts/Installers/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Internal/Assert.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,13 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Binding/Binders/ConcreteBinders/ConcreteIdBinderGeneric.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalSettingsSO.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/UI/SafeAreaFilter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/LevelsConfig.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/SceneManagment/LevelLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/SceneManagment/LevelConfigs.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/SceneManagement/LevelConfigs.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/Installers/LevelInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/Installers/PlayerInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Core/Installers/UIInstaller.cs" />
@@ -93,17 +170,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalMove.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/PlayerInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadFirstLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Utils/Constants.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelLoadreInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/LoadStartLevel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/SceneManagement/LevelLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelLoaderInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/IFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemyFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enums/EnemyType.cs" />
@@ -117,7 +189,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/EnemyAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/AnimalAnimations.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enums/EnemyStates.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Factories/AnimalFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyStateMashine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/IState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/IdleState.cs" />
@@ -126,7 +197,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyWalkState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/States/EnemyStateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Enemy/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/RotateObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/IRotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/IKillSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/IRotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Rotate/Rotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/PlayerInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Factories/AnimalFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Installers/LevelInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Player/Animal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Coin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/_Core/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimalsEscape/Interactive/Key.cs" />
       </list>
     </option>
   </component>
@@ -252,9 +336,9 @@
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
     <state x="857" y="254" key="RiderGenerateDialog/0.0.2048.1104@0.0.2048.1104" timestamp="1653910883699" />
-    <state x="687" y="241" width="672" height="678" key="search.everywhere.popup" timestamp="1653982284928">
+    <state x="687" y="241" width="672" height="678" key="search.everywhere.popup" timestamp="1654328434432">
       <screen x="0" y="0" width="2048" height="1104" />
     </state>
-    <state x="687" y="241" width="672" height="678" key="search.everywhere.popup/0.0.2048.1104@0.0.2048.1104" timestamp="1653982284928" />
+    <state x="687" y="241" width="672" height="678" key="search.everywhere.popup/0.0.2048.1104@0.0.2048.1104" timestamp="1654328434432" />
   </component>
 </project>

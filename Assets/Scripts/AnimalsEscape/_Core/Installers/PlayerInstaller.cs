@@ -10,7 +10,7 @@ namespace AnimalsEscape.Core.Installers
 
         private void OnValidate()
         {
-            if (_animalFactory == null)
+            if (!_animalFactory)
             {
                 _animalFactory = FindObjectOfType<AnimalFactory>();
             }

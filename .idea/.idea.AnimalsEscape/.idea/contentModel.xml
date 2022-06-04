@@ -1503,6 +1503,12 @@
             <e p="Interactive" t="Include">
               <e p="Coin.cs" t="Include" />
               <e p="Door.cs" t="Include" />
+              <e p="Key.cs" t="Include" />
+              <e p="Rotate" t="Include">
+                <e p="IKillSequence.cs" t="Include" />
+                <e p="IRotator.cs" t="Include" />
+                <e p="Rotator.cs" t="Include" />
+              </e>
             </e>
             <e p="Player" t="Include">
               <e p="Animal.cs" t="Include" />
@@ -2262,7 +2268,7 @@
               </e>
             </e>
           </e>
-          <e p="com.unity.ide.rider@3.0.13" t="Include">
+          <e p="com.unity.ide.rider@3.0.14" t="Include">
             <e p="Rider" t="Include">
               <e p="Editor" t="Include">
                 <e p="com.unity.ide.rider.asmdef" t="Include" />
@@ -2316,7 +2322,7 @@
               </e>
             </e>
           </e>
-          <e p="com.unity.ide.visualstudio@2.0.14" t="Include">
+          <e p="com.unity.ide.visualstudio@2.0.15" t="Include">
             <e p="Editor" t="Include">
               <e p="AssemblyInfo.cs" t="Include" />
               <e p="AsyncOperation.cs" t="Include" />

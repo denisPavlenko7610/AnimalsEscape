@@ -18,7 +18,7 @@ namespace AnimalsEscape.Player
                 return Instantiate(animalSetting.AnimalPrefab, transform.position, transform.rotation, transform);
             }
 
-            throw new NullReferenceException($"Can`t create {_animalType}");
+            throw new Exception($"Can`t create {_animalType}");
         }
     }
 }

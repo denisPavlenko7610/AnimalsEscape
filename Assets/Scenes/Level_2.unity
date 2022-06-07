@@ -124,7 +124,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 1db2379c29c2ad8459ead105c9352c5f, type: 2}
 --- !u!1001 &89803402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132,6 +132,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 989629544}
     m_Modifications:
+    - target: {fileID: 1358307077, guid: f66f7ac9eed9f9645952092561889b13, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820573588, guid: f66f7ac9eed9f9645952092561889b13, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3210196790652762586, guid: f66f7ac9eed9f9645952092561889b13,
         type: 3}
       propertyPath: m_RootOrder
@@ -192,11 +200,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFactory
       objectReference: {fileID: 0}
+    - target: {fileID: 3210196790871596216, guid: f66f7ac9eed9f9645952092561889b13,
+        type: 3}
+      propertyPath: <Points>k__BackingField.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210196790871596216, guid: f66f7ac9eed9f9645952092561889b13,
+        type: 3}
+      propertyPath: <Points>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 89803405}
+    - target: {fileID: 3210196790871596216, guid: f66f7ac9eed9f9645952092561889b13,
+        type: 3}
+      propertyPath: <Points>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 89803404}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f66f7ac9eed9f9645952092561889b13, type: 3}
 --- !u!4 &89803403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3210196790652762586, guid: f66f7ac9eed9f9645952092561889b13,
+    type: 3}
+  m_PrefabInstance: {fileID: 89803402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &89803404 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1820573589, guid: f66f7ac9eed9f9645952092561889b13,
+    type: 3}
+  m_PrefabInstance: {fileID: 89803402}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &89803405 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1358307078, guid: f66f7ac9eed9f9645952092561889b13,
     type: 3}
   m_PrefabInstance: {fileID: 89803402}
   m_PrefabAsset: {fileID: 0}
@@ -1065,6 +1100,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3100893513942544581, guid: 5225de717b9fb8242a80668519217b34,
+        type: 3}
+      propertyPath: _waypoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100893513942544581, guid: 5225de717b9fb8242a80668519217b34,
+        type: 3}
+      propertyPath: _waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 89803405}
+    - target: {fileID: 3100893513942544581, guid: 5225de717b9fb8242a80668519217b34,
+        type: 3}
+      propertyPath: _waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 89803404}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5225de717b9fb8242a80668519217b34, type: 3}
 --- !u!1001 &8650703117813621445

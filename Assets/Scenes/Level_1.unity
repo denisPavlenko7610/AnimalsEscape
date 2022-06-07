@@ -124,7 +124,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 305664331d9dc1749b770e2b443b6f9b, type: 2}
 --- !u!1 &113278898
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +566,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8649141082934513051}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1358307078 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1358307078, guid: f66f7ac9eed9f9645952092561889b13,
+    type: 3}
+  m_PrefabInstance: {fileID: 3210196790871596214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1585086573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -641,6 +647,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1585086573}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1820573589 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1820573589, guid: f66f7ac9eed9f9645952092561889b13,
+    type: 3}
+  m_PrefabInstance: {fileID: 3210196790871596214}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2109341330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -708,6 +720,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3100893513942544581, guid: 5225de717b9fb8242a80668519217b34,
+        type: 3}
+      propertyPath: _waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1358307078}
+    - target: {fileID: 3100893513942544581, guid: 5225de717b9fb8242a80668519217b34,
+        type: 3}
+      propertyPath: _waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1820573589}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5225de717b9fb8242a80668519217b34, type: 3}
 --- !u!4 &2109341331 stripped
@@ -867,6 +889,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 989629544}
     m_Modifications:
+    - target: {fileID: 1358307077, guid: f66f7ac9eed9f9645952092561889b13, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1820573588, guid: f66f7ac9eed9f9645952092561889b13, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3210196790652762586, guid: f66f7ac9eed9f9645952092561889b13,
         type: 3}
       propertyPath: m_RootOrder
@@ -927,6 +957,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFactory
       objectReference: {fileID: 0}
+    - target: {fileID: 3210196790871596216, guid: f66f7ac9eed9f9645952092561889b13,
+        type: 3}
+      propertyPath: <Points>k__BackingField.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3210196790871596216, guid: f66f7ac9eed9f9645952092561889b13,
+        type: 3}
+      propertyPath: <Points>k__BackingField.Array.data[0]
+      value: 
+      objectReference: {fileID: 1358307078}
+    - target: {fileID: 3210196790871596216, guid: f66f7ac9eed9f9645952092561889b13,
+        type: 3}
+      propertyPath: <Points>k__BackingField.Array.data[1]
+      value: 
+      objectReference: {fileID: 1820573589}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f66f7ac9eed9f9645952092561889b13, type: 3}
 --- !u!1001 &4795033037671979741

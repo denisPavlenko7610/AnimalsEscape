@@ -32,7 +32,6 @@ namespace AnimalsEscape
 
         private void SetHasKey()
         {
-            print("set key");
             HasKey = true;
         }
 

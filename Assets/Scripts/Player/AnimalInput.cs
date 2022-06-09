@@ -8,11 +8,11 @@ namespace AnimalsEscape
     {
         public Action<Vector2> input;
         private Vector2 _moveVector;
-        private InputActions _inputActions;
+        private Input_Actions _inputActions;
 
         private void OnEnable()
         {
-            _inputActions = new InputActions();
+            _inputActions = new Input_Actions();
             _inputActions.Enable();
             _inputActions.Player.Move.performed += UpdateInput;
             _inputActions.Player.Move.canceled += CanceledInput;

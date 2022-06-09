@@ -17,7 +17,7 @@ namespace AnimalsEscape
         private EnemyIdleState _idleState;
         private EnemyPatrollingState _patrollingState;
         private NavMeshAgent _navMeshAgent;
-        public List<Transform> Waypoints { get; set; }
+        public List<Transform> Waypoints { get; set; } = new();
 
         private void Start()
         {

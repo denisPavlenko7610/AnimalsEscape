@@ -96,8 +96,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scriptableObjectInstallers: []
   _monoInstallers:
-  - {fileID: 972760742}
   - {fileID: 1733357695409715076}
+  - {fileID: 972760742}
   _installerPrefabs: []
   _parentNewObjectsUnderContext: 1
   _editorReflectionBakingCoverageMode: 0
@@ -201,7 +201,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a6e1c345a7cd042a4c424829af1dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelsConfig: {fileID: 11400000, guid: 6806fe406fe33fb4c8c258c65eff0728, type: 2}
+  _levels:
+  - sceneAsset: {fileID: 102900000, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
+    required: 0
+    buildIndex: 1
+  - sceneAsset: {fileID: 102900000, guid: ad0c351df399b69499689d9ee8335604, type: 3}
+    required: 0
+    buildIndex: 2
 --- !u!1001 &774256944087556807
 PrefabInstance:
   m_ObjectHideFlags: 0

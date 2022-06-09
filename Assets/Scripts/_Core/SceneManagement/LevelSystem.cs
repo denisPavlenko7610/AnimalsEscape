@@ -1,5 +1,6 @@
-using AnimalsEscape.Core.SceneManagement;
+using System.Collections.Generic;
 using AnimalsEscape.UI;
+using Trisibo;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Zenject;
@@ -8,8 +9,7 @@ namespace AnimalsEscape._Core.SceneManagement
 {
     public class LevelSystem : MonoBehaviour
     {
-        [SerializeField] private LevelsConfig _levelsConfig;
-        
+        [SerializeField] List<SceneField> _levels = new();
         private int _currentLevelIndex = -1;
         private LevelText _levelText;
         string key = "Level";
@@ -25,7 +25,7 @@ namespace AnimalsEscape._Core.SceneManagement
             PlayerPrefs.SetInt(key, level);
         }
 
-        public void LoadSavedLevel()
+        public void LoadSavedOrNextLevel()
         {
             if (PlayerPrefs.HasKey(key))
             {
@@ -53,7 +53,7 @@ namespace AnimalsEscape._Core.SceneManagement
         
         private void Load(int levelIndex)
         {
-            if (levelIndex != _levelsConfig.Levels.Count)
+            if (levelIndex != _levels.Count)
             {
                 _currentLevelIndex = levelIndex;
             }
@@ -64,7 +64,7 @@ namespace AnimalsEscape._Core.SceneManagement
             }
 
             _levelText.ShowLevel(levelIndex + 1);
-            SceneManager.LoadScene(_levelsConfig.Levels[levelIndex].name);
+            SceneManager.LoadScene(_levels[levelIndex].BuildIndex);
         }
     }
 }

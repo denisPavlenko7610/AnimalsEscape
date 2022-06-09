@@ -1,4 +1,3 @@
-using System;
 using AnimalsEscape._Core.SceneManagement;
 using UnityEngine;
 using Zenject;
@@ -17,8 +16,7 @@ namespace AnimalsEscape._Core
 
         private void Start()
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            _levelSystem.LoadSavedLevel();
+            _levelSystem.LoadSavedOrNextLevel();
         }
     }
 }

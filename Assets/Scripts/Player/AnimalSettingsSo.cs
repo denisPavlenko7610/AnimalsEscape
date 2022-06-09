@@ -8,7 +8,7 @@ namespace AnimalsEscape.Player
     [CreateAssetMenu(fileName = "AnimalSettingsSo", menuName = "Animal/AnimalSettings")]
     public class AnimalSettingsSo : ScriptableObject
     {
-        public List<AnimalSetting> AnimalSettings;
+        public List<AnimalSetting> AnimalSettings = new();
     }
     
     [Serializable]

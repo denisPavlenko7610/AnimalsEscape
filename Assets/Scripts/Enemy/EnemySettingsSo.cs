@@ -8,7 +8,7 @@ namespace AnimalsEscape
     [CreateAssetMenu(fileName = "EnemySettingsSo", menuName = "Enemy/EnemySettings")]
     public class EnemySettingsSo : ScriptableObject
     {
-        public List<EnemySetting> EnemySettings;
+        public List<EnemySetting> EnemySettings = new();
     }
     
     [Serializable]

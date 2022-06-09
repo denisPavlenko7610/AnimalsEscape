@@ -30,7 +30,7 @@ namespace AnimalsEscape._Core.SceneManagement
             if (PlayerPrefs.HasKey(key))
             {
                 var levelIndex = PlayerPrefs.GetInt(key);
-                LoadLevel(levelIndex);
+                Load(levelIndex);
             }
             else
             {
@@ -46,11 +46,6 @@ namespace AnimalsEscape._Core.SceneManagement
             Load(levelIndex);
         }
 
-        private void LoadLevel(int level)
-        {
-            Load(level);
-        }
-        
         private void Load(int levelIndex)
         {
             if (levelIndex != _levels.Count)

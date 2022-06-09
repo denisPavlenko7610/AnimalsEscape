@@ -19,27 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Scene field.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Scene field/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Scene field/Editor/SceneFieldEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Scene field/Editor/SceneFieldEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Scene field/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Scene field/README.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Scene field/SceneField.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Scene field/SceneField.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/LevelsConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Configs/LevelsConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySettingsSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemySettingsSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AnimalSettingsSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AnimalSettingsSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Core/LoadStartLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Core/LoadStartLevel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Core/SceneManagement/LevelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Core/SceneManagement/LevelSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Core/SceneManagement/LevelsConfig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Core/SceneManagement/LevelsConfig.cs.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -199,7 +179,7 @@
       <workItem from="1654673759346" duration="3236000" />
       <workItem from="1654709072318" duration="2272000" />
       <workItem from="1654760097943" duration="3801000" />
-      <workItem from="1654794899412" duration="5309000" />
+      <workItem from="1654794899412" duration="5779000" />
     </task>
     <servers />
   </component>

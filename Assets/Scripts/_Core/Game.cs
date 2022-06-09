@@ -1,4 +1,4 @@
-using AnimalsEscape.Core.SceneManagement;
+using AnimalsEscape._Core.SceneManagement;
 using AnimalsEscape.Interactive;
 using UnityEngine;
 using Zenject;
@@ -7,15 +7,15 @@ namespace AnimalsEscape._Core
 {
     public class Game : MonoBehaviour
     {
-        private LevelLoader _levelLoader;
+        private LevelSystem levelSystem;
         private Door _door;
         private Key _key;
         private Animal _animal;
 
         [Inject]
-        public void Construct(LevelLoader levelLoader, Door door, Animal animal, Key key)
+        public void Construct(LevelSystem levelSystem, Door door, Animal animal, Key key)
         {
-            _levelLoader = levelLoader;
+            this.levelSystem = levelSystem;
             _door = door;
             _animal = animal;
             _key = key;
@@ -37,7 +37,7 @@ namespace AnimalsEscape._Core
             if (!_animal.HasKey)
                 return;
                 
-            _levelLoader.LoadNextLevel();
+            levelSystem.LoadNextLevel();
         }
     }
 }

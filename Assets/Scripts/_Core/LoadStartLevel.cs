@@ -1,24 +1,24 @@
-using AnimalsEscape.Core.SceneManagement;
+using System;
+using AnimalsEscape._Core.SceneManagement;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using Zenject;
 
 namespace AnimalsEscape._Core
 {
     public class LoadStartLevel : MonoBehaviour
     {
-        private LevelLoader _levelLoader;
+        private LevelSystem _levelSystem;
 
         [Inject]
-        public void Construct(LevelLoader levelLoader)
+        public void Construct(LevelSystem levelSystem)
         {
-            _levelLoader = levelLoader;
+            _levelSystem = levelSystem;
         }
 
         private void Start()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            //_levelLoader.LoadNextLevel();
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            _levelSystem.LoadSavedLevel();
         }
     }
 }

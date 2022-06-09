@@ -1,15 +1,15 @@
-using AnimalsEscape.Core.SceneManagement;
+using AnimalsEscape._Core.SceneManagement;
 using Zenject;
 
-namespace AnimalsEscape.Core.Installers
+namespace AnimalsEscape._Core.Installers
 {
     public class LevelLoaderInstaller : MonoInstaller
     {
-        public LevelLoader LevelLoader;
-
+        public LevelSystem levelSystem;
+        
         public override void InstallBindings()
         {
-            Container.Bind<LevelLoader>().FromInstance(LevelLoader).AsSingle().NonLazy();
+            Container.Bind<LevelSystem>().FromInstance(levelSystem).AsSingle().NonLazy();
         }
     }
 }

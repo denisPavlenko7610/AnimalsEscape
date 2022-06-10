@@ -23,21 +23,31 @@ namespace AnimalsEscape._Core
 
         private void OnEnable()
         {
-            _door.CompleteLevelHandler += LoadLevel;
+            _door.CompleteLevelHandler += LoadNextLevel;
             _animal.SetKey(_key);
         }
 
         private void OnDisable()
         {
-            _door.CompleteLevelHandler -= LoadLevel;
+            _door.CompleteLevelHandler -= LoadNextLevel;
         }
 
-        private void LoadLevel()
+        public void GameOver()
+        {
+            ReloadLevel();
+        }
+
+        private void LoadNextLevel()
         {
             if (!_animal.HasKey)
                 return;
                 
             levelSystem.LoadNextLevel();
+        }
+
+        private void ReloadLevel()
+        {
+            levelSystem.ReloadLevel();
         }
     }
 }

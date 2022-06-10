@@ -46,6 +46,11 @@ namespace AnimalsEscape._Core.SceneManagement
             Load(levelIndex);
         }
 
+        public void ReloadLevel()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
         private void Load(int levelIndex)
         {
             if (levelIndex != _levels.Count)

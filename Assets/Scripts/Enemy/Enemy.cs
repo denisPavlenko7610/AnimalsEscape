@@ -10,6 +10,7 @@ namespace AnimalsEscape
     {
         [SerializeField] private EnemyAnimations _enemyAnimations;
         [SerializeField] private float _idleTime = 3f;
+        [field:SerializeField] public Scanner Scanner { get; set; }
 
         private float _idleTimeChange;
         private float _walkTimeChange;

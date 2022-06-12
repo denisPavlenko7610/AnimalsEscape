@@ -134,7 +134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 113278899}
   m_Layer: 0
-  m_Name: ----------Environment---------
+  m_Name: ----------Environment---
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -418,7 +418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 737895660}
   m_Layer: 0
-  m_Name: ----------Settings------
+  m_Name: ----------Settings-------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1145,11 +1145,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Building
-      objectReference: {fileID: 0}
-    - target: {fileID: 8649141082019697754, guid: 9c2534358780e9544bbf15f3433cedbb,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c2534358780e9544bbf15f3433cedbb, type: 3}

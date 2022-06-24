@@ -20,125 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/Black.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/Black.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/Button.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/Button.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/PressedRedM.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/PressedRedM.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/RedM.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/RedM.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/HomeLabel.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/HomeLabel/materials.mtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/HomeLabel/materials.mtl.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/HomeLabel/materials.mtl.bak.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/HomeLabel/materials.mtl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/HomeLabel/model.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/HomeLabel/model.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Pipe.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Pipe/Pipe.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Pipe/Pipe.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Pipe/pipe.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Pipe/pipe.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Attach.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Attach.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/AttachAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/AttachAttribute.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/AutoAdd.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/AutoAdd.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Demo.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Demo/AutoAttachDemo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Demo/AutoAttachDemo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Demo/AutoAttachDemoChild.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Demo/AutoAttachDemoChild.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Demo/Demo.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Demo/Demo.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Dythervin.AutoAttach.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Dythervin.AutoAttach.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Editor/AutoAttachDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Editor/AutoAttachDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Editor/AutoAttachTool.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Editor/AutoAttachTool.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Setters.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Setters/ArraySetter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Setters/ArraySetter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Setters/ClassSetter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Setters/ClassSetter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Setters/ListSetter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Setters/ListSetter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Setters/SetterBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/AutoAttach/Setters/SetterBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/Dythervin.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/Dythervin.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/Utils.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/Utils/Symbols.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/Utils/Symbols.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/Utils/TypeExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Dythervin/Utils/TypeExtensions.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/README.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Button.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Button.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/MetalicFence.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/MetalicFence.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level/FloorPrefab.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level/FloorPrefab.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level/WallPrefab.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level/WallPrefab.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactive/ButtonToPress.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactive/ButtonToPress/ButtonAnimation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactive/ButtonToPress/ButtonAnimation.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactive/ButtonToPress/ButtonPress.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactive/ButtonToPress/ButtonPress.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactive/Fence.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactive/Fence.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/LevelEditorSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/UniformFoldoutState.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/FieldOfView.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/FieldOfView/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/FieldOfView/Editor/FieldOfViewEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/FieldOfView/Editor/FieldOfViewEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/FieldOfView/FieldOfView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/FieldOfView/FieldOfView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/AutoSaver.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/AutoSaver/AutoSave.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/AutoSaver/AutoSave.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/AutoSaver/AutoSavePreferences.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/AutoSaver/AutoSavePreferences.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/AutoSaver/SixpolysLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/AutoSaver/SixpolysLogo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/Editor.asmdef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/Editor.asmdef.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Other.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/materials.mtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/materials.mtl.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/materials.mtl.bak.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/materials.mtl.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/model.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Other/HomeLabel/model.obj.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1/SceneSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1/SceneSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2/LightingData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2/LightingData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2/NavMesh.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2/NavMesh.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2/ReflectionProbe-0.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2/ReflectionProbe-0.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Project.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Project.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -307,6 +197,7 @@
       <workItem from="1655016613954" duration="6465000" />
       <workItem from="1655046364762" duration="10000" />
       <workItem from="1655643340706" duration="6568000" />
+      <workItem from="1656052169505" duration="7565000" />
     </task>
     <servers />
   </component>

@@ -200,6 +200,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyFactory
       objectReference: {fileID: 0}
+    - target: {fileID: 3210196790652762589, guid: f66f7ac9eed9f9645952092561889b13,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3210196790871596216, guid: f66f7ac9eed9f9645952092561889b13,
         type: 3}
       propertyPath: <Points>k__BackingField.Array.size
@@ -666,6 +671,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 113278899}
     m_Modifications:
+    - target: {fileID: 1522525982, guid: 9c2534358780e9544bbf15f3433cedbb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1706785881, guid: 9c2534358780e9544bbf15f3433cedbb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1883707672, guid: 9c2534358780e9544bbf15f3433cedbb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056192210, guid: 9c2534358780e9544bbf15f3433cedbb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8649141082019697753, guid: 9c2534358780e9544bbf15f3433cedbb,
         type: 3}
       propertyPath: m_RootOrder

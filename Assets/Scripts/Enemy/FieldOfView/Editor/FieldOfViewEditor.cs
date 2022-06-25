@@ -19,11 +19,6 @@ namespace AnimalsEscape
 
             Handles.DrawLine(fowPosition, fowPosition + viewAngleA * fow.ViewRadius);
             Handles.DrawLine(fowPosition, fowPosition + viewAngleB * fow.ViewRadius);
-            Handles.color = Color.red;
-            foreach (var visibleTarget in fow.VisibleTargets)
-            {
-                Handles.DrawLine(fowPosition, visibleTarget.position);
-            }
         }
     }
 }

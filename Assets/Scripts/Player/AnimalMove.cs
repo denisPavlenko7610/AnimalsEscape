@@ -5,31 +5,26 @@ namespace AnimalsEscape
     public class AnimalMove : MonoBehaviour
     {
         [SerializeField] private Rigidbody _rigidbody;
-        [SerializeField] private float _speed = 7f;
-        [SerializeField] private float _rotationMultiplier = 1.2f;
+        [SerializeField] private float _speed = 5.5f;
+        [SerializeField] private float _rotationMultiplier = 2f;
         private float _rotationDegree = 360f;
 
         public Vector2 MoveInput { get; set; }
 
         private void FixedUpdate()
         {
-            if (MoveInput.magnitude > 0)
+            var input = new Vector3(MoveInput.x, 0, MoveInput.y);
+            if (input == Vector3.zero)
             {
-                _rigidbody.isKinematic = false;
-                var input = new Vector3(MoveInput.x, 0, MoveInput.y);
-                Move(input);
-                Rotate(input);
+                _rigidbody.velocity = Vector3.zero;
+                return;
             }
-            else
-            {
-                if (_rigidbody.isKinematic)
-                    return;
 
-                _rigidbody.isKinematic = true;
-            }
+            Move(input);
+            Rotate(input);
         }
-        private void Move(Vector3 input) =>
-            _rigidbody.MovePosition(_rigidbody.position + input * (Time.fixedDeltaTime * _speed));
+
+        private void Move(Vector3 input) => _rigidbody.velocity = input * _speed;
 
         private void Rotate(Vector3 input)
         {

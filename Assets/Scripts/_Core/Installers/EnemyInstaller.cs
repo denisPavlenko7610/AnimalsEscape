@@ -34,7 +34,7 @@ namespace AnimalsEscape.Core.Installers
         public override void InstallBindings()
         {
             var newEnemy = _enemyFactory.Create();
-            newEnemy.Scanner.OnScannerReactHandler += _game.GameOver;
+            newEnemy.FieldOfView.OnScannerReactHandler += _game.GameOver;
             newEnemy.Waypoints = _waypoints;
             Container.Bind<Enemy>().FromInstance(newEnemy).AsSingle().NonLazy();
         }

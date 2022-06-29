@@ -19,7 +19,34 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="" />
+    <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Editor/MeshCombinerEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Editor/MeshCombinerEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Scripts/MeshCombiner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Scripts/MeshCombiner.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/readme.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/readme.pdf.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnimalsEscape_0.1_BurstDebugInformation_DoNotShip/tempburstlibs/armeabi-v7a/lib_burst_generated.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Editor/MeshCombinerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Editor/MeshCombinerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Scripts/MeshCombiner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Scripts/MeshCombiner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/readme.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/readme.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterials/MaxFriction.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterials/MaxFriction.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterials/ZeroFriction.physicMaterial" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterials/ZeroFriction.physicMaterial.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/EnemyStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/EnemyStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,6 +218,7 @@
       <workItem from="1656089184778" duration="5203000" />
       <workItem from="1656168788511" duration="12249000" />
       <workItem from="1656227839248" duration="2316000" />
+      <workItem from="1656316643500" duration="239000" />
     </task>
     <servers />
   </component>

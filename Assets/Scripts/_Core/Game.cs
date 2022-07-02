@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using AnimalsEscape._Core.SceneManagement;
 using AnimalsEscape.Interactive;
+using Dythervin.AutoAttach;
 using UnityEngine;
 using Zenject;
 
@@ -7,6 +9,7 @@ namespace AnimalsEscape._Core
 {
     public class Game : MonoBehaviour
     {
+        [SerializeField, Attach(Attach.Scene)] private List<Portal> portals;
         private LevelSystem levelSystem;
         private Door _door;
         private Key _key;
@@ -23,13 +26,21 @@ namespace AnimalsEscape._Core
 
         private void OnEnable()
         {
-            _door.CompleteLevelHandler += LoadNextLevel;
             _animal.SetKey(_key);
+            _door.CompleteLevelHandler += LoadNextLevel;
+            foreach (var portal in portals)
+            {
+                portal.OnPortalTriggerEnterHandler += _animal.MoveThroughPortal;
+            }
         }
 
         private void OnDisable()
         {
             _door.CompleteLevelHandler -= LoadNextLevel;
+            foreach (var portal in portals)
+            {
+                portal.OnPortalTriggerEnterHandler -= _animal.MoveThroughPortal;
+            }
         }
 
         public void GameOver()

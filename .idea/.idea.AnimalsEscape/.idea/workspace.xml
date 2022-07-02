@@ -20,32 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Editor/MeshCombinerEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Editor/MeshCombinerEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Scripts/MeshCombiner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/Scripts/MeshCombiner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/readme.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/External/MeshCombiner/readme.pdf.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnimalsEscape_0.1_BurstDebugInformation_DoNotShip/tempburstlibs/armeabi-v7a/lib_burst_generated.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Editor/MeshCombinerEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Editor/MeshCombinerEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Scripts/MeshCombiner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/Scripts/MeshCombiner.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/readme.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MeshCombiner/readme.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterials/MaxFriction.physicMaterial" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterials/MaxFriction.physicMaterial.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterials/ZeroFriction.physicMaterial" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PhysicsMaterials/ZeroFriction.physicMaterial.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/EnemyStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/States/EnemyStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/SpaceShip/Materials/1K_Body-TXTR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/SpaceShip/Materials/1K_Body-TXTR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Meshes/Materials/shipdoor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Meshes/Materials/shipdoor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Animals/Cat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/Cat.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Ball.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Ball.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Door.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Door.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Key.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Key.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Animal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Core/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Core/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2021.3.3f1/Editor/Data/CGIncludes/HLSLSupport.cginc" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31b86d204baf45de8328f2d1261a79f7810a00/61/788f0a69/CustomPropertyDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/0e/bf2ff1c7/Mesh.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/27/9776504a/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -183,10 +179,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10672">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="10672" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -219,6 +215,8 @@
       <workItem from="1656168788511" duration="12249000" />
       <workItem from="1656227839248" duration="2316000" />
       <workItem from="1656316643500" duration="239000" />
+      <workItem from="1656752066158" duration="1512000" />
+      <workItem from="1656784699775" duration="7921000" />
     </task>
     <servers />
   </component>

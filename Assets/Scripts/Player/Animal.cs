@@ -1,24 +1,27 @@
+using System;
 using AnimalsEscape.Interactive;
+using Cysharp.Threading.Tasks;
+using Dythervin.AutoAttach;
 using UnityEngine;
-using Zenject;
 
 namespace AnimalsEscape
 {
     public class Animal : MonoBehaviour
     {
-        [SerializeField] private AnimalInput _animalInput;
-        [SerializeField] private AnimalMove _animalMove;
-        [SerializeField] private AnimalAnimations animalAnimations;
+        [SerializeField, Attach] AnimalInput _animalInput;
+        [SerializeField, Attach] AnimalMove _animalMove;
+        [SerializeField, Attach] AnimalAnimations _animalAnimations;
 
-        private Key _key;
+        bool canTeleportation = true;
+        Key _key;
         public bool HasKey { get; private set; }
 
-        private void OnEnable()
+        void OnEnable()
         {
             if (_animalInput) _animalInput.input += Move;
         }
 
-        private void OnDisable()
+        void OnDisable()
         {
             if (_animalInput) _animalInput.input -= Move;
             if (_key) _key.CollectKeyHandler -= SetHasKey;
@@ -30,15 +33,34 @@ namespace AnimalsEscape
             _key.CollectKeyHandler += SetHasKey;
         }
 
-        private void SetHasKey()
+        public void MoveThroughPortal(Transform anotherPortal)
         {
-            HasKey = true;
+            if (canTeleportation)
+            {
+                transform.position = anotherPortal.position;
+                UniTask.Delay(TimeSpan.FromSeconds(1));
+                canTeleportation = false;
+            }
         }
+
+        void SetHasKey() => HasKey = true;
 
         private void Move(Vector2 moveInput)
         {
             _animalMove.MoveInput = moveInput;
-            animalAnimations.MoveAnimation(moveInput);
+            _animalAnimations.MoveAnimation(moveInput);
+            SetCanTeleportation(moveInput);
+        }
+
+        private void SetCanTeleportation(Vector2 moveInput)
+        {
+            if (canTeleportation)
+                return;
+
+            if (moveInput.magnitude > 0)
+            {
+                canTeleportation = true;
+            }
         }
     }
 }

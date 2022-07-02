@@ -1683,4 +1683,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _animalInput: {fileID: 5899540549917707486}
   _animalMove: {fileID: 5899540549917707481}
-  animalAnimations: {fileID: 5899540549917707487}
+  _animalAnimations: {fileID: 5899540549917707487}
+  _collider: {fileID: 4059739567266819040}

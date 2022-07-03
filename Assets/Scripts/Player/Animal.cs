@@ -38,7 +38,6 @@ namespace AnimalsEscape
             if (canTeleportation)
             {
                 transform.position = anotherPortal.position;
-                UniTask.Delay(TimeSpan.FromSeconds(1));
                 canTeleportation = false;
             }
         }
@@ -57,10 +56,7 @@ namespace AnimalsEscape
             if (canTeleportation)
                 return;
 
-            if (moveInput.magnitude > 0)
-            {
-                canTeleportation = true;
-            }
+            canTeleportation = true;
         }
     }
 }

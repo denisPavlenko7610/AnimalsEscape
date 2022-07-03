@@ -21,27 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/SpaceShip/Materials/1K_Body-TXTR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/SpaceShip/Materials/1K_Body-TXTR.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Meshes/Materials/shipdoor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Meshes/Materials/shipdoor.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Animals/Cat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/Cat.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Ball.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Ball.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Door.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Door.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Key.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InteractObjects/Key.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Animal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Core/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Core/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced-Renderer.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Balanced.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -179,10 +159,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="10672">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="10672" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -216,7 +196,8 @@
       <workItem from="1656227839248" duration="2316000" />
       <workItem from="1656316643500" duration="239000" />
       <workItem from="1656752066158" duration="1512000" />
-      <workItem from="1656784699775" duration="7921000" />
+      <workItem from="1656784699775" duration="8372000" />
+      <workItem from="1656828910896" duration="601000" />
     </task>
     <servers />
   </component>

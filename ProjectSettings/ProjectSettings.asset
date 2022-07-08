@@ -777,6 +777,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     Android: AUTO_ATTACH
+    Standalone: AUTO_ATTACH
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

@@ -7,39 +7,26 @@ namespace Gun
     {
         [SerializeField] private Transform _spawnPoint;
         [SerializeField] private Bullet.Bullet _bulletPrefab;
-        [SerializeField] private float _fireSpeed = 1.5f;
+        [SerializeField] private float _fireSpeed;
+        [SerializeField] private float _delay;
 
         private ObjectPool<Bullet.Bullet> _pool;
+        private float _startDelay;
 
         private void Awake()
         {
-            _pool = new ObjectPool<Bullet.Bullet>(SpawnBullet, OnTakeBulletFromPool, OnReturnBulletFromPool);
+            _pool = new ObjectPool<Bullet.Bullet>
+                (SpawnBullet, OnTakeBulletFromPool, OnReturnBulletFromPool);
+        }
+
+        private void Start()
+        {
+            _startDelay = _delay;
         }
 
         private void Update()
         {
             Shoot();
-        }
-
-        private void Shoot()
-        {
-            _fireSpeed -= Time.deltaTime;
-
-            if (_fireSpeed < 0f)
-            {
-                _fireSpeed = 1.5f;
-                GetBullet();
-            }
-        }
-
-        private Vector3 RayToPoint()
-        {
-            var startRay = transform.position;
-            var direction = transform.right * 10f;
-
-            var ray = new Ray(startRay, direction);
-
-            return Physics.Raycast(ray, out var hit, 10f) ? hit.collider.transform.position : Vector3.zero;
         }
 
         private Bullet.Bullet SpawnBullet()
@@ -48,22 +35,35 @@ namespace Gun
             newBullet.SetPool(_pool);
             return newBullet;
         }
-        
+
         private void OnTakeBulletFromPool(Bullet.Bullet bullet)
         {
             bullet.gameObject.SetActive(true);
-            bullet.Rigidbody.MovePosition(RayToPoint());
+            bullet.Rigidbody.isKinematic = false;
+            bullet.Rigidbody.velocity = Vector3.right * _fireSpeed;
         }
-        
+
         private void OnReturnBulletFromPool(Bullet.Bullet bullet)
         {
             bullet.gameObject.SetActive(false);
+            bullet.Rigidbody.isKinematic = true;
             bullet.transform.position = _spawnPoint.position;
         }
 
         private void GetBullet()
         {
             _pool.Get();
+        }
+
+        private void Shoot()
+        {
+            _delay -= Time.deltaTime;
+
+            if (_delay <= 0f)
+            {
+                _delay = _startDelay;
+                GetBullet();
+            }
         }
     }
 }

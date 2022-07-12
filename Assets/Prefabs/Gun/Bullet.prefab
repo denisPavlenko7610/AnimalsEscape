@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 5267692458762965884}
   - component: {fileID: 9081552936511873331}
   - component: {fileID: 641314853612524517}
-  - component: {fileID: 1852331202393656534}
+  - component: {fileID: 1017319573053469268}
   m_Layer: 0
   m_Name: BulletModel
   m_TagString: Untagged
@@ -147,7 +147,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &1852331202393656534
+--- !u!135 &1017319573053469268
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,7 +155,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3760099555026028514}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5

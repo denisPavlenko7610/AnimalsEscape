@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5450232297255945868}
   - component: {fileID: 1046499324623721662}
   m_Layer: 0
-  m_Name: Bomb
+  m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,11 +112,11 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 60
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &1046499324623721662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,3 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5be1c802d0c854286daca156c60603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rigidbody: {fileID: 5450232297255945868}
+  _obstacleLayerMask:
+    serializedVersion: 2
+    m_Bits: 128

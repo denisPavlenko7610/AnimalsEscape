@@ -21,8 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Animal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Animal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gun/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gun/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gun/Gun.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gun/Gun.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gun/Bullet/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gun/Bullet/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gun/Gun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gun/Gun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,10 +39,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/31b86d204baf45de8328f2d1261a79f7810a00/61/788f0a69/CustomPropertyDrawer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/0e/bf2ff1c7/Mesh.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/27/9776504a/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/8a/baf9f097/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Scripts/Asteroid/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Scripts/Installers/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Scripts/Enemy/EnemyFacade.cs" root0="FORCE_HIGHLIGHTING" />
@@ -198,6 +200,13 @@
       <workItem from="1656752066158" duration="1512000" />
       <workItem from="1656784699775" duration="8372000" />
       <workItem from="1656828910896" duration="601000" />
+      <workItem from="1657276312400" duration="3010000" />
+      <workItem from="1657365412246" duration="13445000" />
+      <workItem from="1657385665069" duration="3621000" />
+      <workItem from="1657390352829" duration="555000" />
+      <workItem from="1657394011309" duration="828000" />
+      <workItem from="1657528961133" duration="8412000" />
+      <workItem from="1657631052518" duration="9346000" />
     </task>
     <servers />
   </component>

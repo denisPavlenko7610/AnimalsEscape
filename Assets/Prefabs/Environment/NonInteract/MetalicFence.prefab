@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d76f664f77b3764bbd86b527af263bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buttonToPress: {fileID: 0}
+  buttonPressToPress: {fileID: 0}
   _collider: {fileID: 328976973}
   _meshRenderers:
   - {fileID: 8300472282257709079}

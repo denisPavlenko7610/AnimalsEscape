@@ -1,0 +1,5 @@
+red - #EB2114
+violet - #C713EB
+black - #D4D4D9
+blue - #35CBF0
+green - #0EE658

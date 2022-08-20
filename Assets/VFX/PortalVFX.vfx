@@ -45,13 +45,13 @@ MonoBehaviour:
     - model: {fileID: 8926484042661614838}
       id: 0
       isStickyNote: 0
-  - title: Flash
+  - title: Halo
     position:
       serializedVersion: 2
       x: 1642
       y: -256
       width: 726
-      height: 1563
+      height: 1740
     contents:
     - model: {fileID: 8926484042661614668}
       id: 0
@@ -71,10 +71,10 @@ MonoBehaviour:
   - title: Sparks
     position:
       serializedVersion: 2
-      x: 2790
-      y: -319
+      x: 2802
+      y: -262
       width: 694
-      height: 1693
+      height: 1778
     contents:
     - model: {fileID: 8926484042661614734}
       id: 0
@@ -96,9 +96,9 @@ MonoBehaviour:
   uiBounds:
     serializedVersion: 2
     x: 614
-    y: -319
-    width: 2870
-    height: 1803
+    y: -262
+    width: 2882
+    height: 1779
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -833,6 +833,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614625}
   - {fileID: 8926484042661614613}
   - {fileID: 8926484042661614631}
+  - {fileID: 8926484042661614842}
   m_OutputSlots: []
   m_Label: 
   m_Data: {fileID: 8926484042661614568}
@@ -2070,7 +2071,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children:
   - {fileID: 8926484042661614812}
-  m_UIPosition: {x: 1918, y: 522}
+  m_UIPosition: {x: 1918, y: 422}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -2838,7 +2839,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614672}
   - {fileID: 8926484042661614692}
   dataType: 0
-  capacity: 100
+  capacity: 10
   stripCapacity: 16
   particlePerStripCount: 16
   needsComputeBounds: 0
@@ -3274,7 +3275,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children:
   - {fileID: 8926484042661614736}
-  m_UIPosition: {x: 3034, y: -259}
+  m_UIPosition: {x: 3046, y: -202}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -3365,7 +3366,7 @@ MonoBehaviour:
   m_Children:
   - {fileID: 8926484042661614753}
   - {fileID: 8926484042661614764}
-  m_UIPosition: {x: 3034, y: 45}
+  m_UIPosition: {x: 3046, y: 102}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -4303,7 +4304,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 3034, y: 460}
+  m_UIPosition: {x: 3046, y: 518}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []
@@ -4343,7 +4344,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614773}
   - {fileID: 8926484042661614792}
   - {fileID: 8926484042661614796}
-  m_UIPosition: {x: 3034, y: 675}
+  m_UIPosition: {x: 3046, y: 733}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -5156,7 +5157,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661614802}
       inputSlot: {fileID: 8926484042661614797}
-    position: {x: 2815.2, y: 1220.8}
+    position: {x: 2827.2, y: 1278.4}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661614802
@@ -6185,4 +6186,38 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 1
+  m_LinkedSlots: []
+--- !u!114 &8926484042661614842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 8926484042661614842}
+  m_MasterData:
+    m_Owner: {fileID: 8926484042661614585}
+    m_Value:
+      m_Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 50
+    m_Space: 2147483647
+  m_Property:
+    name: _Scale
+    m_serializedType:
+      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 0
   m_LinkedSlots: []

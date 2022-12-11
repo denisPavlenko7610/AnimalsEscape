@@ -35,7 +35,7 @@ namespace AnimalsEscape._Core.SceneManagement
             else
             {
                 LoadNextLevel();
-                print("Key isn`t found");
+                //print("Key isn`t found");
             }
         }
         

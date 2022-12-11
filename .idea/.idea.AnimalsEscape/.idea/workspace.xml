@@ -20,11 +20,153 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5041762e-d24c-4edd-9ca2-fc90d63250ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Door/Left.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Door/Left.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Door/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Door/Materials/mat17.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Door/Materials/mat17.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Door/Materials/mat20.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Door/Materials/mat20.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Door/Right.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Door/Right.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/NonInteract/Door.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/NonInteract/Door/Door.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/NonInteract/Door/Door.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level/Tiles/New Palette 1.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Level/Tiles/New Palette 1.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2/NavMesh-BasicLevel 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2/NavMesh-BasicLevel 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2/NavMesh-BasicLevel.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2/NavMesh-BasicLevel.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2/NavMesh-Floor.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2/NavMesh-Floor.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AnimalsEscape/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/JKT_Art/Animals/cat/fbx/Materials/cat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/JKT_Art/Animals/cat/fbx/Materials/cat2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/JKT_Art/Animals/duck/FBX/Materials/No Name.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/JKT_Art/Animals/duck/FBX/Materials/No Name.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Floor/Fabric_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Floor/Fabric_1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Floor/Fabric_3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Floor/Fabric_3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Floor/Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Floor/Floor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Floor/fabric_2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Floor/fabric_2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/M_Scanner.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/M_Scanner.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/M_Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/M_Wall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Cat/Materials/cat_material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat/Materials/cat_material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Cat Lite.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Cat Lite.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Materials/Mat_Cat_Lite.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animals/Cat1/Model/Materials/Mat_Cat_Lite.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Fox/Materials/M_Fox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animals/Fox/Materials/M_Fox.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Penguin/Materials/Penguin(Skin).mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animals/Penguin/Materials/Penguin(Skin).mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Penguin/Materials/PenguinFBX-PinguinBody__Pinguin_Skin__png.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animals/Penguin/Materials/PenguinFBX-PinguinBody__Pinguin_Skin__png.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Rabbits/Materials/Rabbit1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animals/Rabbits/Materials/Rabbit1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Animals/Rabbits/Materials/Rabbit_Eyes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Animals/Rabbits/Materials/Rabbit_Eyes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Ball/ball.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Ball/ball.obj.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Grey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Grey.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Main.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Materials/Main.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Enemy/Robot (1).fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Enemy/Robot (1).fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/Black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/PressedRedM.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/PressedRedM.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/RedM.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Button/RedM.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Coin.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Coin.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Materials/M_DarkYellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Materials/M_DarkYellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Materials/M_Yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Coin/Materials/M_Yellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/mat15.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/mat15.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/mat18.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/mat18.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/mat19.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Door/Materials/mat19.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Key.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Key.obj.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Materials/Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Key/Materials/Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Portal/Materials/Accent.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Portal/Materials/Accent.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Portal/Materials/Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Portal/Materials/Blue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Portal/Materials/Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Portal/Materials/Green.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Portal/Materials/Main Gray.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Portal/Materials/Main Gray.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Portal/Materials/Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Interact/Portal/Materials/Red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Bomb/Materials/Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Bomb/Materials/Black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Bomb/Materials/DarkMetal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Bomb/Materials/DarkMetal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Bomb/Materials/White.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Bomb/Materials/White.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/HomeLabel/materials/mat18.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/HomeLabel/materials/mat18.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/HomeLabel/materials/mat23.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/HomeLabel/materials/mat23.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Bathroom Materials/Bathroom Lamp Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Bathroom Materials/Bathroom Lamp Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Bathroom Materials/Bathroom Mirror Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Bathroom Materials/Bathroom Mirror Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Bathroom Materials/Bathroom Stuff Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Bathroom Materials/Bathroom Stuff Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Bathroom Materials/Shower And Rug Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Bathroom Materials/Shower And Rug Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Black Simple.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Black Simple.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Electronics Materials/Fridge.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Electronics Materials/Fridge.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Electronics Materials/Lamp.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Electronics Materials/Lamp.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Electronics Materials/TV.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Electronics Materials/TV.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Floor Materials/Floor 01 Mat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Floor Materials/Floor 01 Mat2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Floor Materials/Floor 01 Mat3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Floor Materials/Floor 01 Mat3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Floor Materials/Floor 02 Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Floor Materials/Floor 02 Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Floor Materials/Floor 02 Office Wood Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Floor Materials/Floor 02 Office Wood Floor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Closet 01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Closet 01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Drawer 01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Drawer 01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Drawer 02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Drawer 02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Office Furniture 01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Office Furniture 01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Pair Bed 01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Pair Bed 01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Shelf Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Shelf Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Sofa 01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Sofa 01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/TV-Stand 01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/TV-Stand 01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Table And Chair Dark.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Table And Chair Dark.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Table And Chair.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Furniture Materials/Table And Chair.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Kitchen Materials/Kitchen 01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Kitchen Materials/Kitchen 01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/A3D Ball.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/A3D Ball.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Bottle Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Bottle Blue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Bottle Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Bottle Green.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Bottle Red 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Bottle Red 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Bottle Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Bottle Red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Paintings_Book Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Paintings_Book Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Paintings_Book Mat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Paintings_Book Mat2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Paintings_Book Mat3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Paintings_Book Mat3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Suitcase_Remote_Coffeemugs_Newspaper.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Prop Materials/Suitcase_Remote_Coffeemugs_Newspaper.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Toilet_Bathtub Materials/Toilet_Bathtub Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Toilet_Bathtub Materials/Toilet_Bathtub Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Vegetation Materials/Plant 01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Vegetation Materials/Plant 01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Ground_White_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Ground_White_Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Skirting Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Skirting Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 01 Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 01 Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 02 Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 02 Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 02 Mat2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 02 Mat2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 02 Mat3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 02 Mat3.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 03 Livingroom.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 03 Livingroom.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 04 Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 04 Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 05 Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 05 Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 06 Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 06 Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 07 Mat1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/POLYTEX - Home/Materials/Wall Floor Skirting Materials/Wall 07 Mat1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Pipe/Pipe.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Pipe/Pipe.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Rocks/meshes/Materials/No Name.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Rocks/meshes/Materials/No Name.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Rocks/meshes/Materials/rock_01Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/Rocks/meshes/Materials/rock_01Mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/SpaceShip/Materials/1K_Body-TXTR.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/SpaceShip/Materials/1K_Body-TXTR.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/SpaceShip/Materials/Space_Shooter_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Imported/SpaceShip/Materials/Space_Shooter_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Materials/stars.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Materials/stars.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Materials/target.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Materials/target.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Meshes/Materials/Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Meshes/Materials/Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Meshes/Materials/shipdoor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Meshes/Materials/shipdoor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Media/Textures/Background/Materials/Free_Shmup_Sprites_Starfield.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Media/Models/Materials/Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Media/Models/Materials/Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Animals/Cat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Animals/Cat.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Interact/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Interact/Ball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level/Grid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level/Grid.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Level/Tiles/New Palette.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Level/Tiles/New Palette.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/ProjectContext.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/Bullet.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/NonInteract/Door.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/Bullet/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cannon/Bullet/Bullet.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cannon/Bullet.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Input/Input_Actions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Input/Input_Actions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Core/SceneManagement/LevelSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Core/SceneManagement/LevelSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity-Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-HighFidelity.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/URP-Performant.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VFX/PortalVFX.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/PortalVFX.vfx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/boot.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +177,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/3e/f55a3eab/ObjectPool`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1212ad1dec44ce7b7147976b91869c3157800/9a/e6dc5dc3/IObjectPool`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Scripts/Asteroid/Asteroid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame1 (Beginner)/Scripts/Installers/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/OptionalExtras/SampleGame2 (Advanced)/Scripts/Enemy/EnemyFacade.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,7 +187,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Install/ZenjectBinding.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Internal/Assert.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Main/DiContainer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cannon/Bullet/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cannon/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Cannon/Cannon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactive/ButtonToPress/ButtonAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactive/Fence.cs" root0="FORCE_HIGHLIGHTING" />
@@ -127,8 +267,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "do_not_show_Android_plugin_suggestion": "true",
     "settings.editor.selected.configurable": "preferences.sourceCode.C#",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\RDragon\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\RDragon\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\RDragon\\AppData\\Local\\Symbols\\src"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -140,8 +288,16 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.2.0f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\RDragon\Desktop\Projects\AnimalsEscape -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\RDragon\Desktop\Projects\AnimalsEscape" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="E:\Programs\UnityEditors\2022.1.21f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.2.0f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\RDragon\Desktop\Projects\AnimalsEscape -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\RDragon\Desktop\Projects\AnimalsEscape" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -207,6 +363,7 @@
       <workItem from="1657729885854" duration="305000" />
       <workItem from="1659165438328" duration="787000" />
       <workItem from="1668448939693" duration="729000" />
+      <workItem from="1670747982627" duration="1818000" />
     </task>
     <servers />
   </component>

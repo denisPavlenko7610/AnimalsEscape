@@ -1,6 +1,6 @@
 using System;
 using AnimalsEscape.Utils;
-using Dythervin.AutoAttach;
+using RDTools.AutoAttach;
 using UnityEngine;
 
 namespace AnimalsEscape

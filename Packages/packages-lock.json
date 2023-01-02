@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.rdragon.tools": {
+      "version": "https://github.com/denisPavlenko7610/RDTools.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "860431f399edf0eec0c1cc47cd8417bb9983fd97"
+    },
     "com.unity.2d.tilemap": {
       "version": "1.0.0",
       "depth": 0,
@@ -10,7 +17,7 @@
       }
     },
     "com.unity.2d.tilemap.extras": {
-      "version": "3.0.2",
+      "version": "3.0.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -31,7 +38,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
-      "version": "1.7.3",
+      "version": "1.7.4",
       "depth": 1,
       "source": "registry",
       "dependencies": {

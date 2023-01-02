@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using AnimalsEscape._Core.SceneManagement;
 using AnimalsEscape.Interactive;
-using Dythervin.AutoAttach;
+using RDTools.AutoAttach;
 using UnityEngine;
 using Zenject;
 

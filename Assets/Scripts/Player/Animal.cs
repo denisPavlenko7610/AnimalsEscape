@@ -1,7 +1,5 @@
-using System;
 using AnimalsEscape.Interactive;
-using Cysharp.Threading.Tasks;
-using Dythervin.AutoAttach;
+using RDTools.AutoAttach;
 using UnityEngine;
 
 namespace AnimalsEscape

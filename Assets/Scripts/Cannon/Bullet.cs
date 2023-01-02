@@ -1,5 +1,5 @@
 using System;
-using Dythervin.AutoAttach;
+using RDTools.AutoAttach;
 using UnityEngine;
 
 namespace Cannon
@@ -7,7 +7,7 @@ namespace Cannon
     [RequireComponent(typeof(Rigidbody))]
     public class Bullet : MonoBehaviour
     {
-        [SerializeField, Attach()]private Rigidbody _rigidbody;
+        [SerializeField, Attach]private Rigidbody _rigidbody;
         [SerializeField] private LayerMask _obstacleLayerMask = 0;
 
         public event Action<Bullet> onTriggeredBullet;

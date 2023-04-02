@@ -15404,6 +15404,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1361021480}
     m_Modifications:
+    - target: {fileID: 4316665842448993129, guid: a892c5b14fa70e2449e9ade704c608a3,
+        type: 3}
+      propertyPath: m_Axis.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4525955467031842105, guid: a892c5b14fa70e2449e9ade704c608a3,
         type: 3}
       propertyPath: m_RootOrder
@@ -15463,6 +15468,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657714458899736047, guid: a892c5b14fa70e2449e9ade704c608a3,
+        type: 3}
+      propertyPath: m_Anchor.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657714458899736047, guid: a892c5b14fa70e2449e9ade704c608a3,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -2.949305
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657714458899736047, guid: a892c5b14fa70e2449e9ade704c608a3,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -4.775057
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657714458899736047, guid: a892c5b14fa70e2449e9ade704c608a3,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -4.126687
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

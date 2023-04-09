@@ -6,10 +6,18 @@ namespace AnimalsEscape.Interactive
 {
     public class Rotator : MonoBehaviour, IRotator, IKillSequence
     {
-        [SerializeField, Range(1,10)] private float rotateTime = 2f;
+        [SerializeField, Range(1,10)] private float _rotateTime = 2f;
+
+        [SerializeField]
+        private bool _isAroundY;
 
         private float _aroundAxisDegree = 360f;
         private Sequence _rotateSequence;
+
+        private void OnDisable()
+        {
+            StopRotation();
+        }
 
         void Start()
         {
@@ -18,10 +26,15 @@ namespace AnimalsEscape.Interactive
         
         public void Rotate()
         {
+            Vector3 rotationVector;
+            rotationVector = _isAroundY 
+                ? new Vector3(0, _aroundAxisDegree, 0) 
+                : new Vector3(0, 0, _aroundAxisDegree);
+            
             _rotateSequence = DOTween.Sequence();
             _rotateSequence
                 .Append(transform
-                    .DORotate(new Vector3(0, 0, _aroundAxisDegree), rotateTime, RotateMode.FastBeyond360)
+                    .DORotate(rotationVector, _rotateTime, RotateMode.FastBeyond360)
                     .SetRelative(true)
                     .SetEase(Ease.Linear))
                 .SetLoops(-1);

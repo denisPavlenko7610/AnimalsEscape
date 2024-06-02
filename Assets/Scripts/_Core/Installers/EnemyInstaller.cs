@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using AnimalsEscape._Core;
 using AnimalsEscape.Factories;
 using RDTools.AutoAttach;
-using System;
 using UnityEngine;
 using Zenject;
 
@@ -20,7 +19,7 @@ namespace AnimalsEscape.Core.Installers
         {
             Enemy enemy = _enemyFactory.Create();
             enemy.FieldOfView.OnScannerReactHandler += _game.GameOver;
-            enemy.Waypoints = _waypoints.Points;
+            enemy.Init(_waypoints?.Points);
             _enemies.Add(enemy);
         }
 

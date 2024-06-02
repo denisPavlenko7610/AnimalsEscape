@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: EnemySettingsSo
   m_EditorClassIdentifier: 
   EnemySettings:
-  - EnemyType: 0
+    EnemyType: 0
     EnemyPrefab: {fileID: -1032948932296949580, guid: f600bdf330614a74fb743e6f7b9903fd,
       type: 3}

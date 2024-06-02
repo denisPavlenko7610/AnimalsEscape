@@ -12,6 +12,7 @@ namespace AnimalsEscape._Core
     {
         [FormerlySerializedAs("portals")] 
         [SerializeField, Attach(Attach.Scene)] List<Portal> _portals;
+        
         LevelSystem levelSystem;
         Door _door;
         Key _key;

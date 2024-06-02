@@ -5237,6 +5237,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 770944920}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &770944922 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8183165669142822819, guid: afc990b71715bb24089bd4ede0b4c20d,
+    type: 3}
+  m_PrefabInstance: {fileID: 770944920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bff330e7ffb845fc808396c135ccf032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &772661781
 GameObject:
   m_ObjectHideFlags: 0
@@ -10992,6 +11004,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3210196790652762587, guid: f66f7ac9eed9f9645952092561889b13,
+        type: 3}
+      propertyPath: '_enemyStartPoints.Array.data[0]'
+      value: 
+      objectReference: {fileID: 770944922}
     - target: {fileID: 3210196790652762589, guid: f66f7ac9eed9f9645952092561889b13,
         type: 3}
       propertyPath: m_Name
@@ -11054,6 +11071,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a748b406f3073834eafd51b0717aa23b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1888580926 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3210196790871596216, guid: f66f7ac9eed9f9645952092561889b13,
+    type: 3}
+  m_PrefabInstance: {fileID: 1888580921}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bd4bc86f071dff4b89b998d8f2a5a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1897778372
@@ -12650,6 +12679,11 @@ PrefabInstance:
       propertyPath: _game
       value: 
       objectReference: {fileID: 2422408588587048644}
+    - target: {fileID: 3100893513942544581, guid: 5225de717b9fb8242a80668519217b34,
+        type: 3}
+      propertyPath: _waypoints
+      value: 
+      objectReference: {fileID: 1888580926}
     - target: {fileID: 3100893513942544581, guid: 5225de717b9fb8242a80668519217b34,
         type: 3}
       propertyPath: _enemyFactory

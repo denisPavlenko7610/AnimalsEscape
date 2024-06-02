@@ -11,21 +11,20 @@ namespace AnimalsEscape
     {
         [SerializeField] EnemyAnimations _enemyAnimations;
         [SerializeField] float _idleTime = 3f;
-        [field:SerializeField, Attach(Attach.Default,false)] public FieldOfView FieldOfView { get; set; }
-
+        [field:SerializeField, Attach(Attach.Default,false)] public FieldOfView FieldOfView { get; private set; }
+        [SerializeField] NavMeshAgent _navMeshAgent;
+        
         float _idleTimeChange;
         float _walkTimeChange;
         EnemyStateMachine _enemyStateMachine;
         EnemyIdleState _idleState;
         EnemyPatrollingState _patrollingState;
-        NavMeshAgent _navMeshAgent;
-        public List<Transform> Waypoints { get; set; } = new();
-
-        void Start()
+        
+        
+        public void Init(List<Transform> waypoints)
         {
-            _navMeshAgent = GetComponent<NavMeshAgent>();
             _idleState = new EnemyIdleState(_enemyAnimations);
-            _patrollingState = new EnemyPatrollingState(_enemyAnimations, Waypoints, _navMeshAgent);
+            _patrollingState = new EnemyPatrollingState(_enemyAnimations, waypoints, _navMeshAgent);
             _enemyStateMachine = new EnemyStateMachine();
             _enemyStateMachine.Init(_idleState);
             _idleTimeChange = _idleTime;

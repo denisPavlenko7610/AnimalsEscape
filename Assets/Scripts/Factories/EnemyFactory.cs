@@ -1,5 +1,6 @@
 using System.Linq;
 using AnimalsEscape.Enums;
+using RDTools;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,12 +12,10 @@ namespace AnimalsEscape.Factories
         [SerializeField] EnemySettingsSo _enemySettingsSo;
         [SerializeField] List<EnemyStartPoint> _enemyStartPoints = new();
 
-        void OnValidate()
+        [Button]
+        void FindEnemyStartPoints()
         {
-            if (_enemyStartPoints.Count == 0)
-            {
-                _enemyStartPoints = FindObjectsByType<EnemyStartPoint>(FindObjectsSortMode.None).ToList();
-            }
+            _enemyStartPoints = FindObjectsByType<EnemyStartPoint>(FindObjectsSortMode.None).ToList();
         }
 
         public Enemy Create()

@@ -7,10 +7,10 @@ namespace AnimalsEscape
     public class AnimalInput : MonoBehaviour
     {
         public Action<Vector2> input;
-        private Vector2 _moveVector;
-        private Input_Actions _inputActions;
+        Vector2 _moveVector;
+        Input_Actions _inputActions;
 
-        private void OnEnable()
+        void OnEnable()
         {
             _inputActions = new Input_Actions();
             _inputActions.Enable();
@@ -18,20 +18,20 @@ namespace AnimalsEscape
             _inputActions.Player.Move.canceled += CanceledInput;
         }
 
-        private void OnDisable()
+        void OnDisable()
         {
             _inputActions?.Disable();
             if (_inputActions != null) _inputActions.Player.Move.performed -= UpdateInput;
             if (_inputActions != null) _inputActions.Player.Move.canceled -= CanceledInput;
         }
 
-        private void UpdateInput(InputAction.CallbackContext ctx)
+        void UpdateInput(InputAction.CallbackContext ctx)
         {
             _moveVector = _inputActions.Player.Move.ReadValue<Vector2>();
             input?.Invoke(_moveVector);
         }
 
-        private void CanceledInput(InputAction.CallbackContext ctx)
+        void CanceledInput(InputAction.CallbackContext ctx)
         {
             _moveVector = Vector2.zero;
             input?.Invoke(_moveVector);

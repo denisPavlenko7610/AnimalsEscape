@@ -6,13 +6,13 @@ namespace AnimalsEscape.Interactive
 {
     public class Rotator : MonoBehaviour, IRotator, IKillSequence
     {
-        [SerializeField, Range(1,10)] private float _rotateTime = 2f;
+        [SerializeField, Range(1,10)] float _rotateTime = 2f;
 
         [SerializeField]
-        private bool _isAroundY;
+        bool _isAroundY;
 
-        private float _aroundAxisDegree = 360f;
-        private Sequence _rotateSequence;
+        float _aroundAxisDegree = 360f;
+        Sequence _rotateSequence;
 
         private void OnDisable()
         {

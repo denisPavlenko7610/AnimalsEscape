@@ -42,14 +42,14 @@ namespace AnimalsEscape
 
         void SetHasKey() => HasKey = true;
 
-        private void Move(Vector2 moveInput)
+        void Move(Vector2 moveInput)
         {
             _animalMove.MoveInput = moveInput;
             _animalAnimations.MoveAnimation(moveInput);
             SetCanTeleportation(moveInput);
         }
 
-        private void SetCanTeleportation(Vector2 moveInput)
+        void SetCanTeleportation(Vector2 moveInput)
         {
             if (canTeleportation)
                 return;

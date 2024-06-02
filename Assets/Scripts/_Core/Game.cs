@@ -3,17 +3,19 @@ using AnimalsEscape._Core.SceneManagement;
 using AnimalsEscape.Interactive;
 using RDTools.AutoAttach;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Zenject;
 
 namespace AnimalsEscape._Core
 {
     public class Game : MonoBehaviour
     {
-        [SerializeField, Attach(Attach.Scene)] private List<Portal> portals;
-        private LevelSystem levelSystem;
-        private Door _door;
-        private Key _key;
-        private Animal _animal;
+        [FormerlySerializedAs("portals")] 
+        [SerializeField, Attach(Attach.Scene)] List<Portal> _portals;
+        LevelSystem levelSystem;
+        Door _door;
+        Key _key;
+        Animal _animal;
 
         [Inject]
         public void Construct(LevelSystem levelSystem, Door door, Animal animal, Key key)
@@ -24,20 +26,20 @@ namespace AnimalsEscape._Core
             _key = key;
         }
 
-        private void OnEnable()
+        void OnEnable()
         {
             _animal.SetKey(_key);
             _door.CompleteLevelHandler += LoadNextLevel;
-            foreach (var portal in portals)
+            foreach (var portal in _portals)
             {
                 portal.OnPortalTriggerEnterHandler += _animal.MoveThroughPortal;
             }
         }
 
-        private void OnDisable()
+        void OnDisable()
         {
             _door.CompleteLevelHandler -= LoadNextLevel;
-            foreach (var portal in portals)
+            foreach (var portal in _portals)
             {
                 portal.OnPortalTriggerEnterHandler -= _animal.MoveThroughPortal;
             }
@@ -48,7 +50,7 @@ namespace AnimalsEscape._Core
             ReloadLevel();
         }
 
-        private void LoadNextLevel()
+        void LoadNextLevel()
         {
             if (!_animal.HasKey)
                 return;
@@ -56,7 +58,7 @@ namespace AnimalsEscape._Core
             levelSystem.LoadNextLevel();
         }
 
-        private void ReloadLevel()
+        void ReloadLevel()
         {
             levelSystem.ReloadLevel();
         }

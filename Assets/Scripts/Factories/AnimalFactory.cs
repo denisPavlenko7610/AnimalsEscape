@@ -1,4 +1,3 @@
-using System;
 using System.Linq;
 using AnimalsEscape.Enums;
 using UnityEngine;
@@ -7,8 +6,8 @@ namespace AnimalsEscape.Player
 {
     public class AnimalFactory : MonoBehaviour, IFactory<Animal>
     {
-        [SerializeField] private AnimalType _animalType;
-        [SerializeField] private AnimalSettingsSo _animalSettingsSo;
+        [SerializeField] AnimalType _animalType;
+        [SerializeField] AnimalSettingsSo _animalSettingsSo;
 
         public Animal Create()
         {
@@ -18,7 +17,8 @@ namespace AnimalsEscape.Player
                 return Instantiate(animalSetting.AnimalPrefab, transform.position, transform.rotation, transform);
             }
 
-            throw new Exception($"Can`t create {_animalType}");
+            Debug.LogError($"Can`t create {_animalType}");
+            return null;
         }
     }
 }

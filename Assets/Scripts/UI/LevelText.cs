@@ -5,7 +5,7 @@ namespace AnimalsEscape.UI
 {
     public class LevelText : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI _levelText;
+        [SerializeField] TextMeshProUGUI _levelText;
 
         public void ShowLevel(int level)
         {

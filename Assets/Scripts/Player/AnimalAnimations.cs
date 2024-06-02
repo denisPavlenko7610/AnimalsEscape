@@ -4,9 +4,9 @@ namespace AnimalsEscape
 {
     public class AnimalAnimations : MonoBehaviour
     {
-        [SerializeField] private Animator _animalAnimator;
-        private static readonly int Run = Animator.StringToHash("Run");
-        private float _minValue = 0.01f;
+        [SerializeField] Animator _animalAnimator;
+        static readonly int Run = Animator.StringToHash("Run");
+        float _minValue = 0.01f;
 
         public void MoveAnimation(Vector2 moveInput)
         {

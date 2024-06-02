@@ -7,13 +7,13 @@ namespace Cannon
     [RequireComponent(typeof(Rigidbody))]
     public class Bullet : MonoBehaviour
     {
-        [SerializeField, Attach]private Rigidbody _rigidbody;
-        [SerializeField] private LayerMask _obstacleLayerMask = 0;
+        [SerializeField, Attach]Rigidbody _rigidbody;
+        [SerializeField] LayerMask _obstacleLayerMask = 0;
 
         public event Action<Bullet> onTriggeredBullet;
         public Rigidbody Rigidbody => _rigidbody;
 
-        private void OnTriggerEnter(Collider other)
+        void OnTriggerEnter(Collider other)
         {
             if ((_obstacleLayerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
                 onTriggeredBullet?.Invoke(this);
@@ -23,7 +23,7 @@ namespace Cannon
         {
             bullet.gameObject.SetActive(true);
             bullet.Rigidbody.isKinematic = false;
-            bullet.Rigidbody.velocity = Vector3.right * fireSpeed;
+            bullet.Rigidbody.linearVelocity = Vector3.right * fireSpeed;
         }
 
         public void DisableBullet(Bullet bullet, Transform spawnPoint)

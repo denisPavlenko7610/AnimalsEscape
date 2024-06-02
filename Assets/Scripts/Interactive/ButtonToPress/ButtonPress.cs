@@ -13,7 +13,8 @@ namespace AnimalsEscape
         bool _isButtonPressed;
         
         public event Action OnPressed; 
-        private void OnTriggerEnter(Collider other)
+        
+        void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag(Constants.AnimalTag) || _isButtonPressed)
                 return;

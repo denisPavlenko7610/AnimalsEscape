@@ -6,23 +6,24 @@ namespace Cannon
 {
     public class Cannon : MonoBehaviour
     {
-        [SerializeField] private Transform _spawnPoint;
-        [SerializeField] private Bullet _bulletPrefab;
-        [SerializeField] private float _fireSpeed;
-        [SerializeField] private float _delay;
+        [SerializeField] Transform _spawnPoint;
+        [SerializeField] Bullet _bulletPrefab;
+        [SerializeField] float _fireSpeed;
+        [SerializeField] float _delay;
 
         public ObjectPool<Bullet> Pool { get; set; }
-        private List<Bullet> _instantiatedBullets = new();
-        private float _startDelay;
+        
+        List<Bullet> _instantiatedBullets = new();
+        float _startDelay;
 
-        private void Awake()
+        void Awake()
         {
             Pool = new ObjectPool<Bullet>
                 (SpawnBullet, OnTakeBulletFromPool, OnReturnBulletFromPool);
             _startDelay = _delay;
         }
 
-        private void OnDisable()
+        void OnDisable()
         {
             foreach (var instantiatedBullet in _instantiatedBullets)
             {
@@ -30,12 +31,12 @@ namespace Cannon
             }
         }
 
-        private void Update()
+        void Update()
         {
             Shoot();
         }
 
-        private void Shoot()
+        void Shoot()
         {
             _delay -= Time.deltaTime;
 
@@ -46,9 +47,9 @@ namespace Cannon
             }
         }
 
-        private void GetBullet() => Pool.Get();
+        void GetBullet() => Pool.Get();
 
-        private Bullet SpawnBullet()
+        Bullet SpawnBullet()
         {
             var newBullet = Instantiate(_bulletPrefab, _spawnPoint.position, Quaternion.identity, transform);
             _instantiatedBullets.Add(newBullet);
@@ -56,10 +57,10 @@ namespace Cannon
             return newBullet;
         }
 
-        private void OnTakeBulletFromPool(Bullet bullet) => bullet.InitBullet(bullet, _fireSpeed);
+        void OnTakeBulletFromPool(Bullet bullet) => bullet.InitBullet(bullet, _fireSpeed);
 
-        private void OnReturnBulletFromPool(Bullet bullet) => bullet.DisableBullet(bullet, _spawnPoint);
+        void OnReturnBulletFromPool(Bullet bullet) => bullet.DisableBullet(bullet, _spawnPoint);
 
-        private void BulletRelease(Bullet bullet) => Pool.Release(bullet);
+        void BulletRelease(Bullet bullet) => Pool.Release(bullet);
     }
 }

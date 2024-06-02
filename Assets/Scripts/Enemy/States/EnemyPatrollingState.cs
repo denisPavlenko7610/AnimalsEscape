@@ -6,9 +6,9 @@ namespace AnimalsEscape.States
 {
     public class EnemyPatrollingState : IState
     {
-        private EnemyAnimations _enemyAnimations;
-        private List<Transform> _waypoints = new();
-        private NavMeshAgent _navMeshAgent;
+        EnemyAnimations _enemyAnimations;
+        List<Transform> _waypoints = new();
+        NavMeshAgent _navMeshAgent;
 
         public EnemyPatrollingState(EnemyAnimations enemyAnimations, List<Transform> waypoints,
             NavMeshAgent navMeshAgent)

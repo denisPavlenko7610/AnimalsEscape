@@ -8,7 +8,7 @@ namespace AnimalsEscape
     {
         public event Action CompleteLevelHandler;
 
-        private void OnTriggerEnter(Collider other)
+        void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag(Constants.AnimalTag))
             {

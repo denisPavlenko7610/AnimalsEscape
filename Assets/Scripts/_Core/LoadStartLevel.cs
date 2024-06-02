@@ -6,7 +6,7 @@ namespace AnimalsEscape._Core
 {
     public class LoadStartLevel : MonoBehaviour
     {
-        private LevelSystem _levelSystem;
+        LevelSystem _levelSystem;
 
         [Inject]
         public void Construct(LevelSystem levelSystem)
@@ -14,7 +14,7 @@ namespace AnimalsEscape._Core
             _levelSystem = levelSystem;
         }
 
-        private void Start()
+        void Start()
         {
             _levelSystem.LoadSavedOrNextLevel();
         }

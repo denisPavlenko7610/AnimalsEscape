@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using AnimalsEscape.Enums;
 using UnityEngine;
 
@@ -8,7 +7,7 @@ namespace AnimalsEscape
     [CreateAssetMenu(fileName = "EnemySettingsSo", menuName = "Enemy/EnemySettings")]
     public class EnemySettingsSo : ScriptableObject
     {
-        public List<EnemySetting> EnemySettings = new();
+        public EnemySetting EnemySettings;
     }
     
     [Serializable]

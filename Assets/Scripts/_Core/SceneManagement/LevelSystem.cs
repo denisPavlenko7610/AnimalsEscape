@@ -10,12 +10,12 @@ namespace AnimalsEscape._Core.SceneManagement
     public class LevelSystem : MonoBehaviour
     {
         [SerializeField] List<SceneField> _levels = new();
-        private int _currentLevelIndex = -1;
-        private LevelText _levelText;
+        int _currentLevelIndex = -1;
+        LevelText _levelText;
         string key = "Level";
 
         [Inject]
-        private void Construct(LevelText levelText)
+        void Construct(LevelText levelText)
         {
             _levelText = levelText;
         }
@@ -51,7 +51,7 @@ namespace AnimalsEscape._Core.SceneManagement
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        private void Load(int levelIndex)
+        void Load(int levelIndex)
         {
             if (levelIndex != _levels.Count)
             {

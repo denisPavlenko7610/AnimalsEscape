@@ -8,12 +8,12 @@ namespace AnimalsEscape.Interactive
     public class Key : MonoBehaviour
     {
         [SerializeField] MeshRenderer _meshRenderer;
-        [SerializeField] private Collider _collider;
-        [SerializeField, HideInInspector] private Rotator _rotator;
+        [SerializeField] Collider _collider;
+        [SerializeField, HideInInspector] Rotator _rotator;
         
         public event Action CollectKeyHandler;
 
-        private void OnValidate()
+        void OnValidate()
         {
             if (!_meshRenderer)
                 _meshRenderer = GetComponent<MeshRenderer>();
@@ -25,7 +25,7 @@ namespace AnimalsEscape.Interactive
                 _rotator = GetComponent<Rotator>();
         }
         
-        private void OnTriggerEnter(Collider other)
+        void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag(Constants.AnimalTag))
                 return;

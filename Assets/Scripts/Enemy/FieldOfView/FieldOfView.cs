@@ -31,12 +31,12 @@ namespace AnimalsEscape
             StartFinding();
         }
 
-        private void LateUpdate()
+        void LateUpdate()
         {
             DrawFieldOfView();
         }
 
-        private void OnTriggerEnter(Collider other)
+        void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag(Constants.AnimalTag))
                 return;
@@ -69,10 +69,10 @@ namespace AnimalsEscape
         void FindVisibleTargets()
         {
             var targetsInViewRadius = Physics.OverlapSphere(_meshTransform.position, ViewRadius, _targetMask);
-            foreach (var targetCollider in targetsInViewRadius)
+            foreach (Collider targetCollider in targetsInViewRadius)
             {
-                var target = targetCollider.transform;
-                var directionToTarget = (target.position - _meshTransform.position).normalized;
+                Transform target = targetCollider.transform;
+                Vector3 directionToTarget = (target.position - _meshTransform.position).normalized;
 
                 if (Vector3.Angle(_meshTransform.forward, directionToTarget) < ViewAngle / 2)
                 {
@@ -89,23 +89,23 @@ namespace AnimalsEscape
 
         void DrawFieldOfView()
         {
-            var stepCount = Mathf.RoundToInt(ViewAngle * _meshResolution);
-            var stepAngleSize = ViewAngle / stepCount;
+            int stepCount = Mathf.RoundToInt(ViewAngle * _meshResolution);
+            float stepAngleSize = ViewAngle / stepCount;
             List<Vector3> viewPoints = new();
-            var oldViewCast = new ViewCastInfo();
-            for (var i = 0; i <= stepCount; i++)
+            ViewCastInfo oldViewCast = new ViewCastInfo();
+            for (int i = 0; i <= stepCount; i++)
             {
-                var angle = _meshTransform.eulerAngles.y - ViewAngle / 2 + stepAngleSize * i;
-                var newViewCastInfo = ViewCast(angle);
+                float angle = _meshTransform.eulerAngles.y - ViewAngle / 2 + stepAngleSize * i;
+                ViewCastInfo newViewCastInfo = ViewCast(angle);
 
                 if (i > 0)
                 {
-                    var edgeDistanceThresholdExceeded = Mathf.Abs(oldViewCast.Distance - newViewCastInfo.Distance) >
+                    bool edgeDistanceThresholdExceeded = Mathf.Abs(oldViewCast.Distance - newViewCastInfo.Distance) >
                                                         _edgeDistanceTreshold;
                     if (oldViewCast.Hit != newViewCastInfo.Hit ||
                         (oldViewCast.Hit && newViewCastInfo.Hit && edgeDistanceThresholdExceeded))
                     {
-                        var edge = FindEdge(oldViewCast, newViewCastInfo);
+                        EdgeInfo edge = FindEdge(oldViewCast, newViewCastInfo);
                         if (edge.PointA != Vector3.zero)
                             viewPoints.Add(edge.PointA);
 
@@ -118,12 +118,12 @@ namespace AnimalsEscape
                 oldViewCast = newViewCastInfo;
             }
 
-            var vertexCount = viewPoints.Count + 1;
-            var vertices = new Vector3[vertexCount];
-            var triangles = new int[(vertexCount - 2) * 3];
+            int vertexCount = viewPoints.Count + 1;
+            Vector3[] vertices = new Vector3[vertexCount];
+            int[] triangles = new int[(vertexCount - 2) * 3];
 
             vertices[0] = Vector3.zero;
-            for (var i = 0; i < vertexCount - 1; i++)
+            for (int i = 0; i < vertexCount - 1; i++)
             {
                 vertices[i + 1] = _meshTransform.InverseTransformPoint(viewPoints[i]);
                 if (i < vertexCount - 2)
@@ -142,16 +142,16 @@ namespace AnimalsEscape
 
         EdgeInfo FindEdge(ViewCastInfo minViewCast, ViewCastInfo maxViewCast)
         {
-            var minAngle = minViewCast.Angle;
-            var maxAngle = maxViewCast.Angle;
-            var minPoint = Vector3.zero;
-            var maxPoint = Vector3.zero;
-            for (var i = 0; i < _edgeResolveInterations; i++)
+            float minAngle = minViewCast.Angle;
+            float maxAngle = maxViewCast.Angle;
+            Vector3 minPoint = Vector3.zero;
+            Vector3 maxPoint = Vector3.zero;
+            for (int i = 0; i < _edgeResolveInterations; i++)
             {
-                var angle = (minAngle + maxAngle) / 2;
-                var newViewCast = ViewCast(angle);
+                float angle = (minAngle + maxAngle) / 2;
+                ViewCastInfo newViewCast = ViewCast(angle);
 
-                var edgeDistanceThresholdExceeded =
+                bool edgeDistanceThresholdExceeded =
                     Mathf.Abs(minViewCast.Distance - maxViewCast.Distance) > _edgeDistanceTreshold;
                 if (newViewCast.Hit == minViewCast.Hit && !edgeDistanceThresholdExceeded)
                 {
@@ -177,7 +177,7 @@ namespace AnimalsEscape
             return new ViewCastInfo(false, _meshTransform.position + direction * ViewRadius, ViewRadius, globalAngle);
         }
 
-        private void CheckAnimal(Transform target)
+        void CheckAnimal(Transform target)
         {
             if (target.CompareTag(Constants.AnimalTag))
                 OnScannerReactHandler?.Invoke();
@@ -223,7 +223,7 @@ namespace AnimalsEscape
             }
         }
 
-        private void OnDestroy()
+        void OnDestroy()
         {
             if (_cancelToken != null)
                 _cancelToken.Cancel();

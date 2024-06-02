@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Interactive.Food
 {
@@ -12,8 +9,6 @@ namespace Interactive.Food
 
         private void Start()
         {
-
-            
         }
     }
 }

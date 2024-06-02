@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using AnimalsEscape._Core;
 using AnimalsEscape.Factories;
 using RDTools.AutoAttach;
+using System;
 using UnityEngine;
 using Zenject;
 
@@ -9,16 +10,26 @@ namespace AnimalsEscape.Core.Installers
 {
     public class EnemyInstaller : MonoInstaller
     {
-        [SerializeField, Attach(Attach.Scene)] private Game _game;
-        [SerializeField, Attach(Attach.Scene)] private EnemyFactory _enemyFactory;
-        [SerializeField, Attach(Attach.Scene)] private List<Transform> _waypoints = new();
+        [SerializeField, Attach(Attach.Scene)] Game _game;
+        [SerializeField, Attach(Attach.Scene)] EnemyFactory _enemyFactory;
+        [SerializeField, Attach(Attach.Scene)] Waypoints _waypoints;
+
+        List<Enemy> _enemies = new();
 
         public override void InstallBindings()
         {
-            var newEnemy = _enemyFactory.Create();
-            newEnemy.FieldOfView.OnScannerReactHandler += _game.GameOver;
-            newEnemy.Waypoints = _waypoints;
-            Container.Bind<Enemy>().FromInstance(newEnemy).AsSingle().NonLazy();
+            Enemy enemy = _enemyFactory.Create();
+            enemy.FieldOfView.OnScannerReactHandler += _game.GameOver;
+            enemy.Waypoints = _waypoints.Points;
+            _enemies.Add(enemy);
+        }
+
+        void OnDestroy()
+        {
+            foreach (Enemy enemy in _enemies)
+            {
+                enemy.FieldOfView.OnScannerReactHandler -= _game.GameOver;
+            }
         }
     }
 }

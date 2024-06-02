@@ -8,7 +8,7 @@ namespace AnimalsEscape
         [SerializeField] float _height = 0.1f;
         [SerializeField] float _timeToAnimate = 1f;
         [SerializeField] Transform _buttonCenter;
-        [SerializeField] private MeshRenderer _meshRenderer;
+        [SerializeField] MeshRenderer _meshRenderer;
         [SerializeField] Material _material;
 
         public void Play()

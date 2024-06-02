@@ -6,13 +6,13 @@ namespace AnimalsEscape.Core.Installers
 {
     public class PlayerInstaller : MonoInstaller
     {
-        [SerializeField] private AnimalFactory _animalFactory;
+        [SerializeField] AnimalFactory _animalFactory;
 
         private void OnValidate()
         {
             if (!_animalFactory)
             {
-                _animalFactory = FindObjectOfType<AnimalFactory>();
+                _animalFactory = FindAnyObjectByType<AnimalFactory>();
             }
         }
 

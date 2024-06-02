@@ -1,24 +1,33 @@
-using System;
 using System.Linq;
 using AnimalsEscape.Enums;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace AnimalsEscape.Factories
 {
     public class EnemyFactory : MonoBehaviour, IFactory<Enemy>
     {
-        [SerializeField] private EnemyType _enemyType;
-        [SerializeField] private EnemySettingsSo _enemySettingsSo;
+        [SerializeField] EnemyType _enemyType;
+        [SerializeField] EnemySettingsSo _enemySettingsSo;
+        [SerializeField] List<EnemyStartPoint> _enemyStartPoints = new();
+
+        void OnValidate()
+        {
+            if (_enemyStartPoints.Count == 0)
+            {
+                _enemyStartPoints = FindObjectsByType<EnemyStartPoint>(FindObjectsSortMode.None).ToList();
+            }
+        }
 
         public Enemy Create()
         {
-            foreach (var enemySetting in _enemySettingsSo.EnemySettings.Where(s =>
-                s.EnemyType == _enemyType))
+            foreach (EnemyStartPoint point in _enemyStartPoints)
             {
-                return Instantiate(enemySetting.EnemyPrefab, transform.position, transform.rotation, transform);
+                return Instantiate(point.enemySetting.EnemySettings.EnemyPrefab, point.transform.position, point.transform.rotation, transform);
             }
 
-            throw new NullReferenceException($"Can`t create {_enemyType}");
+            Debug.LogError($"Can`t create {_enemyType}");
+            return null;
         }
     }
 }

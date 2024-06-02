@@ -2,7 +2,7 @@ namespace AnimalsEscape.States
 {
     public class EnemyIdleState : IState
     {
-        private EnemyAnimations _enemyAnimations;
+        EnemyAnimations _enemyAnimations;
         public EnemyIdleState(EnemyAnimations enemyAnimations)
         {
             _enemyAnimations = enemyAnimations;

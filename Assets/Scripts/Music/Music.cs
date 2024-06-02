@@ -17,13 +17,13 @@ namespace AnimalsEscape.Music
         bool isStop;
         const string key = "isStop";
 
-        private void OnEnable()
+        void OnEnable()
         {
             LoadVolumeSettings();
             _soundButton.onClick.AddListener(StopPlayingSound);
         }
 
-        private void LoadVolumeSettings()
+        void LoadVolumeSettings()
         {
             if (PlayerPrefs.HasKey(key))
             {
@@ -32,7 +32,7 @@ namespace AnimalsEscape.Music
             }
         }
 
-        private void OnDisable()
+        void OnDisable()
         {
             _soundButton.onClick.RemoveListener(StopPlayingSound);
         }
@@ -42,7 +42,7 @@ namespace AnimalsEscape.Music
             CheckPlayMusic();
         }
 
-        private void CheckPlayMusic()
+        void CheckPlayMusic()
         {
             if (!_musicSource.isPlaying && !isStop)
             {
@@ -61,7 +61,7 @@ namespace AnimalsEscape.Music
             SetSoundSettings();
         }
 
-        private void SetSoundSettings()
+        void SetSoundSettings()
         {
             if (isStop)
                 MuteVolume();
@@ -69,7 +69,7 @@ namespace AnimalsEscape.Music
                 UnmuteVolume();
         }
 
-        private void UnmuteVolume()
+        void UnmuteVolume()
         {
             PlayerPrefs.SetInt(key, 0);
             var standardVolume = -11f;
@@ -77,7 +77,7 @@ namespace AnimalsEscape.Music
             _soundImage.sprite = Resources.Load<Sprite>("Sound/VolumeUnmute");
         }
 
-        private void MuteVolume()
+        void MuteVolume()
         {
             PlayerPrefs.SetInt(key, 1);
             var muteVolume = -80f;

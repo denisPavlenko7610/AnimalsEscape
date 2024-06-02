@@ -9,19 +9,19 @@ namespace AnimalsEscape
     [RequireComponent(typeof(EnemyAnimations), typeof(NavMeshAgent))]
     public class Enemy : MonoBehaviour
     {
-        [SerializeField] private EnemyAnimations _enemyAnimations;
-        [SerializeField] private float _idleTime = 3f;
+        [SerializeField] EnemyAnimations _enemyAnimations;
+        [SerializeField] float _idleTime = 3f;
         [field:SerializeField, Attach(Attach.Default,false)] public FieldOfView FieldOfView { get; set; }
 
-        private float _idleTimeChange;
-        private float _walkTimeChange;
-        private EnemyStateMachine _enemyStateMachine;
-        private EnemyIdleState _idleState;
-        private EnemyPatrollingState _patrollingState;
-        private NavMeshAgent _navMeshAgent;
+        float _idleTimeChange;
+        float _walkTimeChange;
+        EnemyStateMachine _enemyStateMachine;
+        EnemyIdleState _idleState;
+        EnemyPatrollingState _patrollingState;
+        NavMeshAgent _navMeshAgent;
         public List<Transform> Waypoints { get; set; } = new();
 
-        private void Start()
+        void Start()
         {
             _navMeshAgent = GetComponent<NavMeshAgent>();
             _idleState = new EnemyIdleState(_enemyAnimations);
@@ -31,13 +31,13 @@ namespace AnimalsEscape
             _idleTimeChange = _idleTime;
         }
 
-        private void Update()
+        void Update()
         {
             _enemyStateMachine.CurrentState.Run();
             CheckStates();
         }
 
-        private void CheckStates()
+        void CheckStates()
         {
             if (_enemyStateMachine.CurrentState == _patrollingState)
             {
@@ -58,20 +58,20 @@ namespace AnimalsEscape
             }
         }
 
-        private bool CheckDestinationReached(float dist)
+        bool CheckDestinationReached(float dist)
         {
             return !float.IsPositiveInfinity(dist) 
                    && _navMeshAgent.pathStatus == NavMeshPathStatus.PathComplete 
                    && _navMeshAgent.remainingDistance == 0;
         }
 
-        private void SetWalkState()
+        void SetWalkState()
         {
             _enemyStateMachine.ChangeState(_patrollingState);
             _idleTimeChange = _idleTime;
         }
 
-        private void SetIdleState()
+        void SetIdleState()
         {
             _enemyStateMachine.ChangeState(_idleState);
         }

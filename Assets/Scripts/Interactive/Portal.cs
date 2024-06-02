@@ -6,11 +6,11 @@ namespace AnimalsEscape
 {
     public class Portal : MonoBehaviour
     {
-        [SerializeField] private Transform anotherPortal;
+        [SerializeField] Transform anotherPortal;
 
         public event Action<Transform> OnPortalTriggerEnterHandler;
         
-        private void OnTriggerEnter(Collider other)
+        void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag(Constants.AnimalTag))
             {

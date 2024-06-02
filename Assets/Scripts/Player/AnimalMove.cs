@@ -16,7 +16,7 @@ namespace AnimalsEscape
             var input = new Vector3(MoveInput.x, 0, MoveInput.y);
             if (input == Vector3.zero)
             {
-                _rigidbody.linearVelocity = Vector3.zero;
+                _rigidbody.velocity = Vector3.zero;
                 return;
             }
 
@@ -24,7 +24,7 @@ namespace AnimalsEscape
             Rotate(input);
         }
 
-        void Move(Vector3 input) => _rigidbody.linearVelocity = input * _speed;
+        void Move(Vector3 input) => _rigidbody.velocity = input * _speed;
 
         void Rotate(Vector3 input)
         {

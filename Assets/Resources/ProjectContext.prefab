@@ -205,13 +205,13 @@ MonoBehaviour:
   _levels:
   - sceneAsset: {fileID: 102900000, guid: 2f38909ae34ce0944b8598d45045178e, type: 3}
     required: 0
-    buildIndex: -1
+    buildIndex: 1
   - sceneAsset: {fileID: 102900000, guid: 99c9720ab356a0642a771bea13969a05, type: 3}
     required: 0
-    buildIndex: 1
+    buildIndex: 2
   - sceneAsset: {fileID: 102900000, guid: ad0c351df399b69499689d9ee8335604, type: 3}
     required: 0
-    buildIndex: 2
+    buildIndex: 3
 --- !u!1001 &774256944087556807
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -750,7 +750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 286174957235585523, guid: a8e090bb49524e34591262c636aad4b9,
         type: 3}
-      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      propertyPath: m_ActiveFontFeatures.Array.data[0]
       value: 1801810542
       objectReference: {fileID: 0}
     - target: {fileID: 6139427916364480352, guid: a8e090bb49524e34591262c636aad4b9,

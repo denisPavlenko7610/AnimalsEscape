@@ -8,14 +8,6 @@ namespace AnimalsEscape
     {
         [field:SerializeField] public List<Transform> Points { get; private set; } = new();
 
-        void OnValidate()
-        {
-            if (Points.Count == 0)
-            {
-                FindWaypoints();
-            }
-        }
-
         void FindWaypoints()
         {
             Points = transform.GetComponentsInChildren<Transform>().Skip(1).ToList();

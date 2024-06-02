@@ -12,20 +12,14 @@ namespace AnimalsEscape.Factories
         [SerializeField] EnemySettingsSo _enemySettingsSo;
         [SerializeField] List<EnemyStartPoint> _enemyStartPoints = new();
 
-        [Button]
-        void FindEnemyStartPoints()
-        {
-            _enemyStartPoints = FindObjectsByType<EnemyStartPoint>(FindObjectsSortMode.None).ToList();
-        }
-
         public Enemy Create()
         {
+            _enemyStartPoints = FindObjectsByType<EnemyStartPoint>(FindObjectsSortMode.None).ToList();
             foreach (EnemyStartPoint point in _enemyStartPoints)
             {
                 return Instantiate(point.enemySetting.EnemySettings.EnemyPrefab, point.transform.position, point.transform.rotation, transform);
             }
-
-            Debug.LogError($"Can`t create {_enemyType}");
+            
             return null;
         }
     }

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/_Bootstrap.unity
     guid: 9cc4b3bd5474e8e4389ec097694498c6
   - enabled: 1
+    path: Assets/Scenes/Level_0.unity
+    guid: 2f38909ae34ce0944b8598d45045178e
+  - enabled: 1
     path: Assets/Scenes/Test_Level_1.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
@@ -18,4 +21,3 @@ EditorBuildSettings:
     path: Assets/Scenes/AdvertisementUI.unity
     guid: 9cf3d48b8da3982499ebeef482a94464
   m_configObjects: {}
-  m_UseUCBPForAssetBundles: 0

@@ -23,7 +23,7 @@ namespace Cannon
         {
             bullet.gameObject.SetActive(true);
             bullet.Rigidbody.isKinematic = false;
-            bullet.Rigidbody.linearVelocity = Vector3.right * fireSpeed;
+            bullet.Rigidbody.velocity = Vector3.right * fireSpeed;
         }
 
         public void DisableBullet(Bullet bullet, Transform spawnPoint)

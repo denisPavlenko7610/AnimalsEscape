@@ -1,17 +1,15 @@
 using System.Collections.Generic;
 using AnimalsEscape._Core.SceneManagement;
 using AnimalsEscape.Interactive;
-using RDTools.AutoAttach;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Zenject;
 
 namespace AnimalsEscape._Core
 {
     public class Game : MonoBehaviour
     {
-        [FormerlySerializedAs("portals")] 
-        [SerializeField, Attach(Attach.Scene)] List<Portal> _portals;
+        List<Portal> _portals = new();
         
         LevelSystem levelSystem;
         Door _door;
@@ -29,6 +27,8 @@ namespace AnimalsEscape._Core
 
         void OnEnable()
         {
+            _portals = FindObjectsByType<Portal>(FindObjectsSortMode.None).ToList();
+            
             _animal.SetKey(_key);
             _door.CompleteLevelHandler += LoadNextLevel;
             foreach (var portal in _portals)

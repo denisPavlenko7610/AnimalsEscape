@@ -10,9 +10,10 @@ namespace AnimalsEscape._Core.SceneManagement
     public class LevelSystem : MonoBehaviour
     {
         [SerializeField] List<SceneField> _levels = new();
+        
         int _currentLevelIndex = -1;
         LevelText _levelText;
-        string key = "Level";
+        const string key = "Level";
 
         [Inject]
         void Construct(LevelText levelText)

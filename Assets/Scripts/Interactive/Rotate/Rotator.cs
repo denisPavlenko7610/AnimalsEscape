@@ -1,6 +1,7 @@
 using AnimalsEscape.Interactive.Rotate;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace AnimalsEscape.Interactive
 {
@@ -9,7 +10,7 @@ namespace AnimalsEscape.Interactive
         [SerializeField, Range(1,10)] float _rotateTime = 2f;
 
         [SerializeField]
-        bool _isAroundY;
+        bool _aroundY;
 
         float _aroundAxisDegree = 360f;
         Sequence _rotateSequence;
@@ -27,7 +28,7 @@ namespace AnimalsEscape.Interactive
         public void Rotate()
         {
             Vector3 rotationVector;
-            rotationVector = _isAroundY 
+            rotationVector = _aroundY 
                 ? new Vector3(0, _aroundAxisDegree, 0) 
                 : new Vector3(0, 0, _aroundAxisDegree);
             

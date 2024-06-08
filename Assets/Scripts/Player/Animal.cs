@@ -1,5 +1,7 @@
 using AnimalsEscape.Interactive;
+using Cannon;
 using RDTools.AutoAttach;
+using System;
 using UnityEngine;
 
 namespace AnimalsEscape
@@ -9,6 +11,8 @@ namespace AnimalsEscape
         [SerializeField, Attach] AnimalInput _animalInput;
         [SerializeField, Attach] AnimalMove _animalMove;
         [SerializeField, Attach] AnimalAnimations _animalAnimations;
+
+        public event Action OnBulletCollision;
 
         bool canTeleportation = true;
         Key _key;
@@ -31,11 +35,11 @@ namespace AnimalsEscape
             _key.CollectKeyHandler += SetHasKey;
         }
 
-        public void MoveThroughPortal(Transform anotherPortal)
+        public void MoveThroughPortal(Portal anotherPortal)
         {
             if (canTeleportation)
             {
-                transform.position = anotherPortal.position;
+                transform.position = anotherPortal.transform.position;
                 canTeleportation = false;
             }
         }
@@ -55,6 +59,12 @@ namespace AnimalsEscape
                 return;
 
             canTeleportation = true;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.TryGetComponent(out Bullet bullet))
+                OnBulletCollision?.Invoke();
         }
     }
 }

@@ -2460,6 +2460,11 @@ PrefabInstance:
       objectReference: {fileID: 7671552793984584259}
     - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
         type: 3}
+      propertyPath: _anotherPortal
+      value: 
+      objectReference: {fileID: 2736765116439043750}
+    - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
       propertyPath: _portalMaterial
       value: 
       objectReference: {fileID: 2100000, guid: c569851923409514e838692729704d04, type: 2}
@@ -2526,6 +2531,7 @@ MonoBehaviour:
   _anotherPortalVisualEffect: {fileID: 710761022}
   _thisPortalVisualEffect: {fileID: 533611096}
   _portalMaterial: {fileID: 2100000, guid: c569851923409514e838692729704d04, type: 2}
+  _portal: {fileID: 1597287224}
 --- !u!43 &1599416352
 Mesh:
   m_ObjectHideFlags: 0
@@ -3123,6 +3129,11 @@ PrefabInstance:
       propertyPath: anotherPortal
       value: 
       objectReference: {fileID: 1597287225}
+    - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
+      propertyPath: _anotherPortal
+      value: 
+      objectReference: {fileID: 1597287224}
     - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
         type: 3}
       propertyPath: _portalMaterial
@@ -3732,6 +3743,7 @@ MonoBehaviour:
   _anotherPortalVisualEffect: {fileID: 533611096}
   _thisPortalVisualEffect: {fileID: 710761022}
   _portalMaterial: {fileID: 2100000, guid: c569851923409514e838692729704d04, type: 2}
+  _portal: {fileID: 2736765116439043750}
 --- !u!1001 &8650703117813621445
 PrefabInstance:
   m_ObjectHideFlags: 0

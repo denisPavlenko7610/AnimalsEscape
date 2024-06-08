@@ -1,5 +1,4 @@
-﻿using AnimalsEscape.Utils;
-using Cysharp.Threading.Tasks;
+﻿using AnimalsEscape;
 using UnityEngine;
 using UnityEngine.VFX;
 
@@ -9,38 +8,25 @@ public class PortalVFX : MonoBehaviour
     [SerializeField] VisualEffect _thisPortalVisualEffect;
 
     [SerializeField] Material _portalMaterial;
+    [SerializeField] Portal _portal;
 
-    int _timeToReloadPortalsInMs = 10000;
-
-    private bool _isActive = true;
-    public bool IsActive
+    void Start()
     {
-        get { return _isActive; }
-        set { _isActive = value; }
+        _portalMaterial.EnableKeyword("_EMISSION");
     }
 
-    void Start() => _portalMaterial.EnableKeyword("_EMISSION");
-
-    void OnTriggerEnter(Collider other)
+    private void OnEnable()
     {
-        if (!IsActive)
-            return;
-
-        if (other.CompareTag(Constants.AnimalTag))
-            DeactivatePortalsAsync();
+       _portal.OnStateChanged += SetPortalState;
     }
 
-    async void DeactivatePortalsAsync()
+    private void OnDisable()
     {
-        SetPortalState(false);
-        await UniTask.Delay(_timeToReloadPortalsInMs);
-        SetPortalState(true);
+        _portal.OnStateChanged -= SetPortalState;
     }
 
-    void SetPortalState(bool state)
-    {
-        _isActive = state;
-
+    public void SetPortalState(bool state)
+    { 
         _thisPortalVisualEffect.enabled = state;
         _anotherPortalVisualEffect.enabled = state;
 

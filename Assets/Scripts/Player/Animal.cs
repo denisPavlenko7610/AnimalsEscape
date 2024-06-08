@@ -35,11 +35,11 @@ namespace AnimalsEscape
             _key.CollectKeyHandler += SetHasKey;
         }
 
-        public void MoveThroughPortal(Transform anotherPortal)
+        public void MoveThroughPortal(Portal anotherPortal)
         {
             if (canTeleportation)
             {
-                transform.position = anotherPortal.position;
+                transform.position = anotherPortal.transform.position;
                 canTeleportation = false;
             }
         }

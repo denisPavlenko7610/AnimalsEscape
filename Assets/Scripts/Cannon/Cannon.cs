@@ -27,7 +27,7 @@ namespace Cannon
         {
             foreach (var instantiatedBullet in _instantiatedBullets)
             {
-                instantiatedBullet.onTriggeredBullet -= BulletRelease;
+                instantiatedBullet.OnTriggeredBullet -= BulletRelease;
             }
         }
 
@@ -53,7 +53,7 @@ namespace Cannon
         {
             var newBullet = Instantiate(_bulletPrefab, _spawnPoint.position, Quaternion.identity, transform);
             _instantiatedBullets.Add(newBullet);
-            newBullet.onTriggeredBullet += BulletRelease;
+            newBullet.OnTriggeredBullet += BulletRelease;
             return newBullet;
         }
 

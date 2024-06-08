@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 10
+  serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -38,11 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.17384669, g: 0.21736743, b: 0.29952005, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -65,6 +67,9 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -154,6 +159,12 @@ Transform:
   - {fileID: 6933313801794631852}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &144368014 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4956199767012839004, guid: bd839f3cf541cf043a58761a36a9a3ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 2736765116439043749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &189559224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -479,12 +490,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    m_Quality: 3
-    m_FrameInfluence: 0.1
-    m_JitterScale: 1
-    m_MipBias: 0
-    m_VarianceClampScale: 0.9
-    m_ContrastAdaptiveSharpening: 0
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!4 &385148268 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3210196790652762586, guid: f66f7ac9eed9f9645952092561889b13,
@@ -611,8 +622,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   m_Enabled: 1
-  serializedVersion: 11
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2
   m_Range: 10
@@ -662,12 +674,8 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
-  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-  m_LightUnit: 1
-  m_LuxAtDistance: 1
-  m_EnableSpotReflector: 1
 --- !u!4 &410087041
 Transform:
   m_ObjectHideFlags: 0
@@ -863,14 +871,20 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  'm_MeshMetrics[0]': 0
-  'm_MeshMetrics[1]': 0
+  m_MeshMetrics[0]: 0
+  m_MeshMetrics[1]: 0
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
     offset: 0
     size: 0
     path: 
+--- !u!2083052967 &533611096 stripped
+VisualEffect:
+  m_CorrespondingSourceObject: {fileID: 959567215945422886, guid: bd839f3cf541cf043a58761a36a9a3ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1597287223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &576533206
 GameObject:
   m_ObjectHideFlags: 0
@@ -936,9 +950,6 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials: []
@@ -1252,9 +1263,6 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1330,6 +1338,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4795033038375300815, guid: 195322261f9816e41807cc8fc145a5d8,
     type: 3}
   m_PrefabInstance: {fileID: 4795033037671979741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!2083052967 &710761022 stripped
+VisualEffect:
+  m_CorrespondingSourceObject: {fileID: 959567215945422886, guid: bd839f3cf541cf043a58761a36a9a3ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 2736765116439043749}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &737895659
 GameObject:
@@ -1924,8 +1938,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  'm_MeshMetrics[0]': 1
-  'm_MeshMetrics[1]': 10.7026205
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 10.7026205
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -2237,6 +2251,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3210196790871596214}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1412583846 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4956199767012839004, guid: bd839f3cf541cf043a58761a36a9a3ca,
+    type: 3}
+  m_PrefabInstance: {fileID: 1597287223}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1585086573
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2252,19 +2272,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6372945369788381876, guid: a4d01a5791895984b8d99dae2a4c68db,
         type: 3}
+      propertyPath: _bullet
+      value: 
+      objectReference: {fileID: 1046499324623721662, guid: 0ba394939ccdf5544999bc1431376e33,
+        type: 3}
+    - target: {fileID: 6372945369788381876, guid: a4d01a5791895984b8d99dae2a4c68db,
+        type: 3}
       propertyPath: portals.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6372945369788381876, guid: a4d01a5791895984b8d99dae2a4c68db,
         type: 3}
-      propertyPath: 'portals.Array.data[0]'
+      propertyPath: portals.Array.data[0]
       value: 
       objectReference: {fileID: 1597287224}
     - target: {fileID: 6372945369788381876, guid: a4d01a5791895984b8d99dae2a4c68db,
         type: 3}
-      propertyPath: 'portals.Array.data[1]'
+      propertyPath: portals.Array.data[1]
       value: 
       objectReference: {fileID: 2736765116439043750}
+    - target: {fileID: 6372945369788381876, guid: a4d01a5791895984b8d99dae2a4c68db,
+        type: 3}
+      propertyPath: _animalBulletCollision
+      value: 
+      objectReference: {fileID: 6379016249196417570, guid: 3948555bed0e63647aff1af2bcf5da78,
+        type: 3}
     - target: {fileID: 7272106342262988854, guid: a4d01a5791895984b8d99dae2a4c68db,
         type: 3}
       propertyPath: m_RootOrder
@@ -2418,9 +2450,29 @@ PrefabInstance:
       objectReference: {fileID: 1597287226}
     - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
         type: 3}
+      propertyPath: _portalVFX
+      value: 
+      objectReference: {fileID: 1597287229}
+    - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
       propertyPath: anotherPortal
       value: 
       objectReference: {fileID: 7671552793984584259}
+    - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
+      propertyPath: _portalMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: c569851923409514e838692729704d04, type: 2}
+    - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
+      propertyPath: _thisPortalVisualEffect
+      value: 
+      objectReference: {fileID: 533611096}
+    - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
+      propertyPath: _anotherPortalVisualEffect
+      value: 
+      objectReference: {fileID: 710761022}
     - target: {fileID: 9204254136761783942, guid: bd839f3cf541cf043a58761a36a9a3ca,
         type: 3}
       propertyPath: m_Enabled
@@ -2429,7 +2481,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4956199767012839004, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1597287229}
   m_SourcePrefab: {fileID: 100100000, guid: bd839f3cf541cf043a58761a36a9a3ca, type: 3}
 --- !u!114 &1597287224 stripped
 MonoBehaviour:
@@ -2437,7 +2493,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1597287223}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1412583846}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39f66a57e8fbcd74e8c486c0d4b4dd48, type: 3}
@@ -2455,6 +2511,21 @@ SphereCollider:
     type: 3}
   m_PrefabInstance: {fileID: 1597287223}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1597287229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412583846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 418b8f7ded6d75846b07540d55a00545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anotherPortalVisualEffect: {fileID: 710761022}
+  _thisPortalVisualEffect: {fileID: 533611096}
+  _portalMaterial: {fileID: 2100000, guid: c569851923409514e838692729704d04, type: 2}
 --- !u!43 &1599416352
 Mesh:
   m_ObjectHideFlags: 0
@@ -2612,8 +2683,8 @@ Mesh:
   m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
-  'm_MeshMetrics[0]': 1
-  'm_MeshMetrics[1]': 10.7026205
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 10.7026205
   m_MeshOptimizationFlags: 1
   m_StreamData:
     serializedVersion: 2
@@ -2770,9 +2841,6 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2853,12 +2921,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3100893513577274232, guid: 5225de717b9fb8242a80668519217b34,
         type: 3}
-      propertyPath: '_monoInstallers.Array.data[1]'
+      propertyPath: _monoInstallers.Array.data[1]
       value: 
       objectReference: {fileID: 2109341332}
     - target: {fileID: 3100893513577274232, guid: 5225de717b9fb8242a80668519217b34,
         type: 3}
-      propertyPath: '_monoInstallers.Array.data[2]'
+      propertyPath: _monoInstallers.Array.data[2]
       value: 
       objectReference: {fileID: 2109341333}
     - target: {fileID: 3100893513577274238, guid: 5225de717b9fb8242a80668519217b34,
@@ -2980,6 +3048,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1031566104}
     m_Modifications:
+    - target: {fileID: 959567215945422886, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4956199767012839004, guid: bd839f3cf541cf043a58761a36a9a3ca,
         type: 3}
       propertyPath: m_Name
@@ -3042,13 +3115,42 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
         type: 3}
+      propertyPath: _portalVFX
+      value: 
+      objectReference: {fileID: 7671552793984584263}
+    - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
       propertyPath: anotherPortal
       value: 
       objectReference: {fileID: 1597287225}
+    - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
+      propertyPath: _portalMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: c569851923409514e838692729704d04, type: 2}
+    - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
+      propertyPath: _thisPortalVisualEffect
+      value: 
+      objectReference: {fileID: 710761022}
+    - target: {fileID: 7425425789442156821, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
+      propertyPath: _anotherPortalVisualEffect
+      value: 
+      objectReference: {fileID: 533611096}
+    - target: {fileID: 7497293587878282676, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4956199767012839004, guid: bd839f3cf541cf043a58761a36a9a3ca,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7671552793984584263}
   m_SourcePrefab: {fileID: 100100000, guid: bd839f3cf541cf043a58761a36a9a3ca, type: 3}
 --- !u!114 &2736765116439043750 stripped
 MonoBehaviour:
@@ -3056,7 +3158,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2736765116439043749}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 144368014}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 39f66a57e8fbcd74e8c486c0d4b4dd48, type: 3}
@@ -3295,7 +3397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3210196790652762587, guid: f66f7ac9eed9f9645952092561889b13,
         type: 3}
-      propertyPath: '_enemyStartPoints.Array.data[0]'
+      propertyPath: _enemyStartPoints.Array.data[0]
       value: 
       objectReference: {fileID: 5428085031495986758}
     - target: {fileID: 3210196790652762589, guid: f66f7ac9eed9f9645952092561889b13,
@@ -3310,12 +3412,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3210196790871596216, guid: f66f7ac9eed9f9645952092561889b13,
         type: 3}
-      propertyPath: '<Points>k__BackingField.Array.data[0]'
+      propertyPath: <Points>k__BackingField.Array.data[0]
       value: 
       objectReference: {fileID: 1358307078}
     - target: {fileID: 3210196790871596216, guid: f66f7ac9eed9f9645952092561889b13,
         type: 3}
-      propertyPath: '<Points>k__BackingField.Array.data[1]'
+      propertyPath: <Points>k__BackingField.Array.data[1]
       value: 
       objectReference: {fileID: 1820573589}
     m_RemovedComponents: []
@@ -3615,6 +3717,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2736765116439043749}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7671552793984584263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144368014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 418b8f7ded6d75846b07540d55a00545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _anotherPortalVisualEffect: {fileID: 533611096}
+  _thisPortalVisualEffect: {fileID: 710761022}
+  _portalMaterial: {fileID: 2100000, guid: c569851923409514e838692729704d04, type: 2}
 --- !u!1001 &8650703117813621445
 PrefabInstance:
   m_ObjectHideFlags: 0

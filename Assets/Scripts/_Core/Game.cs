@@ -4,13 +4,13 @@ using AnimalsEscape.Interactive;
 using System.Linq;
 using UnityEngine;
 using Zenject;
+using Cannon;
 
 namespace AnimalsEscape._Core
 {
     public class Game : MonoBehaviour
     {
         List<Portal> _portals = new();
-        
         LevelSystem levelSystem;
         Door _door;
         Key _key;
@@ -28,9 +28,10 @@ namespace AnimalsEscape._Core
         void OnEnable()
         {
             _portals = FindObjectsByType<Portal>(FindObjectsSortMode.None).ToList();
-            
             _animal.SetKey(_key);
             _door.CompleteLevelHandler += LoadNextLevel;
+            _animal.OnBulletCollision += GameOver;
+            
             foreach (var portal in _portals)
             {
                 portal.OnPortalTriggerEnterHandler += _animal.MoveThroughPortal;
@@ -40,6 +41,7 @@ namespace AnimalsEscape._Core
         void OnDisable()
         {
             _door.CompleteLevelHandler -= LoadNextLevel;
+            _animal.OnBulletCollision -= GameOver;
             foreach (var portal in _portals)
             {
                 portal.OnPortalTriggerEnterHandler -= _animal.MoveThroughPortal;
@@ -55,7 +57,7 @@ namespace AnimalsEscape._Core
         {
             if (!_animal.HasKey)
                 return;
-                
+
             levelSystem.LoadNextLevel();
         }
 

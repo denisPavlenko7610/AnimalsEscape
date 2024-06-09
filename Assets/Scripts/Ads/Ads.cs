@@ -25,7 +25,23 @@ namespace AnimalsEscape
             });
         }
         
-        public void LoadInterstitialAd()
+       
+
+        public void ShowInterstitialAd()
+        {
+            RegisterEventHandlers(_interstitialAd);
+            if (_interstitialAd != null && _interstitialAd.CanShowAd())
+            {
+                Debug.Log("Showing interstitial ad.");
+                _interstitialAd.Show();
+            }
+            else
+            {
+                Debug.LogError("Interstitial ad is not ready yet.");
+            }
+        }
+        
+        void LoadInterstitialAd()
         {
             if (_interstitialAd != null)
             {
@@ -53,22 +69,8 @@ namespace AnimalsEscape
                     _interstitialAd = ad;
                 });
         }
-
-        public void ShowInterstitialAd()
-        {
-            RegisterEventHandlers(_interstitialAd);
-            if (_interstitialAd != null && _interstitialAd.CanShowAd())
-            {
-                Debug.Log("Showing interstitial ad.");
-                _interstitialAd.Show();
-            }
-            else
-            {
-                Debug.LogError("Interstitial ad is not ready yet.");
-            }
-        }
         
-        private void RegisterEventHandlers(InterstitialAd interstitialAd)
+        void RegisterEventHandlers(InterstitialAd interstitialAd)
         {
             interstitialAd.OnAdFullScreenContentClosed += () =>
             {

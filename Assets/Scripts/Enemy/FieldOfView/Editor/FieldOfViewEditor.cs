@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
+#if UNITY_EDITOR
 namespace AnimalsEscape
 {
     [CustomEditor(typeof(FieldOfView))]
@@ -22,3 +23,4 @@ namespace AnimalsEscape
         }
     }
 }
+#endif

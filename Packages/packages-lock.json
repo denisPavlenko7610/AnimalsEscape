@@ -5,7 +5,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "ecebf1d7858c2efd0eaac8ac62c7232df1a86bec"
+      "hash": "41e0cafde67cea7281957cfffdc78c73cc09b05f"
     },
     "com.unity.2d.tilemap": {
       "version": "1.0.0",

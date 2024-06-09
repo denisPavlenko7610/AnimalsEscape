@@ -11,15 +11,18 @@ namespace AnimalsEscape._Core
     public class Game : MonoBehaviour
     {
         List<Portal> _portals = new();
-        LevelSystem levelSystem;
+        
+        LevelSystem _levelSystem;
         Door _door;
         Key _key;
         Animal _animal;
+        Ads _ads;
 
         [Inject]
-        public void Construct(LevelSystem levelSystem, Door door, Animal animal, Key key)
+        public void Construct(Ads ads, LevelSystem levelSystem, Door door, Animal animal, Key key)
         {
-            this.levelSystem = levelSystem;
+            _ads = ads;
+            _levelSystem = levelSystem;
             _door = door;
             _animal = animal;
             _key = key;
@@ -28,6 +31,7 @@ namespace AnimalsEscape._Core
         void OnEnable()
         {
             _portals = FindObjectsByType<Portal>(FindObjectsSortMode.None).ToList();
+            
             _animal.SetKey(_key);
             _door.CompleteLevelHandler += LoadNextLevel;
             _animal.OnBulletCollision += GameOver;
@@ -36,6 +40,8 @@ namespace AnimalsEscape._Core
             {
                 portal.OnPortalTriggerEnterHandler += _animal.MoveThroughPortal;
             }
+
+            _ads.onAdClosed += ReloadLevel;
         }
 
         void OnDisable()
@@ -46,24 +52,48 @@ namespace AnimalsEscape._Core
             {
                 portal.OnPortalTriggerEnterHandler -= _animal.MoveThroughPortal;
             }
+            
+            _ads.onAdClosed -= ReloadLevel;
+        }
+
+        void Start()
+        {
+            LogSettings();
         }
 
         public void GameOver()
         {
-            ReloadLevel();
+            if (_levelSystem.GetCurrentLevelNumber() % 2 == 0)
+            {
+                _ads.ShowInterstitialAd();
+            }
+            else
+            {
+                ReloadLevel();
+            }
         }
 
         void LoadNextLevel()
         {
             if (!_animal.HasKey)
                 return;
-
-            levelSystem.LoadNextLevel();
+                
+            _levelSystem.LoadNextLevel();
         }
 
         void ReloadLevel()
         {
-            levelSystem.ReloadLevel();
+            _levelSystem.ReloadLevel();
+        }
+        
+        void LogSettings()
+        {
+
+#if UNITY_EDITOR
+            Debug.unityLogger.logEnabled = true;
+#else
+            Debug.logger.logEnabled = false;
+#endif
         }
     }
 }

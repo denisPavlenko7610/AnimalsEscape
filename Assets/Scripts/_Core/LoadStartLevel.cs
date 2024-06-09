@@ -6,6 +6,8 @@ namespace AnimalsEscape._Core
 {
     public class LoadStartLevel : MonoBehaviour
     {
+        [SerializeField] bool _shouldSave = true;
+        
         LevelSystem _levelSystem;
 
         [Inject]
@@ -16,6 +18,7 @@ namespace AnimalsEscape._Core
 
         void Start()
         {
+            _levelSystem.init(_shouldSave);
             _levelSystem.LoadSavedOrNextLevel();
         }
     }

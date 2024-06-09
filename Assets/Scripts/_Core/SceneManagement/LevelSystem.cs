@@ -14,11 +14,17 @@ namespace AnimalsEscape._Core.SceneManagement
         int _currentLevelIndex = -1;
         LevelText _levelText;
         const string key = "Level";
+        bool _shouldSave = true;
 
         [Inject]
         void Construct(LevelText levelText)
         {
             _levelText = levelText;
+        }
+        
+        public void init(bool shouldSave)
+        {
+            _shouldSave = shouldSave;
         }
 
         public void SaveLevel(int level)
@@ -30,31 +36,33 @@ namespace AnimalsEscape._Core.SceneManagement
         {
             if (PlayerPrefs.HasKey(key))
             {
-                var levelIndex = PlayerPrefs.GetInt(key);
+                int levelIndex = PlayerPrefs.GetInt(key);
                 Load(levelIndex);
             }
             else
             {
                 LoadNextLevel();
-                //print("Key isn`t found");
+                print("Key isn`t found");
             }
         }
         
         public void LoadNextLevel()
         {
-            var levelIndex = _currentLevelIndex + 1;
-            SaveLevel(levelIndex);
+            int levelIndex = _currentLevelIndex + 1;
+            if (_shouldSave)
+            {
+                SaveLevel(levelIndex);
+            }
             Load(levelIndex);
         }
 
-        public void ReloadLevel()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        public int GetCurrentLevelNumber() => SceneManager.GetActiveScene().buildIndex;
+
+        public void ReloadLevel() => SceneManager.LoadScene(GetCurrentLevelNumber());
 
         void Load(int levelIndex)
         {
-            if (levelIndex != _levels.Count)
+            if (levelIndex < _levels.Count)
             {
                 _currentLevelIndex = levelIndex;
             }

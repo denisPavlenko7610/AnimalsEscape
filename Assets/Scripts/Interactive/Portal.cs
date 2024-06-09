@@ -1,19 +1,23 @@
 ﻿using Cysharp.Threading.Tasks;
+using Player;
 using System;
+using System.Threading;
 using UnityEngine;
 
 namespace AnimalsEscape
 {
     public enum PortalType
     {
-        Blue
+        Blue,
+        Pink
     }
 
     public class Portal : MonoBehaviour
     {
         [SerializeField] Portal _anotherPortal;
         [SerializeField] PortalVFX _portalVFX;
-
+        
+        private CancellationTokenSource _cancellationTokenSource;
         public event Action<Portal> OnPortalTriggerEnterHandler;
         public event Action<bool> OnStateChanged;
 
@@ -23,6 +27,16 @@ namespace AnimalsEscape
 
         [SerializeField] PortalType _portalType;
 
+        void Awake()
+        {
+            _cancellationTokenSource = new CancellationTokenSource();
+        }
+
+        void OnDisable()
+        {
+            _cancellationTokenSource?.Cancel();
+        }
+
         void OnTriggerEnter(Collider other)
         {
             PortalTrigger(other);
@@ -30,7 +44,7 @@ namespace AnimalsEscape
 
         void PortalTrigger(Collider other)
         {
-            if (IsActive && other.GetComponentInParent<Animal>())
+            if (IsActive && other.TryGetComponent(out AnimalTag animalTag))
             {
                 OnPortalTriggerEnterHandler?.Invoke(_anotherPortal);
                 TogglePortalsAsync();
@@ -40,7 +54,7 @@ namespace AnimalsEscape
         async void TogglePortalsAsync()
         {
             ChangePortalView(false);
-            await UniTask.Delay(_timeToReloadPortalsInMs);
+            await UniTask.Delay(_timeToReloadPortalsInMs, cancellationToken: _cancellationTokenSource.Token);
             ChangePortalView(true);
         }
 

@@ -15,18 +15,18 @@ public class PortalVFX : MonoBehaviour
         _portalMaterial.EnableKeyword("_EMISSION");
     }
 
-    private void OnEnable()
+    void OnEnable()
     {
-       _portal.OnStateChanged += SetPortalState;
+        _portal.OnStateChanged += SetPortalState;
     }
 
-    private void OnDisable()
+    void OnDisable()
     {
         _portal.OnStateChanged -= SetPortalState;
     }
 
-    public void SetPortalState(bool state)
-    { 
+    void SetPortalState(bool state)
+    {
         _thisPortalVisualEffect.enabled = state;
         _anotherPortalVisualEffect.enabled = state;
 

@@ -13,20 +13,23 @@ namespace AnimalsEscape
         [SerializeField, Attach] AnimalAnimations _animalAnimations;
 
         public event Action OnBulletCollision;
-
-        bool canTeleportation = true;
+        
         Key _key;
         public bool HasKey { get; private set; }
 
         void OnEnable()
         {
-            if (_animalInput) _animalInput.input += Move;
+            if (_animalInput)
+                _animalInput.input += Move;
         }
 
         void OnDisable()
         {
-            if (_animalInput) _animalInput.input -= Move;
-            if (_key) _key.CollectKeyHandler -= SetHasKey;
+            if (_animalInput)
+                _animalInput.input -= Move;
+            
+            if (_key)
+                _key.CollectKeyHandler -= SetHasKey;
         }
 
         public void SetKey(Key key)
@@ -37,11 +40,7 @@ namespace AnimalsEscape
 
         public void MoveThroughPortal(Portal anotherPortal)
         {
-            if (canTeleportation)
-            {
-                transform.position = anotherPortal.transform.position;
-                canTeleportation = false;
-            }
+            transform.position = anotherPortal.transform.position;
         }
 
         void SetHasKey() => HasKey = true;
@@ -50,15 +49,6 @@ namespace AnimalsEscape
         {
             _animalMove.MoveInput = moveInput;
             _animalAnimations.MoveAnimation(moveInput);
-            SetCanTeleportation(moveInput);
-        }
-
-        void SetCanTeleportation(Vector2 moveInput)
-        {
-            if (canTeleportation)
-                return;
-
-            canTeleportation = true;
         }
 
         private void OnTriggerEnter(Collider other)

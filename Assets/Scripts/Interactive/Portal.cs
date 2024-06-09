@@ -21,7 +21,7 @@ namespace AnimalsEscape
         public event Action<Portal> OnPortalTriggerEnterHandler;
         public event Action<bool> OnStateChanged;
 
-        public bool IsActive { get; private set; } = true;
+        public static bool IsActive { get; private set; } = true;
 
         int _timeToReloadPortalsInMs = 10_000;
 
@@ -34,7 +34,8 @@ namespace AnimalsEscape
 
         void OnDisable()
         {
-            _cancellationTokenSource?.Cancel();
+            if (IsActive)
+                _cancellationTokenSource?.Cancel();
         }
 
         void OnTriggerEnter(Collider other)
@@ -54,7 +55,15 @@ namespace AnimalsEscape
         async void TogglePortalsAsync()
         {
             ChangePortalView(false);
-            await UniTask.Delay(_timeToReloadPortalsInMs, cancellationToken: _cancellationTokenSource.Token);
+            try
+            {
+                await UniTask.Delay(_timeToReloadPortalsInMs, cancellationToken: _cancellationTokenSource.Token);
+            }
+            catch (OperationCanceledException)
+            {
+                Debug.Log("cancellation token called");
+                return;
+            }
             ChangePortalView(true);
         }
 

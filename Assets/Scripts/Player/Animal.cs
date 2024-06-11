@@ -13,7 +13,7 @@ namespace AnimalsEscape
         [SerializeField, Attach] AnimalAnimations _animalAnimations;
 
         public event Action OnBulletCollision;
-        
+
         Key _key;
         public bool HasKey { get; private set; }
 
@@ -37,7 +37,6 @@ namespace AnimalsEscape
             _key = key;
             _key.CollectKeyHandler += SetHasKey;
         }
-
         public void MoveThroughPortal(Portal anotherPortal)
         {
             transform.position = anotherPortal.transform.position;

@@ -10,6 +10,9 @@ namespace AnimalsEscape._Core
 {
     public class Game : MonoBehaviour
     {
+        static int _deathCounter;
+        static int _adsTreshold = 2;
+
         List<Portal> _portals = new();
         
         LevelSystem _levelSystem;
@@ -59,13 +62,17 @@ namespace AnimalsEscape._Core
         void Start()
         {
             LogSettings();
+            Debug.Log("Death " + _deathCounter);
+            Debug.Log("Ads Threshold " + _adsTreshold);
         }
 
         public void GameOver()
         {
-            if (_levelSystem.GetCurrentLevelNumber() % 2 == 0)
+            if (_deathCounter == _adsTreshold)
             {
                 _ads.ShowInterstitialAd();
+                _adsTreshold = Random.Range(2, 5);
+                _deathCounter = 0;
             }
             else
             {
@@ -84,6 +91,7 @@ namespace AnimalsEscape._Core
         void ReloadLevel()
         {
             _levelSystem.ReloadLevel();
+            _deathCounter++;
         }
         
         void LogSettings()

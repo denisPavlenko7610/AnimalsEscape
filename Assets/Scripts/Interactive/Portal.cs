@@ -21,7 +21,7 @@ namespace AnimalsEscape
         public event Action<Portal> OnPortalTriggerEnterHandler;
         public event Action<bool> OnStateChanged;
 
-        public static bool IsActive { get; private set; } = true;
+        static bool IsActive;
 
         int _timeToReloadPortalsInMs = 10_000;
 
@@ -30,11 +30,12 @@ namespace AnimalsEscape
         void Awake()
         {
             _cancellationTokenSource = new CancellationTokenSource();
+            IsActive = true;
         }
 
         void OnDisable()
         {
-            if (IsActive)
+            if (!IsActive)
                 _cancellationTokenSource?.Cancel();
         }
 

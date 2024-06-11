@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using AnimalsEscape.Utils;
 using Cysharp.Threading.Tasks;
+using Player;
 using UnityEngine;
 
 namespace AnimalsEscape
@@ -41,7 +42,11 @@ namespace AnimalsEscape
             if (!other.CompareTag(Constants.AnimalTag))
                 return;
 
-            CheckAnimal(other.transform);
+            if (other.gameObject.TryGetComponent(out AnimalDeathBool animal) && !animal.IsDead)
+            {
+                CheckAnimal(other.transform);
+                animal.IsDead = true;
+            }
         }
 
         void InitViewMesh()
@@ -81,7 +86,11 @@ namespace AnimalsEscape
                             _obstacleMask))
                     {
                         //print("target: " + target.name);
-                        CheckAnimal(target);
+                        if (target.gameObject.TryGetComponent(out AnimalDeathBool animal) && !animal.IsDead)
+                        {
+                            CheckAnimal(target);
+                            animal.IsDead = true;
+                        }
                     }
                 }
             }

@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 6683949241819416336}
   - component: {fileID: 6683949241824728632}
   - component: {fileID: 5246475220562507839}
-  - component: {fileID: 823589602662482692}
+  - component: {fileID: 7050582446992473135}
   - component: {fileID: 4059739567266819040}
   - component: {fileID: 944516476625864371}
   m_Layer: 8
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7095380de0481fafa6b73d46a567bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &823589602662482692
+--- !u!114 &7050582446992473135
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -392,9 +392,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 6683949241819519792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44dfc51cb01398d44ac0665185c77e7e, type: 3}
+  m_Script: {fileID: 11500000, guid: a017d53704eb562408b76a483dbee702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animalState: 1
+  _input: {fileID: 5899540549917707486}
+  _animal: {fileID: 5899540549917707484}
+  _colliders:
+  - {fileID: 4059739567266819040}
+  - {fileID: 944516476625864371}
 --- !u!136 &4059739567266819040
 CapsuleCollider:
   m_ObjectHideFlags: 0

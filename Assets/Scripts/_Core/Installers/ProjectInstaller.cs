@@ -9,7 +9,6 @@ namespace AnimalsEscape._Core.Installers
         [SerializeField] LevelSystem _levelSystem;
         [SerializeField] Ads _ads;
         
-        
         public override void InstallBindings()
         {
             Container.Bind<LevelSystem>().FromInstance(_levelSystem).AsSingle().NonLazy();

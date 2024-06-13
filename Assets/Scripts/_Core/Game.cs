@@ -4,7 +4,8 @@ using AnimalsEscape.Interactive;
 using System.Linq;
 using UnityEngine;
 using Zenject;
-using Cannon;
+using System;
+using Cysharp.Threading.Tasks;
 
 namespace AnimalsEscape._Core
 {
@@ -12,33 +13,36 @@ namespace AnimalsEscape._Core
     {
         static int _deathCounter;
         static int _adsTreshold = 2;
+        bool _deathSoundIsPlaying;
 
         List<Portal> _portals = new();
-        
+
         LevelSystem _levelSystem;
         Door _door;
         Key _key;
         Animal _animal;
         Ads _ads;
+        AnimalSound _animalSound;
 
         [Inject]
-        public void Construct(Ads ads, LevelSystem levelSystem, Door door, Animal animal, Key key)
+        public void Construct(Ads ads, LevelSystem levelSystem, Door door, Animal animal, Key key, AnimalSound animalSound)
         {
             _ads = ads;
             _levelSystem = levelSystem;
             _door = door;
             _animal = animal;
             _key = key;
+            _animalSound = animalSound;
         }
 
         void OnEnable()
         {
             _portals = FindObjectsByType<Portal>(FindObjectsSortMode.None).ToList();
-            
+
             _animal.SetKey(_key);
             _door.CompleteLevelHandler += LoadNextLevel;
             _animal.OnBulletCollision += GameOver;
-            
+
             foreach (var portal in _portals)
             {
                 portal.OnPortalTriggerEnterHandler += _animal.MoveThroughPortal;
@@ -55,23 +59,29 @@ namespace AnimalsEscape._Core
             {
                 portal.OnPortalTriggerEnterHandler -= _animal.MoveThroughPortal;
             }
-            
+
             _ads.onAdClosed -= ReloadLevel;
         }
 
         void Start()
         {
             LogSettings();
+
             Debug.Log("Death " + _deathCounter);
             Debug.Log("Ads Threshold " + _adsTreshold);
+            Debug.Log("Start Sound");
+
+            _animalSound.PlaySoundAtStart();
+            _deathSoundIsPlaying = false;
         }
 
-        public void GameOver()
+        public async void GameOver()
         {
             if (_deathCounter == _adsTreshold)
             {
+                await DeathSound();
                 _ads.ShowInterstitialAd();
-                _adsTreshold = Random.Range(2, 5);
+                _adsTreshold = UnityEngine.Random.Range(2, 5);
                 _deathCounter = 0;
             }
             else
@@ -84,16 +94,29 @@ namespace AnimalsEscape._Core
         {
             if (!_animal.HasKey)
                 return;
-                
+
             _levelSystem.LoadNextLevel();
         }
 
-        void ReloadLevel()
+        async void ReloadLevel()
         {
+            await DeathSound();
+
             _levelSystem.ReloadLevel();
+            Debug.Log("End Death Sound");
             _deathCounter++;
         }
-        
+
+        async UniTask DeathSound()
+        {
+            if (!_deathSoundIsPlaying)
+            {
+                await _animalSound.PlayDeathSound();
+                _deathSoundIsPlaying = true;
+            }
+        }
+
+
         void LogSettings()
         {
 

@@ -1,7 +1,6 @@
 using System;
 using RDTools.AutoAttach;
 using UnityEngine;
-using AnimalsEscape;
 
 namespace Cannon
 {

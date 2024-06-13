@@ -42,10 +42,10 @@ namespace AnimalsEscape
             if (!other.CompareTag(Constants.AnimalTag))
                 return;
 
-            if (other.gameObject.TryGetComponent(out AnimalDeathBool animal) && !animal.IsDead)
+            if (other.gameObject.TryGetComponent(out AnimalStatus animal) && animal._animalState == AnimalState.alive)
             {
                 CheckAnimal(other.transform);
-                animal.IsDead = true;
+                animal.SetStateDead();
             }
         }
 
@@ -86,10 +86,10 @@ namespace AnimalsEscape
                             _obstacleMask))
                     {
                         //print("target: " + target.name);
-                        if (target.gameObject.TryGetComponent(out AnimalDeathBool animal) && !animal.IsDead)
+                        if (target.gameObject.TryGetComponent(out AnimalStatus animal) && animal._animalState == AnimalState.alive)
                         {
                             CheckAnimal(target);
-                            animal.IsDead = true;
+                            animal.SetStateDead();
                         }
                     }
                 }

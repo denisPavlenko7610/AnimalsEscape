@@ -27,17 +27,13 @@ namespace AnimalsEscape._Core.SceneManagement
             _shouldSave = shouldSave;
         }
 
-        public void SaveLevel(int level)
-        {
-            PlayerPrefs.SetInt(key, level);
-        }
 
         public void LoadSavedOrNextLevel()
         {
             if (PlayerPrefs.HasKey(key))
             {
-                int levelIndex = PlayerPrefs.GetInt(key);
-                Load(levelIndex);
+                _currentLevelIndex = PlayerPrefs.GetInt(key);
+                Load();
             }
             else
             {
@@ -48,32 +44,29 @@ namespace AnimalsEscape._Core.SceneManagement
         
         public void LoadNextLevel()
         {
-            int levelIndex = _currentLevelIndex + 1;
-            if (_shouldSave)
+            _currentLevelIndex++;
+            if (_currentLevelIndex != 0 && _shouldSave)
             {
-                SaveLevel(levelIndex);
+                SaveLevel();
             }
-            Load(levelIndex);
+            Load();
         }
-
-        public int GetCurrentLevelNumber() => SceneManager.GetActiveScene().buildIndex;
-
+        
         public void ReloadLevel() => SceneManager.LoadScene(GetCurrentLevelNumber());
+        
+        int GetCurrentLevelNumber() => SceneManager.GetActiveScene().buildIndex;
+        
+        void SaveLevel() => PlayerPrefs.SetInt(key, _currentLevelIndex);
 
-        void Load(int levelIndex)
+        void Load()
         {
-            if (levelIndex < _levels.Count)
-            {
-                _currentLevelIndex = levelIndex;
-            }
-            else
+            if (_currentLevelIndex >= _levels.Count)
             {
                 _currentLevelIndex = 0;
-                levelIndex = _currentLevelIndex;
             }
 
-            _levelText.ShowLevel(levelIndex + 1);
-            SceneManager.LoadScene(_levels[levelIndex].BuildIndex);
+            _levelText.ShowLevel(_currentLevelIndex + 1);
+            SceneManager.LoadScene(_levels[_currentLevelIndex].BuildIndex);
         }
     }
 }

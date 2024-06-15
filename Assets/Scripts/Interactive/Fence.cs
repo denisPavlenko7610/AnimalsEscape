@@ -10,9 +10,21 @@ namespace AnimalsEscape
         [SerializeField, Attach] private Collider _collider;
         [SerializeField, Attach(Attach.Child)] MeshRenderer[] _meshRenderers;
 
-        void OnEnable() => buttonPressToPress.OnPressed += ButtonPressToPressPressed;
+        void OnEnable()
+        {
+            if (buttonPressToPress == null)
+                return;
+            
+            buttonPressToPress.OnPressed += ButtonPressToPressPressed;
+        }
 
-        void OnDisable() => buttonPressToPress.OnPressed -= ButtonPressToPressPressed;
+        void OnDisable()
+        {
+            if (buttonPressToPress == null)
+                return;
+            
+            buttonPressToPress.OnPressed -= ButtonPressToPressPressed;
+        }
 
         void ButtonPressToPressPressed()
         {

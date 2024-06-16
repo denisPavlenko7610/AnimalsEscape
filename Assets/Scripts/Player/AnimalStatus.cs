@@ -15,6 +15,7 @@ namespace Player
         [SerializeField] AnimalInput _input;
         [SerializeField] Animal _animal;
         [SerializeField] Collider[] _colliders;
+        [SerializeField] AnimalHealth _animalHealth;
 
         void OnEnable()
         {
@@ -34,6 +35,7 @@ namespace Player
 
         public void SetStateDead()
         {
+            _animalHealth.DecreaseHealth();
             _animalState = AnimalState.dead;
             _input.enabled = false;
             foreach (Collider collider in _colliders)
@@ -41,5 +43,7 @@ namespace Player
                 collider.enabled = false;
             }
         }
+
+
     }
 }

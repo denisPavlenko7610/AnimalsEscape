@@ -1,11 +1,9 @@
 fileFormatVersion: 2
-guid: 9a3cd9429a545844b90dba08571166de
+guid: 85fdc0a2d8824574cb1b46685906cdac
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - _animalSettingsSo: {fileID: 11400000, guid: d2daba9c5fd322a4893ce1a2866a70b9,
-      type: 2}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

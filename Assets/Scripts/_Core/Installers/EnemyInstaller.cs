@@ -18,7 +18,7 @@ namespace AnimalsEscape.Core.Installers
         public override void InstallBindings()
         {
             Enemy enemy = _enemyFactory.Create();
-            enemy.FieldOfView.OnScannerReactHandler += _game.GameOver;
+            enemy.FieldOfView.OnScannerAndTriggerReactHandler += _game.GameOver;
             enemy.Init(_waypoints?.Points);
             _enemies.Add(enemy);
         }
@@ -27,7 +27,7 @@ namespace AnimalsEscape.Core.Installers
         {
             foreach (Enemy enemy in _enemies)
             {
-                enemy.FieldOfView.OnScannerReactHandler -= _game.GameOver;
+                enemy.FieldOfView.OnScannerAndTriggerReactHandler -= _game.GameOver;
             }
         }
     }

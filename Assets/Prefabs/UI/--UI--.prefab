@@ -777,6 +777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healthCounter: {fileID: 4916623143580416544}
+  _countdownToHeal: {fileID: 2019747842189953476}
 --- !u!1 &7292736983467868222
 GameObject:
   m_ObjectHideFlags: 0
@@ -965,7 +966,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8371301136813147236}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 

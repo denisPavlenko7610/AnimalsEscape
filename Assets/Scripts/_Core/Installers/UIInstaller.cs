@@ -14,7 +14,7 @@ namespace AnimalsEscape.Core.Installers
             Debug.Log($"Binding HealthUI: {_healthUI != null}");
 
             Container.Bind<LevelText>().FromInstance(_levelText).AsSingle().NonLazy();
-            Container.Bind<HealthUI>().FromInstance(_healthUI).AsSingle();
+            Container.Bind<HealthUI>().FromInstance(_healthUI).AsSingle().NonLazy();
             
         }
     }

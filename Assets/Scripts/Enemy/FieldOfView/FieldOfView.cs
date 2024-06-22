@@ -20,7 +20,8 @@ namespace AnimalsEscape
         [SerializeField] float _edgeResolveInterations = 4f;
         [SerializeField] float _edgeDistanceTreshold = 0.5f;
 
-        public event Action OnScannerReactHandler;
+        public event Action OnScannerAndTriggerReactHandler;
+
         Mesh _viewMesh;
         bool _isStop;
         CancellationTokenSource _cancelToken;
@@ -42,11 +43,15 @@ namespace AnimalsEscape
             if (!other.CompareTag(Constants.AnimalTag))
                 return;
 
-            if (other.gameObject.TryGetComponent(out AnimalStatus animal) && animal._animalState == AnimalState.alive)
+            if (other.gameObject.TryGetComponent(out AnimalStatus animalStatus) && animalStatus._animalState == AnimalState.alive)
             {
-                CheckAnimal(other.transform);
-                animal.SetStateDead();
+                if (other.gameObject.TryGetComponent(out AnimalHealth animalHealth))
+                {
+                    CheckAnimal(other.transform);
+                    animalHealth.DecreaseHealth();
+                }
             }
+
         }
 
         void InitViewMesh()
@@ -86,10 +91,13 @@ namespace AnimalsEscape
                             _obstacleMask))
                     {
                         //print("target: " + target.name);
-                        if (target.gameObject.TryGetComponent(out AnimalStatus animal) && animal._animalState == AnimalState.alive)
+                        if (target.gameObject.TryGetComponent(out AnimalStatus animalStatus) && animalStatus._animalState == AnimalState.alive)
                         {
-                            CheckAnimal(target);
-                            animal.SetStateDead();
+                            if (target.gameObject.TryGetComponent(out AnimalHealth animalHealth))
+                            {
+                                CheckAnimal(target.transform);
+                                animalHealth.DecreaseHealth();
+                            }
                         }
                     }
                 }
@@ -189,7 +197,7 @@ namespace AnimalsEscape
         void CheckAnimal(Transform target)
         {
             if (target.CompareTag(Constants.AnimalTag))
-                OnScannerReactHandler?.Invoke();
+                OnScannerAndTriggerReactHandler?.Invoke();
         }
 
         public Vector3 DirectionFromAngle(float angleInDegrees, bool anglesIsGlobal)

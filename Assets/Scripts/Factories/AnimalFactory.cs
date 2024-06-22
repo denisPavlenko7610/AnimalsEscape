@@ -1,6 +1,7 @@
 using System.Linq;
 using AnimalsEscape.Enums;
 using UnityEngine;
+using Zenject;
 
 namespace AnimalsEscape.Player
 {

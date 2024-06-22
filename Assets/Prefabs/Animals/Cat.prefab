@@ -260,7 +260,8 @@ GameObject:
   - component: {fileID: 6683949241819416336}
   - component: {fileID: 6683949241824728632}
   - component: {fileID: 5246475220562507839}
-  - component: {fileID: 7050582446992473135}
+  - component: {fileID: 6426044802427355435}
+  - component: {fileID: 8150480598050343788}
   - component: {fileID: 4059739567266819040}
   - component: {fileID: 944516476625864371}
   m_Layer: 8
@@ -383,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7095380de0481fafa6b73d46a567bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7050582446992473135
+--- !u!114 &6426044802427355435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -392,12 +393,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 6683949241819519792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a017d53704eb562408b76a483dbee702, type: 3}
+  m_Script: {fileID: 11500000, guid: dabe9cdda152c5f4aafdb232701151a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animalState: 1
-  _input: {fileID: 5899540549917707486}
+  _animalState: 0
+--- !u!114 &8150480598050343788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6683949241819519792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158db63d788a3524b9ce6ae25828dba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthUI: {fileID: 0}
   _animal: {fileID: 5899540549917707484}
+  _animalStatus: {fileID: 6426044802427355435}
+  _input: {fileID: 5899540549917707486}
   _colliders:
   - {fileID: 4059739567266819040}
   - {fileID: 944516476625864371}

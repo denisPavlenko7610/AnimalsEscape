@@ -17,15 +17,14 @@ public class AnimalHealth : MonoBehaviour
 
     HealthUI _healthUI;
 
-    //[Inject]
-    //public void Construct(HealthUI healthUI)
-    //{
-    //    _healthUI = healthUI;
-    //}
+    [Inject]
+    public void Construct(HealthUI healthUI)
+    {
+        _healthUI = healthUI;
+    }
 
     void OnEnable()
     {
-        _healthUI = FindObjectOfType<HealthUI>();
         _animal.OnBulletCollision += DecreaseHealth;
         _healthUI.OnHealed += IncreaseHealthPoint;
     }

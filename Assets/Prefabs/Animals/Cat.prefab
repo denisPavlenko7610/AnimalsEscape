@@ -409,7 +409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 158db63d788a3524b9ce6ae25828dba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _healthUI: {fileID: 0}
   _animal: {fileID: 5899540549917707484}
   _animalStatus: {fileID: 6426044802427355435}
   _input: {fileID: 5899540549917707486}
@@ -1655,6 +1654,7 @@ GameObject:
   - component: {fileID: 5899540549917707486}
   - component: {fileID: 5899540549917707487}
   - component: {fileID: 5899540549917707484}
+  - component: {fileID: 1336006488581253769}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Untagged
@@ -1760,3 +1760,16 @@ MonoBehaviour:
   _animalInput: {fileID: 5899540549917707486}
   _animalMove: {fileID: 5899540549917707481}
   _animalAnimations: {fileID: 5899540549917707487}
+--- !u!114 &1336006488581253769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172194227814315884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717a02054ef2699498e6bd4234fd7995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _containerSource: 1

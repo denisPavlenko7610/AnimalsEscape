@@ -35,7 +35,6 @@ public class AnimalHealth : MonoBehaviour
 
     void OnEnable()
     {
-        _healthUI = FindObjectOfType<HealthUI>();
         _animal.OnBulletCollision += DecreaseHealth;
         _healthUI.OnHealed += IncreaseHealthPoint;
         _rewardedAd.OnRewardedClosed += IncreaseHealthPoint; // <--------------------------------

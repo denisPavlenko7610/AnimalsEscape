@@ -11,8 +11,8 @@ namespace AnimalsEscape._Core
 {
     public class Game : MonoBehaviour
     {
-        static int _deathCounter;
-        static int _adsTreshold = 2;
+        int _deathCounter;
+        int _adsTreshold = 5;
         bool _deathSoundIsPlaying;
 
         List<Portal> _portals = new();
@@ -81,7 +81,6 @@ namespace AnimalsEscape._Core
             {
                 await DeathSound();
                 _ads.ShowInterstitialAd();
-                _adsTreshold = UnityEngine.Random.Range(2, 5);
                 _deathCounter = 0;
             }
             else

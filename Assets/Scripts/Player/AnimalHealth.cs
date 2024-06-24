@@ -76,11 +76,11 @@ public class AnimalHealth : MonoBehaviour
     void IncreaseHealthPoint()
     {
         Health++;
+
+        _healthUI.StopCountdownUI();
         _healthUI.Setup(Health);
-
         _healthUI.IsCouroutineReadyToStop = false;
-        _healthUI.IsCoroutineRunning = false;
-
+        
         if (Health == 5)
             _healthUI.SetStateCountdownToHealText(false);
 

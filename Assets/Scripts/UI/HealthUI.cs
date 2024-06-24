@@ -20,6 +20,7 @@ public class HealthUI : MonoBehaviour
     public bool IsCoroutineRunning { get; set; }
 
     WaitForSeconds _timeOfOneSecond = new WaitForSeconds(1);
+    Coroutine _currentCoroutine;
 
     void Awake()
     {
@@ -40,7 +41,17 @@ public class HealthUI : MonoBehaviour
     public void StartCountdownUI()
     {
         if (!IsCoroutineRunning)
-            StartCoroutine(TimerUIToHeal());
+            _currentCoroutine = StartCoroutine(TimerUIToHeal());
+    }
+
+    public void StopCountdownUI()
+    {
+        if (_currentCoroutine != null)
+        {
+            StopCoroutine(_currentCoroutine);
+            IsCoroutineRunning = false;
+            _currentCoroutine = null;
+        }
     }
 
     void SetupStartTime()
@@ -72,5 +83,6 @@ public class HealthUI : MonoBehaviour
 
             yield return _timeOfOneSecond;
         }
+        IsCoroutineRunning = false;
     }
 }

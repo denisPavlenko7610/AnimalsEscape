@@ -16,23 +16,35 @@ public class AnimalHealth : MonoBehaviour
     [SerializeField] Collider[] _colliders;
 
     HealthUI _healthUI;
+    RewardAd _rewardedAd;
 
+<<<<<<< Updated upstream
+    //[Inject]
+    //public void Construct(HealthUI healthUI)
+    //{
+    //    _healthUI = healthUI;
+    //}
+=======
     [Inject]
-    public void Construct(HealthUI healthUI)
+    public void Construct(HealthUI healthUI, RewardAd rewardedAd)
     {
         _healthUI = healthUI;
+        _rewardedAd = rewardedAd;
     }
+>>>>>>> Stashed changes
 
     void OnEnable()
     {
         _animal.OnBulletCollision += DecreaseHealth;
         _healthUI.OnHealed += IncreaseHealthPoint;
+        _rewardedAd.OnRewardedClosed += IncreaseHealthPoint; // <--------------------------------
     }
 
     void OnDisable()
     {
         _animal.OnBulletCollision -= DecreaseHealth;
         _healthUI.OnHealed -= IncreaseHealthPoint;
+        _rewardedAd.OnRewardedClosed -= IncreaseHealthPoint; // <--------------------------------
     }
 
     void Start()

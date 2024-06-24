@@ -25,8 +25,6 @@ namespace AnimalsEscape
             });
         }
         
-       
-
         public void ShowInterstitialAd()
         {
             RegisterEventHandlers(_interstitialAd);

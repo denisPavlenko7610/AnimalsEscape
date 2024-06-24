@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -8,6 +7,7 @@ public class HealthUI : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI _healthCounter;
     [SerializeField] TextMeshProUGUI _countdownToHeal;
+    [SerializeField] GameObject _imageRewarded;
 
     public Action OnHealed;
 
@@ -23,6 +23,7 @@ public class HealthUI : MonoBehaviour
     public void SetStateCountdownToHealText(bool state)
     {
         _countdownToHeal.enabled = state;
+        _imageRewarded.SetActive(state);
     }
 
     public void Setup(int health)

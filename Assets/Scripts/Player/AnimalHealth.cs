@@ -1,9 +1,7 @@
 using AnimalsEscape;
+using AnimalsEscape.UI;
 using Player;
-using System;
-using System.Collections;
 using UnityEngine;
-using UnityEngine.Windows;
 using Zenject;
 
 public class AnimalHealth : MonoBehaviour
@@ -17,34 +15,30 @@ public class AnimalHealth : MonoBehaviour
 
     HealthUI _healthUI;
     RewardAd _rewardedAd;
-
-<<<<<<< Updated upstream
-    //[Inject]
-    //public void Construct(HealthUI healthUI)
-    //{
-    //    _healthUI = healthUI;
-    //}
-=======
+    LevelText _levelText;
+    
     [Inject]
-    public void Construct(HealthUI healthUI, RewardAd rewardedAd)
+    public void Construct(HealthUI healthUI, RewardAd rewardedAd, LevelText levelText)
     {
         _healthUI = healthUI;
         _rewardedAd = rewardedAd;
+        _levelText = levelText;
     }
->>>>>>> Stashed changes
 
     void OnEnable()
     {
         _animal.OnBulletCollision += DecreaseHealth;
         _healthUI.OnHealed += IncreaseHealthPoint;
-        _rewardedAd.OnRewardedClosed += IncreaseHealthPoint; // <--------------------------------
+        _rewardedAd.OnRewardedClosed += IncreaseHealthPoint;
+        _levelText.GetVideoButton.onClick.AddListener(_rewardedAd.ShowRewardedAd);
     }
 
     void OnDisable()
     {
         _animal.OnBulletCollision -= DecreaseHealth;
         _healthUI.OnHealed -= IncreaseHealthPoint;
-        _rewardedAd.OnRewardedClosed -= IncreaseHealthPoint; // <--------------------------------
+        _rewardedAd.OnRewardedClosed -= IncreaseHealthPoint;
+        _levelText.GetVideoButton.onClick.RemoveListener(_rewardedAd.ShowRewardedAd);
     }
 
     void Start()

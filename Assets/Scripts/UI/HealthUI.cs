@@ -2,12 +2,13 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthUI : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI _healthCounter;
     [SerializeField] TextMeshProUGUI _countdownToHeal;
-    [SerializeField] GameObject _imageRewarded;
+    [SerializeField] Image _imageRewarded;
 
     public Action OnHealed;
 
@@ -20,10 +21,15 @@ public class HealthUI : MonoBehaviour
 
     WaitForSeconds _timeOfOneSecond = new WaitForSeconds(1);
 
+    void Awake()
+    {
+        _imageRewarded.enabled = false;
+    }
+
     public void SetStateCountdownToHealText(bool state)
     {
         _countdownToHeal.enabled = state;
-        _imageRewarded.SetActive(state);
+        _imageRewarded.enabled = state;
     }
 
     public void Setup(int health)

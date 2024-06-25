@@ -9,6 +9,7 @@ namespace Cannon
     {
         [SerializeField, Attach] Rigidbody _rigidbody;
         [SerializeField] LayerMask _obstacleLayerMask = 0;
+        [SerializeField] ParticleSystem _particleExplosion;
 
         public event Action<Bullet> OnTriggeredBullet;
         public Rigidbody Rigidbody => _rigidbody;
@@ -17,7 +18,14 @@ namespace Cannon
         {
             if ((_obstacleLayerMask & 1 << other.gameObject.layer) == 1 << other.gameObject.layer)
                 OnTriggeredBullet?.Invoke(this);
+
+            if (other.gameObject.TryGetComponent(out AnimalHealth animal))
+            {
+                _particleExplosion.transform.parent = null;
+                _particleExplosion.Play();
+            }
         }
+
 
         public void InitBullet(Bullet bullet, float fireSpeed)
         {

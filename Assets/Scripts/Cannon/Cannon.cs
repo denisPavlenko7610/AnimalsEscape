@@ -8,6 +8,7 @@ namespace Cannon
     {
         [SerializeField] Transform _spawnPoint;
         [SerializeField] Bullet _bulletPrefab;
+        [SerializeField] ParticleSystem _particleFire;
         [SerializeField] float _fireSpeed;
         [SerializeField] float _delay;
 
@@ -44,6 +45,7 @@ namespace Cannon
             {
                 _delay = _startDelay;
                 GetBullet();
+                _particleFire.Play();
             }
         }
 

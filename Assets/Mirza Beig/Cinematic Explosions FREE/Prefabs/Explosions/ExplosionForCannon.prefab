@@ -58,6 +58,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: ForceModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: ForceModule.x.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: ForceModule.y.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: ForceModule.z.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: ForceModule.x.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: ForceModule.y.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: ForceModule.z.minMaxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: ForceModule.z.maxCurve.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: ForceModule.z.maxCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+        type: 3}
+      propertyPath: ForceModule.z.maxCurve.m_Curve.Array.data[1].value
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8157332987337599133, guid: 3ef8c9151fb4beb41b1d71201c760f53,
         type: 3}
       propertyPath: m_Name

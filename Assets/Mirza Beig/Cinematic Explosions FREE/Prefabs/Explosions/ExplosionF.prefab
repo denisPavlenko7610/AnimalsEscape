@@ -58,15 +58,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8157332987337599132, guid: 3ef8c9151fb4beb41b1d71201c760f53,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0e1b57a3fb290a741890ed4c8033fee4, type: 2}
     - target: {fileID: 8157332987337599133, guid: 3ef8c9151fb4beb41b1d71201c760f53,
         type: 3}
       propertyPath: m_Name
-      value: Explosion FREE 2 Variant
+      value: ExplosionF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

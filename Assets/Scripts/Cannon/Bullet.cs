@@ -1,6 +1,7 @@
 using System;
 using RDTools.AutoAttach;
 using UnityEngine;
+using Zenject;
 
 namespace Cannon
 {
@@ -9,10 +10,17 @@ namespace Cannon
     {
         [SerializeField, Attach] Rigidbody _rigidbody;
         [SerializeField] LayerMask _obstacleLayerMask = 0;
-        [SerializeField] ParticleSystem _particleExplosion;
 
         public event Action<Bullet> OnTriggeredBullet;
         public Rigidbody Rigidbody => _rigidbody;
+
+        ParticleFactory _particleFactory;
+
+        [Inject]
+        public void Construct(ParticleFactory particleFactory)
+        {
+            _particleFactory = particleFactory;
+        }
 
         void OnTriggerEnter(Collider other)
         {
@@ -20,12 +28,8 @@ namespace Cannon
                 OnTriggeredBullet?.Invoke(this);
 
             if (other.gameObject.TryGetComponent(out AnimalHealth animal))
-            {
-                _particleExplosion.transform.parent = null;
-                _particleExplosion.Play();
-            }
+                _particleFactory.SpawnEffect(Effect.BulletCollisionParticle, transform.position, transform.rotation, null);
         }
-
 
         public void InitBullet(Bullet bullet, float fireSpeed)
         {

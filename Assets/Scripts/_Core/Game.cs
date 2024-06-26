@@ -4,7 +4,6 @@ using AnimalsEscape.Interactive;
 using System.Linq;
 using UnityEngine;
 using Zenject;
-using System;
 using Cysharp.Threading.Tasks;
 
 namespace AnimalsEscape._Core

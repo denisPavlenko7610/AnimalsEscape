@@ -3,17 +3,26 @@ using AnimalsEscape;
 using RDTools.AutoAttach;
 using UnityEngine;
 using System.Collections.Generic;
+using Zenject;
+using AnimalsEscape._Core.SceneManagement;
 
 public class Bomb : MonoBehaviour
 {
     [SerializeField] float _radius;
-    [SerializeField] GameObject _explosionEffect;
-    [SerializeField] ParticleSystem _activatedBombEffect;
+    [SerializeField] float _timeToExplode = 2f;
+    [SerializeField] Transform _spawnPosition;
 
     [SerializeField, Attach(Attach.Scene)] Game _game;
-    [SerializeField] float _timeToExplode = 2f;
 
     bool _explosionDone;
+
+    ParticleFactory _particleFactory;
+
+    [Inject]
+    public void Construct(ParticleFactory particleFactory)
+    {
+        _particleFactory = particleFactory;
+    }
 
     public void ExplodeWithDelay()
     {
@@ -22,7 +31,7 @@ public class Bomb : MonoBehaviour
 
         Invoke("Explode", _timeToExplode);
         GetComponent<Renderer>().material.color = Color.red;
-        _activatedBombEffect.Play();
+        _particleFactory.SpawnEffect(Effect.BombWickParticle, _spawnPosition.position, _spawnPosition.rotation, gameObject.transform);
     }
 
     void Explode()
@@ -54,7 +63,7 @@ public class Bomb : MonoBehaviour
         }
         
         Destroy(gameObject);
-        Instantiate(_explosionEffect, transform.position, Quaternion.identity);//////////////
+        _particleFactory.SpawnEffect(Effect.BombExplosionParticle, _spawnPosition.position, _spawnPosition.rotation, null);
     }
 
     void OnCollisionEnter(Collision collision)

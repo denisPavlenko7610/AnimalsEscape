@@ -8,7 +8,10 @@ public class Bomb : MonoBehaviour
 {
     [SerializeField] float _radius;
     [SerializeField] GameObject _explosionEffect;
+    [SerializeField] ParticleSystem _activatedBombEffect;
+
     [SerializeField, Attach(Attach.Scene)] Game _game;
+    [SerializeField] float _timeToExplode = 2f;
 
     bool _explosionDone;
 
@@ -17,8 +20,9 @@ public class Bomb : MonoBehaviour
         if (_explosionDone) return;
         _explosionDone = true;
 
-        Invoke("Explode", 2f);
+        Invoke("Explode", _timeToExplode);
         GetComponent<Renderer>().material.color = Color.red;
+        _activatedBombEffect.Play();
     }
 
     void Explode()
@@ -38,7 +42,6 @@ public class Bomb : MonoBehaviour
             {
                 animal.DecreaseHealth();
                 _game.GameOver();
-                Debug.Log("EXPLOSION");
             }
 
             if (overlappedColliders[i].TryGetComponent(out Bomb secondBomb))
@@ -51,7 +54,7 @@ public class Bomb : MonoBehaviour
         }
         
         Destroy(gameObject);
-        Instantiate(_explosionEffect, transform.position, Quaternion.identity);
+        Instantiate(_explosionEffect, transform.position, Quaternion.identity);//////////////
     }
 
     void OnCollisionEnter(Collision collision)

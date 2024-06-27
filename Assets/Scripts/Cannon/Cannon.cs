@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Pool;
+using Zenject;
 
 namespace Cannon
 {
@@ -8,13 +9,22 @@ namespace Cannon
     {
         [SerializeField] Transform _spawnPoint;
         [SerializeField] Bullet _bulletPrefab;
+
         [SerializeField] float _fireSpeed;
         [SerializeField] float _delay;
 
         public ObjectPool<Bullet> Pool { get; set; }
-        
+
         List<Bullet> _instantiatedBullets = new();
         float _startDelay;
+
+        ParticleFactory _particleFactory;
+
+        [Inject]
+        public void Construct(ParticleFactory particleFactory)
+        {
+            _particleFactory = particleFactory;
+        }
 
         void Awake()
         {
@@ -44,6 +54,7 @@ namespace Cannon
             {
                 _delay = _startDelay;
                 GetBullet();
+                _particleFactory.SpawnEffect(Effect.CannonFireParticle, _spawnPoint.position, _spawnPoint.rotation, null);
             }
         }
 

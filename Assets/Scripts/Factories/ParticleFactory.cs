@@ -4,12 +4,10 @@ using UnityEngine;
 public class ParticleFactory : MonoBehaviour
 {
     [SerializeField] ParticleEffectsSO _particleEffects;
-    Dictionary<Effect, ParticleSystem> _effectDictionary;
+    Dictionary<Effect, ParticleSystem> _effectDictionary = new();
 
     private void Awake()
     {
-        _effectDictionary = new Dictionary<Effect, ParticleSystem>();
-
         foreach (var particle in _particleEffects.Particles)
             _effectDictionary[particle._effectState] = particle._particleEffect;
     }

@@ -9,9 +9,12 @@ public class RewardAd : MonoBehaviour
 {
 
 #if UNITY_ANDROID
-    private string _adUnitId = "ca-app-pub-3940256099942544/5224354917";
+    private string _adUnitId = "ca-app-pub-3940256099942544/5224354917"; //test
+    //private string _adUnitId = "ca-app-pub-7173647303121367/8926257779";
+    
 #elif UNITY_IPHONE
-  private string _adUnitId = "ca-app-pub-3940256099942544/1712485313";
+  private string _adUnitId = "ca-app-pub-3940256099942544/1712485313"; //test
+  private string _adUnitId = "ca-app-pub-7173647303121367/8926257779";
 #else
   private string _adUnitId = "unused";
 #endif

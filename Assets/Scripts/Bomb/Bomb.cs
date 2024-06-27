@@ -4,7 +4,6 @@ using RDTools.AutoAttach;
 using UnityEngine;
 using System.Collections.Generic;
 using Zenject;
-using AnimalsEscape._Core.SceneManagement;
 
 public class Bomb : MonoBehaviour
 {
@@ -27,7 +26,7 @@ public class Bomb : MonoBehaviour
     public void ExplodeWithDelay()
     {
         if (_explosionDone) return;
-        _explosionDone = true;
+            _explosionDone = true;
 
         Invoke("Explode", _timeToExplode);
         GetComponent<Renderer>().material.color = Color.red;
@@ -38,22 +37,20 @@ public class Bomb : MonoBehaviour
     {
         Collider[] overlappedColliders = Physics.OverlapSphere(transform.position, _radius);
         HashSet<GameObject> processedObjects = new HashSet<GameObject>();
-        for (int i = 0; i < overlappedColliders.Length; i++)
+        foreach (var overlappedCollider in overlappedColliders)
         {
-            GameObject obj = overlappedColliders[i].gameObject;
+            GameObject obj = overlappedCollider.gameObject;
 
-            if (processedObjects.Contains(obj))
+            if (!processedObjects.Add(obj))
                 continue;
 
-            processedObjects.Add(obj);
-
-            if (overlappedColliders[i].TryGetComponent(out AnimalHealth animal))
+            if (overlappedCollider.TryGetComponent(out AnimalHealth animal))
             {
                 animal.DecreaseHealth();
                 _game.GameOver();
             }
 
-            if (overlappedColliders[i].TryGetComponent(out Bomb secondBomb))
+            if (overlappedCollider.TryGetComponent(out Bomb secondBomb))
             {
                 if (Vector3.Distance(transform.position, secondBomb.transform.position) < _radius / 2f)
                 {
@@ -62,8 +59,11 @@ public class Bomb : MonoBehaviour
             }
         }
         
-        Destroy(gameObject);
+        //TODO: change to pool effect
+        gameObject.SetActive(false);
+        Destroy(gameObject, Random.Range(1f, 5f));
         _particleFactory.SpawnEffect(Effect.BombExplosionParticle, _spawnPosition.position, _spawnPosition.rotation, null);
+        //
     }
 
     void OnCollisionEnter(Collision collision)

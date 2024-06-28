@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4837717110706473017}
   - component: {fileID: 5450232297255945868}
   - component: {fileID: 1046499324623721662}
+  - component: {fileID: 5544856159535211296}
   - component: {fileID: 4805612250304649078}
   m_Layer: 0
   m_Name: Bullet
@@ -153,6 +154,20 @@ MonoBehaviour:
   _obstacleLayerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &5544856159535211296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5269129556273234964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b5d38b9613ee743a3484d39608e4c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  durationAnimation: 2
+  rotateAxe: {x: 360, y: 360, z: 0}
 --- !u!114 &4805612250304649078
 MonoBehaviour:
   m_ObjectHideFlags: 0

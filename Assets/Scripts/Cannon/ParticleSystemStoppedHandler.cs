@@ -3,22 +3,18 @@ using UnityEngine;
 
 public class ParticleSystemStoppedHandler : MonoBehaviour
 {
-    private ParticleSystemPool pool;
+    [SerializeField] ParticleSystem _particleSystem;
 
-    private void Awake()
+    public event Action<ParticleSystem> onParticleStopped;
+    
+    void Awake()
     {
-        var _ps = GetComponent<ParticleSystem>();
-        ParticleSystem.MainModule main = _ps.main;
+        ParticleSystem.MainModule main = _particleSystem.main;
         main.stopAction = ParticleSystemStopAction.Callback;
-    }
-
-    public void Init(ParticleSystemPool pool)
-    {
-        this.pool = pool;
     }
 
     void OnParticleSystemStopped()
     {
-        pool.ReleaseParticleSystem(GetComponent<ParticleSystem>());
+        onParticleStopped?.Invoke(_particleSystem);
     }
 }

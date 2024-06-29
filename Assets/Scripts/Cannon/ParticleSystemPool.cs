@@ -1,10 +1,17 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Zenject;
 
 public class ParticleSystemPool : MonoBehaviour
 {
     ParticleFactory _particleFactory;
+
+    [FormerlySerializedAs("typeEffect")]
+    [SerializeField] Effect _typeEffect;
+    [FormerlySerializedAs("poolSize")]
+    [SerializeField] int _poolSize = 5;
+    List<ParticleSystem> _pool = new();
 
     [Inject]
     public void Construct(ParticleFactory particleFactory)
@@ -12,56 +19,50 @@ public class ParticleSystemPool : MonoBehaviour
         _particleFactory = particleFactory;
     }
 
-    [SerializeField] private Effect typeEffect;
-    [SerializeField] private int poolSize = 5;
-    private List<ParticleSystem> pool; 
-
     void Awake()
     {
-        // Initialize the pool
-        pool = new List<ParticleSystem>();
-
-        for (int i = 0; i < poolSize; i++)
+        for (int i = 0; i < _poolSize; i++)
         {
-            CreateNewParticleSystem();
+            CreateNewParticle();
         }
     }
 
-    private void CreateNewParticleSystem()
+    void CreateNewParticle()
     {
-        ParticleSystem newParticle = _particleFactory.SpawnEffect(typeEffect);
+        ParticleSystem newParticle = _particleFactory.SpawnEffect(_typeEffect);
         newParticle.gameObject.SetActive(false);
-        newParticle.GetComponent<ParticleSystemStoppedHandler>().Init(this);
-        pool.Add(newParticle);
+        newParticle.GetComponent<ParticleSystemStoppedHandler>().onParticleStopped += ReleaseParticleSystem;
+        _pool.Add(newParticle);
     }
-
 
     public ParticleSystem GetParticleSystem()
     {
-        foreach (ParticleSystem ps in pool)
+        foreach (ParticleSystem particle in _pool)
         {
-            if (!ps.gameObject.activeInHierarchy)
+            if (!particle.gameObject.activeInHierarchy)
             {
-                ps.gameObject.SetActive(true);
-                return ps;
+                particle.gameObject.SetActive(true);
+                return particle;
             }
         }
-        CreateNewParticleSystem();
-        return pool[pool.Count - 1];
-    }
-    
-    public void ReleaseParticleSystem(ParticleSystem ps)
-    {
-        ps.Clear();
-        ps.Stop();
-        ps.gameObject.SetActive(false);
+        
+        CreateNewParticle();
+        return _pool[_pool.Count - 1];
     }
     
     public void SetParticle(Transform spawnPoint)
     {
-        ParticleSystem ps = GetParticleSystem();
-        ps.transform.position = spawnPoint.position;
-        ps.transform.rotation = spawnPoint.rotation;
-        ps.Play();
+        ParticleSystem particle = GetParticleSystem();
+        particle.transform.position = spawnPoint.position;
+        particle.transform.rotation = spawnPoint.rotation;
+        particle.Play();
+    }
+
+    void ReleaseParticleSystem(ParticleSystem particle)
+    {
+        particle.GetComponent<ParticleSystemStoppedHandler>().onParticleStopped -= ReleaseParticleSystem;
+        particle.Clear();
+        particle.Stop();
+        particle.gameObject.SetActive(false);
     }
 }

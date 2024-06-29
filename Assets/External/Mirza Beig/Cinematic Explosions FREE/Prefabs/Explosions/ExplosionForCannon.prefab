@@ -160,4 +160,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ee5dbfd34e7eb4ab36817bdd10694b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 0}
+  _particleSystem: {fileID: 3654741155788002240}
+--- !u!198 &3654741155788002240 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8157332987337599075, guid: 3ef8c9151fb4beb41b1d71201c760f53,
+    type: 3}
+  m_PrefabInstance: {fileID: 4867428670327487395}
+  m_PrefabAsset: {fileID: 0}

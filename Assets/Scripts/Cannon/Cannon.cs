@@ -16,7 +16,7 @@ namespace Cannon
 
         public ObjectPool<Bullet> Pool { get; set; }
 
-        [SerializeField, Attach()] private ParticleSystemPool _particleSystemPool;
+        [SerializeField, Attach()] ParticleSystemPool _particleSystemPool;
 
         List<Bullet> _instantiatedBullets = new();
         float _startDelay;
@@ -25,6 +25,7 @@ namespace Cannon
         {
             Pool = new ObjectPool<Bullet>
                 (SpawnBullet, OnTakeBulletFromPool, OnReturnBulletFromPool);
+            
             _startDelay = _delay;
         }
 
@@ -44,25 +45,23 @@ namespace Cannon
         void Shoot()
         {
             _delay -= Time.deltaTime;
-            
+
             if (_delay <= 0f)
             {
                 _delay = _startDelay;
                 GetBullet();
                 _particleSystemPool.SetParticle(_spawnPoint);
-
             }
         }
-
-       
-
-    Bullet SpawnBullet()
+        
+        Bullet SpawnBullet()
         {
             var newBullet = Instantiate(_bulletPrefab, _spawnPoint.position, Quaternion.identity, transform);
             _instantiatedBullets.Add(newBullet);
             newBullet.OnTriggeredBullet += BulletRelease;
             return newBullet;
         }
+        
         void GetBullet() => Pool.Get();
 
         void OnTakeBulletFromPool(Bullet bullet) => bullet.InitBullet(bullet, _fireSpeed);
@@ -70,10 +69,5 @@ namespace Cannon
         void OnReturnBulletFromPool(Bullet bullet) => bullet.DisableBullet(bullet, _spawnPoint);
 
         void BulletRelease(Bullet bullet) => Pool.Release(bullet);
-
-        
-       
-        
-        
     }
 }

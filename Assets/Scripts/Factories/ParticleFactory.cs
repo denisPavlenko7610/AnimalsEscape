@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ParticleFactory : MonoBehaviour
@@ -15,9 +16,14 @@ public class ParticleFactory : MonoBehaviour
     public void SpawnEffect(Effect effect, Vector3 position, Quaternion rotation, Transform parent)
     {
         if (_effectDictionary.TryGetValue(effect, out ParticleSystem particleEffect))
-            Instantiate(particleEffect, position, rotation, parent);
-
-
-
+             Instantiate(particleEffect, position, rotation, parent);
+        
+    }
+    
+    public ParticleSystem SpawnEffect(Effect effect)
+    {
+        if (_effectDictionary.TryGetValue(effect, out ParticleSystem particleEffect))
+            return Instantiate(particleEffect);
+        throw new Exception("Not Fund Effect");
     }
 }

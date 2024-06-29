@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17384669, g: 0.21736743, b: 0.29952005, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2019,6 +2019,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 1425040544487846513, guid: 271572a763b2d2146a9ded3bdc741031,
+        type: 3}
+      propertyPath: _particleSystemPool
+      value: 
+      objectReference: {fileID: 2124540442}
     - target: {fileID: 2845416859972563239, guid: 271572a763b2d2146a9ded3bdc741031,
         type: 3}
       propertyPath: m_Name
@@ -2027,8 +2032,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2845416859972563239, guid: 271572a763b2d2146a9ded3bdc741031,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2124540442}
   m_SourcePrefab: {fileID: 100100000, guid: 271572a763b2d2146a9ded3bdc741031, type: 3}
+--- !u!1 &1105587548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2845416859972563239, guid: 271572a763b2d2146a9ded3bdc741031,
+    type: 3}
+  m_PrefabInstance: {fileID: 1105587547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1171513954
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,6 +3217,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1105587547}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2124540442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105587548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdd334eb3d6a31640856caa02c3b2b38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeEffect: 0
+  poolSize: 5
 --- !u!1001 &2736765116439043749
 PrefabInstance:
   m_ObjectHideFlags: 0

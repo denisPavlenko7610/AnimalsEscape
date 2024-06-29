@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using RDTools.AutoAttach;
 using UnityEngine;
 using UnityEngine.Pool;
 using Zenject;
@@ -15,16 +16,10 @@ namespace Cannon
 
         public ObjectPool<Bullet> Pool { get; set; }
 
+        [SerializeField, Attach()] private ParticleSystemPool _particleSystemPool;
+
         List<Bullet> _instantiatedBullets = new();
         float _startDelay;
-
-        ParticleFactory _particleFactory;
-
-        [Inject]
-        public void Construct(ParticleFactory particleFactory)
-        {
-            _particleFactory = particleFactory;
-        }
 
         void Awake()
         {
@@ -49,29 +44,36 @@ namespace Cannon
         void Shoot()
         {
             _delay -= Time.deltaTime;
-
+            
             if (_delay <= 0f)
             {
                 _delay = _startDelay;
                 GetBullet();
-                _particleFactory.SpawnEffect(Effect.CannonFireParticle, _spawnPoint.position, _spawnPoint.rotation, null);
+                _particleSystemPool.SetParticle(_spawnPoint);
+
             }
         }
 
-        void GetBullet() => Pool.Get();
+       
 
-        Bullet SpawnBullet()
+    Bullet SpawnBullet()
         {
             var newBullet = Instantiate(_bulletPrefab, _spawnPoint.position, Quaternion.identity, transform);
             _instantiatedBullets.Add(newBullet);
             newBullet.OnTriggeredBullet += BulletRelease;
             return newBullet;
         }
+        void GetBullet() => Pool.Get();
 
         void OnTakeBulletFromPool(Bullet bullet) => bullet.InitBullet(bullet, _fireSpeed);
 
         void OnReturnBulletFromPool(Bullet bullet) => bullet.DisableBullet(bullet, _spawnPoint);
 
         void BulletRelease(Bullet bullet) => Pool.Release(bullet);
+
+        
+       
+        
+        
     }
 }

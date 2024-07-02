@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using AnimalsEscape.Utils;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,16 +15,22 @@ public class HealthUI : MonoBehaviour
 
     float _minutes;
     float _seconds;
-    float _delta;
+    float _delta = 1;
+
+    private float _defaultMinutes = 4;
+    private float _defaultSeconds = 60;
 
     public bool IsCouroutineReadyToStop { get; set; }
     public bool IsCoroutineRunning { get; set; }
 
-    WaitForSeconds _timeOfOneSecond = new WaitForSeconds(1);
+    WaitForSecondsRealtime _timeOfOneSecond = new WaitForSecondsRealtime(1);
     Coroutine _currentCoroutine;
 
     void Awake()
     {
+        _minutes = Storage.Load(Constants.MINUTESKEY, _defaultMinutes);
+        _seconds = Storage.Load(Constants.SECONDSKEY, _defaultSeconds);
+
         _imageRewarded.enabled = false;
     }
 
@@ -36,6 +43,12 @@ public class HealthUI : MonoBehaviour
     public void Setup(int health)
     {
         _healthCounter.text = health.ToString();
+
+        if (health < 5)
+        {
+            SetStateCountdownToHealText(true);
+            StartCountdownUI();
+        }
     }
 
     public void StartCountdownUI()
@@ -54,16 +67,15 @@ public class HealthUI : MonoBehaviour
         }
     }
 
-    void SetupStartTime()
+    void SetDefualtValueTimer()
     {
-        _minutes = 4;
-        _seconds = 60;
+        _minutes = _defaultMinutes;
+        _seconds = _defaultSeconds;
         _delta = 1;
     }
 
     IEnumerator TimerUIToHeal()
     {
-        SetupStartTime();
         IsCoroutineRunning = true;
         while (!IsCouroutineReadyToStop)
         {
@@ -72,6 +84,7 @@ public class HealthUI : MonoBehaviour
                 _minutes--;
                 _seconds = 60;
             }
+
             _seconds -= _delta;
             _countdownToHeal.text = _minutes.ToString("00") + " : " + _seconds.ToString("00");
 
@@ -83,6 +96,19 @@ public class HealthUI : MonoBehaviour
 
             yield return _timeOfOneSecond;
         }
+
         IsCoroutineRunning = false;
+        SetDefualtValueTimer();
+    }
+
+    private void OnDisable()
+    {
+        Save();
+    }
+
+    private void Save()
+    {
+        Storage.Save(Constants.MINUTESKEY, _minutes);
+        Storage.Save(Constants.SECONDSKEY, _seconds);
     }
 }

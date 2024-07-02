@@ -28,9 +28,9 @@ public class HealthUI : MonoBehaviour
 
     void Awake()
     {
-        _minutes = Storage.Load(Constants.MINUTESKEY,_defaultMinutes);
-        _seconds = Storage.Load(Constants.SECONDSKEY,_defaultSeconds);
-        
+        _minutes = Storage.Load(Constants.MINUTESKEY, _defaultMinutes);
+        _seconds = Storage.Load(Constants.SECONDSKEY, _defaultSeconds);
+
         _imageRewarded.enabled = false;
     }
 
@@ -43,8 +43,8 @@ public class HealthUI : MonoBehaviour
     public void Setup(int health)
     {
         _healthCounter.text = health.ToString();
-        
-        if (health<5)
+
+        if (health < 5)
         {
             SetStateCountdownToHealText(true);
             StartCountdownUI();
@@ -84,6 +84,7 @@ public class HealthUI : MonoBehaviour
                 _minutes--;
                 _seconds = 60;
             }
+
             _seconds -= _delta;
             _countdownToHeal.text = _minutes.ToString("00") + " : " + _seconds.ToString("00");
 
@@ -95,6 +96,7 @@ public class HealthUI : MonoBehaviour
 
             yield return _timeOfOneSecond;
         }
+
         IsCoroutineRunning = false;
         SetDefualtValueTimer();
     }
@@ -106,7 +108,7 @@ public class HealthUI : MonoBehaviour
 
     private void Save()
     {
-        Storage.Save(Constants.MINUTESKEY,_minutes);
-        Storage.Save(Constants.SECONDSKEY,_seconds);
+        Storage.Save(Constants.MINUTESKEY, _minutes);
+        Storage.Save(Constants.SECONDSKEY, _seconds);
     }
 }

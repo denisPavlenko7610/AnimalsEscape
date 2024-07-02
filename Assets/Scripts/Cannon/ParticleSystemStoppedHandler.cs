@@ -1,9 +1,10 @@
+using RDTools.AutoAttach;
 using System;
 using UnityEngine;
 
 public class ParticleSystemStoppedHandler : MonoBehaviour
 {
-    [SerializeField] ParticleSystem _particleSystem;
+    [SerializeField, Attach] ParticleSystem _particleSystem;
 
     public event Action<ParticleSystem> onParticleStopped;
     

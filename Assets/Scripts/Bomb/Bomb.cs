@@ -41,7 +41,7 @@ public class Bomb : MonoBehaviour
         {
             GameObject obj = overlappedCollider.gameObject;
 
-            if (!processedObjects.Add(obj))
+            if (!processedObjects.Contains(obj))
                 continue;
 
             if (overlappedCollider.TryGetComponent(out AnimalHealth animal))

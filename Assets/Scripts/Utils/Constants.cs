@@ -4,8 +4,8 @@ namespace AnimalsEscape.Utils
     {
         public static string AnimalTag = "Animal";
         
-        public static string MinutesKey = "Minutes";
-        public static string SecondsKey = "Seconds";
-        public static string HealthKey = "Health";
+        public const string MINUTESKEY = "Minutes";
+        public const string SECONDSKEY = "Seconds";
+        public const string HEALTHKEY = "Health";
     }
 }

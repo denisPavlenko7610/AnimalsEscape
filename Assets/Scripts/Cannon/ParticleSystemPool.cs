@@ -9,9 +9,11 @@ public class ParticleSystemPool : MonoBehaviour
 
     [FormerlySerializedAs("typeEffect")]
     [SerializeField] Effect _typeEffect;
+    
     [FormerlySerializedAs("poolSize")]
     [SerializeField] int _poolSize = 5;
-    List<ParticleSystem> _pool = new();
+    
+    List<ParticleSystem> _pool = new(10);
 
     [Inject]
     public void Construct(ParticleFactory particleFactory)
@@ -31,11 +33,10 @@ public class ParticleSystemPool : MonoBehaviour
     {
         ParticleSystem newParticle = _particleFactory.SpawnEffect(_typeEffect);
         newParticle.gameObject.SetActive(false);
-        newParticle.GetComponent<ParticleSystemStoppedHandler>().onParticleStopped += ReleaseParticleSystem;
         _pool.Add(newParticle);
     }
 
-    public ParticleSystem GetParticleSystem()
+    public ParticleSystem GetParticle()
     {
         foreach (ParticleSystem particle in _pool)
         {
@@ -52,9 +53,10 @@ public class ParticleSystemPool : MonoBehaviour
     
     public void SetParticle(Transform spawnPoint)
     {
-        ParticleSystem particle = GetParticleSystem();
+        ParticleSystem particle = GetParticle();
         particle.transform.position = spawnPoint.position;
         particle.transform.rotation = spawnPoint.rotation;
+        particle.GetComponent<ParticleSystemStoppedHandler>().onParticleStopped += ReleaseParticleSystem;
         particle.Play();
     }
 

@@ -8,46 +8,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7522982781472501600, guid: 017c9fcd02ca72049806a4014da0bea6,
-        type: 3}
-      propertyPath: UVModule.tilesX
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7522982781472501600, guid: 017c9fcd02ca72049806a4014da0bea6,
-        type: 3}
-      propertyPath: UVModule.tilesY
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7522982781472501600, guid: 017c9fcd02ca72049806a4014da0bea6,
-        type: 3}
-      propertyPath: simulationSpeed
-      value: 1.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7522982781472501600, guid: 017c9fcd02ca72049806a4014da0bea6,
-        type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7522982781472501600, guid: 017c9fcd02ca72049806a4014da0bea6,
-        type: 3}
-      propertyPath: SubModule.subEmitters.Array.data[0].emitter
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7522982781472501601, guid: 017c9fcd02ca72049806a4014da0bea6,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7522982781472501601, guid: 017c9fcd02ca72049806a4014da0bea6,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7522982781472501601, guid: 017c9fcd02ca72049806a4014da0bea6,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
-      objectReference: {fileID: 0}
     - target: {fileID: 7522982781472501601, guid: 017c9fcd02ca72049806a4014da0bea6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -103,20 +63,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: ExplosionForBomb
       objectReference: {fileID: 0}
-    - target: {fileID: 7522982781472501663, guid: 017c9fcd02ca72049806a4014da0bea6,
-        type: 3}
-      propertyPath: m_RenderAlignment
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7522982781472501663, guid: 017c9fcd02ca72049806a4014da0bea6,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 5fd7eb1efb65a9b4aa5224eaa309f1f4, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 7980186131264812128, guid: 017c9fcd02ca72049806a4014da0bea6, type: 3}
-    - {fileID: 302563520763101281, guid: 017c9fcd02ca72049806a4014da0bea6, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 017c9fcd02ca72049806a4014da0bea6, type: 3}

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using AnimalsEscape.Utils;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,16 +15,18 @@ public class HealthUI : MonoBehaviour
 
     float _minutes;
     float _seconds;
-    float _delta;
+    float _delta = 1;
 
     public bool IsCouroutineReadyToStop { get; set; }
     public bool IsCoroutineRunning { get; set; }
 
-    WaitForSeconds _timeOfOneSecond = new WaitForSeconds(1);
+    WaitForSecondsRealtime _timeOfOneSecond = new WaitForSecondsRealtime(1);
     Coroutine _currentCoroutine;
 
     void Awake()
     {
+        _minutes = Storage.Load(Constants.MinutesKey,4);
+        _seconds = Storage.Load(Constants.SecondsKey,60);
         _imageRewarded.enabled = false;
     }
 
@@ -36,6 +39,11 @@ public class HealthUI : MonoBehaviour
     public void Setup(int health)
     {
         _healthCounter.text = health.ToString();
+        if (health<5)
+        {
+            SetStateCountdownToHealText(true);
+            StartCountdownUI();
+        }
     }
 
     public void StartCountdownUI()
@@ -63,7 +71,6 @@ public class HealthUI : MonoBehaviour
 
     IEnumerator TimerUIToHeal()
     {
-        SetupStartTime();
         IsCoroutineRunning = true;
         while (!IsCouroutineReadyToStop)
         {
@@ -84,5 +91,12 @@ public class HealthUI : MonoBehaviour
             yield return _timeOfOneSecond;
         }
         IsCoroutineRunning = false;
+        SetupStartTime();
+    }
+
+    private void OnDisable()
+    {
+        Storage.Save(Constants.MinutesKey,_minutes);
+        Storage.Save(Constants.SecondsKey,_seconds);
     }
 }

@@ -7,7 +7,7 @@ using Zenject;
 
 public class AnimalHealth : MonoBehaviour
 {
-    public static int Health { get; private set; } = 5;
+    public int Health { get; private set; } = 5;
 
     [SerializeField] Animal _animal;
     [SerializeField] AnimalStatus _animalStatus;
@@ -56,7 +56,6 @@ public class AnimalHealth : MonoBehaviour
         Health--;
         _healthUI.Setup(Health);
         _animalStatus._animalState = AnimalState.dead;
-        _input.enabled = false;
 
         foreach (Collider collider in _colliders)
             collider.enabled = false;
@@ -65,7 +64,7 @@ public class AnimalHealth : MonoBehaviour
 
         if (Health <= 0)
         {
-            //You cant play anymore! 
+            _input.IsMoving = false;
         }
     }
 

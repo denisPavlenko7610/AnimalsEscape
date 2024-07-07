@@ -1,0 +1,42 @@
+{
+    "name": "Tests",
+    "rootNamespace": "",
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "Project",
+        "Zenject-TestFramework",
+        "Zenject"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "EmbeddedLinux",
+        "GameCoreScarlett",
+        "GameCoreXboxOne",
+        "LinuxStandalone64",
+        "CloudRendering",
+        "macOSStandalone",
+        "PS4",
+        "PS5",
+        "QNX",
+        "Stadia",
+        "Switch",
+        "tvOS",
+        "WSA",
+        "VisionOS",
+        "WebGL",
+        "WindowsStandalone32",
+        "XboxOne"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

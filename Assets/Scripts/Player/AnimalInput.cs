@@ -10,9 +10,15 @@ namespace AnimalsEscape
         Vector2 _moveVector;
         Input_Actions _inputActions;
 
-        void OnEnable()
+        public bool IsMoving { get; set; } = true;
+
+        void Awake()
         {
             _inputActions = new Input_Actions();
+        }
+
+        void OnEnable()
+        {
             _inputActions.Enable();
             _inputActions.Player.Move.performed += UpdateInput;
             _inputActions.Player.Move.canceled += CanceledInput;
@@ -21,8 +27,12 @@ namespace AnimalsEscape
         void OnDisable()
         {
             _inputActions?.Disable();
-            if (_inputActions != null) _inputActions.Player.Move.performed -= UpdateInput;
-            if (_inputActions != null) _inputActions.Player.Move.canceled -= CanceledInput;
+            
+            if (_inputActions != null)
+                _inputActions.Player.Move.performed -= UpdateInput;
+            
+            if (_inputActions != null)
+                _inputActions.Player.Move.canceled -= CanceledInput;
         }
 
         void UpdateInput(InputAction.CallbackContext ctx)

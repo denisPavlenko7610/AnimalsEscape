@@ -1,6 +1,7 @@
 using AnimalsEscape;
 using NUnit.Framework;
 using UnityEngine;
+
 namespace Tests
 {
     public class AnimalTests : MonoBehaviour

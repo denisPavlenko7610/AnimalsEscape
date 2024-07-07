@@ -54,7 +54,7 @@ public class AnimalHealth : MonoBehaviour
     public void DecreaseHealth()
     {
         Health--;
-        _healthUI.Setup(Health);
+        _healthUI?.Setup(Health);
         _animalStatus._animalState = AnimalState.dead;
 
         foreach (Collider collider in _colliders)
@@ -70,10 +70,10 @@ public class AnimalHealth : MonoBehaviour
 
     void StartCountdownToIncreaseHealth()
     {
-        if (Health < 5 && !_healthUI.IsCouroutineReadyToStop)
+        if (_healthUI && Health < 5 && !_healthUI.IsCouroutineReadyToStop)
         {
-            _healthUI.SetStateCountdownToHealText(true);
-            _healthUI.StartCountdownUI();
+            _healthUI?.SetStateCountdownToHealText(true);
+            _healthUI?.StartCountdownUI();
         }
     }
 

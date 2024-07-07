@@ -5,29 +5,12 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "Project",
-        "Zenject-TestFramework",
         "Zenject"
     ],
-    "includePlatforms": [],
-    "excludePlatforms": [
-        "EmbeddedLinux",
-        "GameCoreScarlett",
-        "GameCoreXboxOne",
-        "LinuxStandalone64",
-        "CloudRendering",
-        "macOSStandalone",
-        "PS4",
-        "PS5",
-        "QNX",
-        "Stadia",
-        "Switch",
-        "tvOS",
-        "WSA",
-        "VisionOS",
-        "WebGL",
-        "WindowsStandalone32",
-        "XboxOne"
+    "includePlatforms": [
+        "Editor"
     ],
+    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [

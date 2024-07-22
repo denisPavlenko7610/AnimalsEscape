@@ -1390,7 +1390,7 @@ GameObject:
   - component: {fileID: 771769512}
   - component: {fileID: 771769513}
   m_Layer: 0
-  m_Name: PoolEffectBomb
+  m_Name: Bombs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

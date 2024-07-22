@@ -13,6 +13,9 @@ public class Bomb : MonoBehaviour
 
     [SerializeField, Attach(Attach.Scene)] Game _game;
 
+    [SerializeField, Attach(Attach.Parent)]
+    ParticleSystemPool _particleSystemPool;
+
     bool _explosionDone;
 
     ParticleFactory _particleFactory;
@@ -26,11 +29,12 @@ public class Bomb : MonoBehaviour
     public void ExplodeWithDelay()
     {
         if (_explosionDone) return;
-            _explosionDone = true;
+        _explosionDone = true;
 
         Invoke("Explode", _timeToExplode);
         GetComponent<Renderer>().material.color = Color.red;
-        _particleFactory.SpawnEffect(Effect.BombWickParticle, _spawnPosition.position, _spawnPosition.rotation, gameObject.transform);
+        _particleFactory.SpawnEffect(Effect.BombWickParticle, _spawnPosition.position, _spawnPosition.rotation,
+            gameObject.transform);
     }
 
     void Explode()
@@ -58,12 +62,11 @@ public class Bomb : MonoBehaviour
                 }
             }
         }
-        
-        //TODO: change to pool effect
+
+
         gameObject.SetActive(false);
         Destroy(gameObject, Random.Range(1f, 5f));
-        _particleFactory.SpawnEffect(Effect.BombExplosionParticle, _spawnPosition.position, _spawnPosition.rotation, null);
-        //
+        _particleSystemPool.SetParticle(_spawnPosition);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -82,5 +85,4 @@ public class Bomb : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, _radius / 2f);
     }
 #endif
-
 }

@@ -26,12 +26,12 @@ public class Bomb : MonoBehaviour
         _particleFactory = particleFactory;
     }
 
-    public void ExplodeWithDelay()
+    void ExplodeWithDelay()
     {
         if (_explosionDone) return;
         _explosionDone = true;
 
-        Invoke("Explode", _timeToExplode);
+        Invoke(nameof(Explode), _timeToExplode);
         GetComponent<Renderer>().material.color = Color.red;
         _particleFactory.SpawnEffect(Effect.BombWickParticle, _spawnPosition.position, _spawnPosition.rotation,
             gameObject.transform);
